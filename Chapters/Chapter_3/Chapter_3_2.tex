@@ -1,0 +1,642 @@
+%PREAMBLE
+\begin{comment}
+%\documentclass[11pt]{article}
+%\input{latex/mycommands.tex}
+%\begin{document}
+asdf
+%ENDPREAMBLE
+\end{comment}
+
+
+
+
+\chapter{Object reconstruction and identification}
+\pablo{Highlight the importance of alignment for the reconstruction}
+
+%{\LARGE \textbf{}\\}
+% The content of this section has to be general, i.e. it is valid for both the polarisation and the tHq analyses
+%\tableofcontents
+\label{chap:ObjectReconstuction}
+
+\vspace*{0.1 cm} 
+\hspace*{200pt} \\
+\hspace*{175pt} \textit{El dos después del uno.} \\
+\hspace*{175pt} ---\textsc{Isabel }\\% \textit{} \\
+\vspace*{2cm} 
+
+%%%%%%%%%%%%%%%%%%%
+%           Object reconstruction         %
+%%%%%%%%%%%%%%%%%%%
+
+Event reconstruction consists of the local pattern recognition (i.e. the
+clustering and resolving of readout channels on the readout detector
+elements), reconstruction of tracks, segments, vertices, cells and clusters in the
+different sub-detectors, and finally the creation of high level objects, such as
+particles of different identification, jets including their flavour tag, or missing
+energy estimation.
+
+To reconstruct the physical objects, the information of all the sub-detectors and systems of ATLAS is employed.
+A detailed description of all of them is presented in Section \ref{chap:ATLAS}. 
+After passing the trigger preselection, the raw data is analysed to build the physics objects that constitute the
+subject of the physical analyses. The process of constructing this elements is known as reconstruction.
+Figure \ref{fig:Chap2:ATLAS:ATLAS_Layers} illustrates how each particle interacts with the different layers of 
+the ATLAS detector. 
+The reconstructed objects are the particles tracks and vertices, the leptons, the photons, jets (and their flavour tag) 
+and the missing transverse momentum.
+
+%In order to have precise measurements it is necessary to have an excellent reconstruction of the particle in the
+%final state. For measurements involving the top quark it is necessary to properly build the top decay products, i.e.
+%electrons, muons jets \bjets and neutrinos (which are identified through the \MET)
+
+\begin{figure}
+	\centering
+ 	 \includegraphics[width = 0.7\textwidth]{Chapter2/ATLAS_layers}
+	 \caption{Fraction of the transversal plane of ATLAS. Each particle leaves a different signature in each layer. By signature is meant the particular
+	 distribution of energy deposition. This scheme is fundamental to understand the object reconstruction in the next chapter. }
+	\label{fig:Chap2:ATLAS:ATLAS_Layers}
+\end{figure}
+
+%%%%%%%%%%%%%%
+%   Tracks and vertices     %
+%%%%%%%%%%%%%%
+\section{Tracks and vertices} % source: https://arxiv.org/pdf/1704.07983.pdf
+\label{sec:Chap3:Reco:Tracking}
+The detection and measurement of charged particles momentum is an essential aspect of any large particle physics
+experiment. Regardless of the medium through which a charged particle travels, it always leaves a trails
+of ionised atoms and liberated electrons. By detecting this it is possible to reconstruct the trajectory of a charged
+particle. ATLAS does this trough its silicon detectors.
+
+The trajectories followed by particles are referred as ``tracks''. For charged particles, the tracks are reconstructed
+using, mainly, the information of the ID and, in the case of muons, the MS.
+ A charged particle passing thought the ID will interact with its active sensors, the pixel detector and SCT
+ (Figures \ref{fig:Chap2:ATLAS:ID_PixelModule}  and \ref{fig:Chap2:ATLAS:ID_SCT} respectively)
+ providing a three-dimensional measurement of space-points.  
+ While each hit in the pixel detector is directly translated into a space-point, for the SCT
+ two hits are needed to reconstruct one space-point. %The TRT is used later
+These space-points can be given by a single pixel activation or 
+by several neighbouring pixels activated simultaneously. 
+Since the ID is submerged in a solenoidal magnetic field, the charged particles have their trajectories curved
+by the Lorentz force, this allows to calculate its $\pT$  using the sagitta method.
+
+The algorithms described in Section \ref{sec:Chap2:ID_alignement}
+are of fundamental importance to reconstruct the tracks.
+This reconstruction is performed in two stages, the inside-out and the outside-in 
+procedures \cite{ATLAS:2017kyn}\cite{Cornelissen:2008zzc}. 
+The first is initiated from the center of the ID and works outwards. 
+This method is also used for the reconstruction of the primary vertex.
+The inside-out algorithm starts by grouping the hits in the Pixel and SCT 
+and merge them into clusters that are used to define the three-dimensional
+measurements referred as space-points.  Secondly, The space-points are
+combined in groups of three to from the track seeds. Then, a pattern recognition
+algorithm named Kalman filter \cite{Fruhwirth:1987fm} is applied to build track
+candidates from the seeds. This is accomplished by adding extra clusters from 
+the ID's remaining layers that are compatible with particle's estimated trajectory.
+The Kalman filter provides several track candidates, so an ambiguity-solver algorithm
+is applied to perform a stringent selection of the candidates. This compares the
+individual track candidates by simple measurements of the track quality.
+Finally,  the track candidates are then put through a high-resolution global $\chi^2$ fit,
+which allows to further reject track candidates with a poor fit.
+
+The inside-out method accounts for the majority of tracks reconstructed in ATLAS but it 
+is complemented by the outside-in, which 
+starts in the TRT and works inwards. This method is used to find small track segments
+in the ID that were missed. 
+
+The identification of the primary vertex is also of crucial importance
+for the object reconstruction. This vertex identifies the interaction point
+in which the hard-scattering process takes place. Therefore, the vertices are
+defined by relating the track's origin with individual points. The reconstruction of
+of the vertex is done in two complementary steps. First, the tracks are associated to
+vertex candidates (vertex finding). Second, iterative $\chi^2$ fit to determine the
+best final three-dimensional location of the vertex. 
+
+ 
+
+
+%\pablo{Highlight the importance of the alignment for the object definition and its reconstruction. Link this section with \ref{sec:Chap2:ID_alignement}}
+
+\paragraph{Sagitta method}\mbox{}\\
+%\subsection{Sagitta method}
+\label{sec:Chap3:Reco:Sagitta}
+The linear momentum (or just momentum) of a particle ($\overrightarrow{p}$) is one of the most important 
+magnitudes in high energy physics experiments because it provides the information
+about the energy of that particle. In principle it is not possible to determine the 
+the component of $\overrightarrow{p}$ in the direction of the beam. However, 
+it is possible to determine the transverse momentum (\pT) of charged particles
+by measuring the curvature of such particle within a magnetic field. In principle,
+particles should have a straight trajectory but the magnetic field ($B$) curves its trajectory.
+The \pT relates to the bending radius ($r$) by the Lorentz force:
+\begin{align*}
+	m\frac{v^2}{r} & = vqB \\
+	\pT &=rqB \, ,
+\end{align*}
+where $q$ is the electrical charge of the particle and $v$ its speed. The $r$ is determined using
+the arc length ($l$) and 
+the sagitta ($s$), which is the distance from the center of the arc to the center of its base. Figure \ref{fig:ChapReco:Sagitta} shows
+in red the definition of sagitta. The radius is deduced by:
+\begin{align*}
+	r^{2}  = (l/2)^{2} + (r-s)^{2} \rightarrow r = \frac{(l/2)^2+s^2}{2s}\, .
+\end{align*}
+For high \pT particles $s << r$ and, hence, it is possible to approximate $r\sim\frac{l^2}{8s}$. 
+The main uncertainty on \pT is the uncertainty on the sagitta and it can be
+modelled with a Gaussian distribution.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{Chapter3/Sagitta_def}
+\caption{The arc represents the path of the particle. With the sagitta and 
+the arc length, the radius of curvature can be determined. The more energetic a
+particle is, the larger is its bending radius.}
+\label{fig:ChapReco:Sagitta}
+\end{figure}
+
+
+
+%%%%%%%%%
+%   Letpons     %
+%%%%%%%%%
+\section{Charged leptons}
+% Leptons :: Electron
+\subsection{Electrons}
+\label{sec:Chap3:Reco:ElectronsAndPhotons}
+%For the reconstruction of electrons and photons, the algorithm first selects the top-clusters to consider when
+%building these particles. It then 
+% https://cds.cern.ch/record/2298955/files/ATL-PHYS-PUB-2017-022.pdf
+
+The reconstruction of electrons\footnote{Note that the term electrons is used to 
+collectively refer to electrons and positrons.} and photons is accomplished through 
+the identification of energy deposits in the ECAL.
+For the electrons, particle tracks recorded in the ID are required.
+
+The only photons that are interesting for this analysis are the ones that 
+are misidentified as electrons producing the so called, electron fakes.
+ Besides that, no photon is taken into consideration.
+
+\paragraph{Electrons}\mbox{}\\
+% Electron identification
+In the analysis presented at this work, there are two final-state light-leptons 
+that can be electrons. Therefore, accurate and efficient electron identification 
+is crucial to measure our process of interest.
+ Figure \ref{fig:ChapReco:ElectronPath} presents 
+a schematic representation of the components composing the process 
+of electron reconstruction and identification.
+When a electron is travels through the detector, it leaves traces in traces in the ID
+and energy deposits in the ECAL. The calorimeter signal activates the LVL1 trigger
+and electron candidates are selected from an initial match between the ECAL energy
+clusters and the ID tracks. The clusters must have a value of $|\eta_{cluster}|$ less than 2.47, 
+excluding the transition region between the barrel and endcap calorimeters. 
+A typical electron candidate is expected to generate 12 hits in the inner tracker system, 
+which includes one hit in the IBL layer, three hits in the silicon pixel layers, and 
+eight hits in the SCT (4 double-sided silicon strips layers).
+Furthermore, approximately 35 straw hits are produced in the TRT system for an electron
+of \pT larger than 500\;MeV. Finally, the electron moves to the ECAL, where the majority
+of its energy is collected by the second layer.
+
+The first step in the electron reconstruction is to build the clusters in the calorimeters.
+To do so, the space in the ECAL is divided into small elements of dimension 
+$\Delta \eta \times \Delta \phi =  0.025 \times 0.025$ that combine the subdetector layers. 
+This elements are called towers. A presampler in the $|\eta|<1.8$ region also gathers the energy
+and, along the first three layer of the ECAL, is used to determine the total energy per tower.
+Cluster seeds by individual towers with energy above 2.5$\,$GeV are
+searched for within the ECAL middle layer. Once the candidate clusters have been established,
+the next step to associate them with the tracks reconstructed in the ID using the tracking algorithms.
+
+When multiple tracks can be linked to a specific electromagnetic calorimeter cluster, 
+it is necessary to designate a primary electron track. This selection is performed 
+through an algorithm that evaluates the $\eta-\phi$ distance between the extrapolated 
+tracks and the cluster barycentre,  and considers the quantity of hits in the silicon 
+detectors and the number of hits in the innermost silicon layers.
+	
+\begin{figure}
+	\centering
+ 	\includegraphics[width = \textwidth]{Chapter3/Objetct_Electron_Identification}
+  	\caption{Trajectory of an electron through the detector. 
+	The hypothetical path of the electron is represented by a solid red line, while the trajectory of a
+	bremsstrahlung photon generated in the tracking system material is represented by a dashed red line.}
+	 \label{fig:ChapReco:ElectronPath}
+\end{figure}
+
+%prompt and non-prompt electrons
+Electrons may arise from either the primary hard-scattering event, such as the decay 
+products of \PW, \PZ, and Higgs bosons (referred to as prompt electrons), or as the 
+decay products of secondary particles with relatively long lifetimes, such as \Pbottom-hadrons 
+(these are the so called non-prompt electrons). 
+An example of non-prompt electron is presented in Figure \ref{fig:ChapReco:NonPromptElectron}. 
+The identification of prompt electrons is achieved through the use of a likelihood discriminant 
+constructed from measurements taken in the ID and ECAL. The measured quantities are selected 
+based on their effectiveness in distinguishing prompt-isolated electrons from energy deposits 
+resulting from hadronic jets, from converted photons and from non-prompt electrons. 
+The discriminant considers the properties of the primary electron track, the lateral and longitudinal 
+growth of the electromagnetic shower in the ECAL, and the spatial compatibility of the primary 
+electron track with the cluster. 
+Different operating points, known as working points, can be achieved by setting fixed values for the likelihood discriminant.
+These are tight, medium and loose (in ascending order of signal efficiency). 
+The tight category is the most stringent, while the loose category is much more permissive in
+terms of accepting something as electron.
+\begin{figure}
+	\centering
+ 	\includegraphics[width = 0.5\textwidth]{Chapter3/Objetct_fake_Ele_nonPromt}
+  	\caption{A prompt electron depicted in green. 
+	The cone symbolises a jet containing a several hadrons.
+	 The dashed red line corresponds to a \Pbottom-hadron (\PBminus),
+	which decays into a \Pcharm-hadron (\APDzero), a neutrino (blue), and a non-prompt electron (red).
+	The non-promt electron is originated from the secondary vertex while the prompt from the primary vertex.}
+	 \label{fig:ChapReco:NonPromptElectron}
+\end{figure}
+
+\paragraph{Photons}\mbox{}\\
+The process of photon reconstruction closely mirrors that of electron reconstruction, 
+with the primary distinction being the absence of tracks in the tracker, 
+unless a photon undergoes conversion into an electron-positron pair,
+in which case the corresponding tracks must be retrieved.
+
+The identification working points are established with the ECAL information.
+The distinction between prompt photons and background photons is achieved 
+by applying selections based on quantities that characterise the shape and 
+properties of the corresponding electromagnetic shower, as well as by 
+implementing isolation criteria for the photon candidate.
+
+% Leptons ::  Muon 
+\subsection{Muons}
+\label{sec:Chap3:Reco:Mu}
+The reconstruction of muon candidates within the ATLAS experiment involves a combination of 
+information from the ID, the MS, and the calorimeters. Muon candidates with $|\eta|<2.5$ are 
+considered for reconstruction \cite{ATLAS:2020auj}.  In the MS, track reconstruction is accomplished 
+by grouping hits into local track segments using a Hough transform \cite{ILLINGWORTH198887}.
+These segments are then merged to form track candidates, and a fitting procedure is employed to 
+determine the trajectory of the muon within the magnetic field. Depending on the subdetectors 
+involved in the muon reconstruction process, different types of muons can be identified:
+\begin{itemize}
+	\item Combined muons: This type of muon is identified by matching MS tracks to ID 
+	tracks and performing a combined track fit using the hits from both systems. The energy
+	loss in the calorimeters is taken into account during the fitting process.
+
+	\item Inside-out muons: An \textit{inside-out} algorithm is utilised to reconstruct this category
+	of muons. It extrapolates ID tracks to the MS and searches for at least three aligned MS 
+	hits, which are then used for a combined track fit.
+
+	\item Muon-spectrometer extrapolated: These muons arise when an MS track cannot be
+	matched to an ID track. In such cases, the parameters of the MS track are extrapolated to 
+	the beamline to define the reconstructed muon.
+
+	\item Segment-tagged muons: This group of muons is identified by extrapolating ID tracks 
+	to the MS and searching for matching segments. A muon is considered segment-tagged if 
+	an ID track is successfully matched to at least one MS segment, and the muon parameters 
+	are directly obtained from the ID track fit.
+
+	\item Calorimeter-tagged muons: In this scenario, muons are identified by extrapolating ID 
+	tracks through the calorimeters to search for energy deposits consistent with those of a 
+	minimum-ionizing particle, i.e . a particle whose mean energy loss rate through matter is 
+	close to the minimum value. If a match is found, the muon is identified as 
+	calorimeter-tagged, and its parameters are again obtained from the ID track fit.	
+\end{itemize}
+
+Prompt muons are identified by applying specific requirements on the number of hits in the ID 
+and the MS, track fit properties, and variables that test the compatibility between measurements 
+in the two systems. The stringency of these requirements leads to three primary working points:
+tight, medium, and loose. 
+%Additionally, two working points are designed for extreme phase space regions: the high-pT 
+%working point, which ensures optimal momentum measurement for muons with pT > 100 GeV, 
+%and the low-pT working point, which addresses muons less likely to be fully reconstructed as 
+%tracks in the MS due to their low momentum.
+
+
+
+% Leptons :: Tau
+\subsection{Hadronically decaying taus}
+\label{sec:Chap3:Reco:Tau}
+%https://cds.cern.ch/record/1609659/files/ATL-GEN-PROC-2013-002.pdf
+The \Ptau lepton, being the most massive known lepton, exhibits a lifetime of approximately 
+$2.9 \times 10^{-13}\,$s \cite{Belle:2013teo} and carries a charge of $-1$. It predominantly decays into final states 
+consisting of hadrons, accounting for approximately 65\% of its total decay modes. 
+ These decays exhibit distinct properties in terms of displacement, multiplicity, and kinematics. 
+ The accurate identification and reconstruction of \Ptau leptons decaying hadronically hold 
+ significant importance in numerous measurements and searches conducted at the LHC.
+
+The \Ptau leptons that decay to hadrons hold significant importance in the analysis under 
+consideration, as the \tauhad probably constitutes the most characteristic final state object in the searches 
+for the \dileptau final state. Consequently, an accurate reconstruction of the \tauhad is crucial to 
+ensure the precise investigation of the underlying physical process. Notably, the primary cause of 
+background in this analysis stems from the misidentification of other objects (mainly jets) as \tauhad, as it
+is shown in Section \ref{sec:ChaptH:Bkg:Fakes}.
+
+The reconstruction of \tauhad candidates involves the use of an \Akt algorithm\cite{Cacciari:2008gp}
+with $R=0.4$. These candidates originate from jet objects with $\ET >10\,$GeV and $|\eta|<2.5$. Subsequently,
+tracks associated with the candidate are determined if they fall within the core region, defined by
+a distance $\Delta R < 0.2$ from the jet barycentre. Additionally, tracks must satisfy specific 
+quality criteria, including minimum \pT cut, hits in the silicon detector, and impact parameters.
+Tracks within an isolation annulus ($0.2 < \Delta R < 0.4$) surrounding the barycentre are also 
+employed to calculate identification variables but these tracks are not associated with the core region of the tau 
+candidate \cite{Leister:1609659}. The \tauhad candidates are categorised as 1-prong 
+(consisting of a single track) or
+multi-prong (primarily composed of three tracks).
+
+To ensure optimal performance in high-pileup scenarios, the Tau Jet Vertex Association\cite{ATLAS:2014rzk}
+algorithm is employed to determine the primary vertex of the \tauhad. This minimises the
+influence of additional interactions, which could potentially lead to tau tracks failing to 
+meet the $z_0$ impact parameter requirement\cite{ATLAS:2012voa}.
+
+The tau reconstruction alone provides limited rejection capabilities against various multi-jet backgrounds that can be challenging to differentiate from \tauhad. Several features of \tauhad, 
+such as their narrow calorimeter clusters, isolation, and distinct 1- or 3-prong track signatures, 
+can be exploited to discriminate between the jets and \tauhad.  During reconstruction, tracks 
+and calorimeter clusters are employed to define several identification
+variables that aid in distinguishing 
+taus from quark- or gluon-initiated jets and other leptons. Variables that demonstrate substantial 
+discriminatory power include those characterising the shower shape in the calorimeter or tracks 
+(e.g., energy fraction within $\Delta R < 0.1$ and average \pT-weighted track distance from the
+tau axis) as well as those based on the track count.
+
+To effectively suppress backgrounds arising from quark- or gluon-initiated processes, 
+a set of multivariate algorithms collectively referred to as the tau identification have been 
+developed by dedicated ATLAs team. These algorithms use the aforementioned ID variables to
+discriminate against jet backgrounds.
+Two multivariate techniques, namely the projective likelihood method (LLH) and the method employing BDTs, are employed. The training of these algorithms involves the use of MC
+samples of $\PZ \rightarrow \Ptau\Ptau$, $\PW \rightarrow \Ptau\Pnu_{\tau}$, and
+$\PZ' \rightarrow \Ptau\Ptau$ for signal \tauhad, while jet-enriched data is utilised for 
+background events.  The LLH and BDT are independently trained for 1-prong and multi-prong 
+candidates. Each tau ID method establishes three thresholds based on the desired signal 
+efficiency: loose, medium, and tight. For 1-prong taus, the corresponding signal efficiencies are
+70\%, 60\%, and 40\% respectively. While for multi-prong these are 65\%, 55\% and 35\%.
+
+Electrons and muons can also mimic the \tauhad signature. Similarly to the 
+jets-faking-taus case, the electrons misidentified as \tauhad are discriminated by means of a 
+BDT that is optimised using MC samples for $\PZ \rightarrow \Ptau\Ptau$ and 
+$\PZ \rightarrow \Pe\Pe$ as background. The muons are misidentified wiht \tauhad 
+when the muon track is associated with a sufficiently energetic calorimeter cluster.
+To reduce the rate \Pmu identified as \tauhad, a cut-based algorithm is used.
+
+% Leptons :: Tau - Identification efficiency
+\subsubsection{Tau identification efficiency}
+To assess the effectiveness of the tau identification,
+experimental data is directly used. The identification efficiency measurement
+is achieved through a tag-and-probe method, which involves three distinct processes 
+that considers decays to a single \tauhad:  $\PZ \rightarrow \taulep \tauhad$, 
+$\PW \rightarrow \tauhad \nu_{\tau}$ and $\ttbar \rightarrow \tauhad + \text{jets}$.
+ 
+The identification efficiency in data ($\epsilon_{\text{data}}$) is determined by comparing the
+number of reconstructed \tauhad candidates (obtained from a fit to the number of tracks) before 
+and after the tau identification is applied.  Similarly, the identification efficiency in simulated MC
+events ($\epsilon_{\text{MC}}$) is also calculated. Scale factors, defined as the ratio of the 
+identification efficiency in data to that in MC ($\epsilon_{\text{data}}/\epsilon_{\text{MC}}$), are 
+then derived to quantify the performance of the tau identification. These scale factors are crucial 
+in data analyses as they account for any discrepancies observed between the data and MC 
+samples. In Table \ref{tab:Chap3:Reco:Tau:eff}, the results obtained from the 
+$\PZ \rightarrow \taulep \tauhad$ decay process are presented. These serve as the primary
+ measurement due to their high precision, owing to the low associated backgrounds.
+The results from the $\PW \rightarrow \tauhad \nu_{\tau}$ process are used as a cross-check, 
+while the $\ttbar \rightarrow \tauhad + \text{jets}$ process provides a measurement for a higher
+ kinematic regime, particularly for higher \pT values.
+
+\begin{table}[]
+\centering
+\begin{tabular}{l|l|l}
+\toprule
+       		& BDT                       				& LLH                 \\ \midrule
+Loose  	& $1.033 \pm 2.0\% \pm 1.0\%$ 	& $1.044 \pm 1.7\% \pm 1.0\%$ \\
+Medium 	& $0.979 \pm 2.1\% \pm 1.1\%$    	& $0.985 \pm 2.1\% \pm 1.1\%$ \\
+Tight  	& $0.907 \pm 2.6\% \pm 1.5\%$    	& $0.941 \pm 2.4\% \pm 1.5\%$ \\ \bottomrule
+\end{tabular}
+\caption{\tauhad identification efficiency measurements performed with $\PZ \rightarrow \taulep \tauhad$ decays \cite{Leister:1609659}. 
+Results presented as "scale factor $\pm$ systematic uncertainty $\pm$ statistical uncertainty".}
+\label{tab:Chap3:Reco:Tau:eff}
+\end{table}
+
+\pablo{Añadir en esta sección la información de este paper: \url{https://arxiv.org/pdf/2211.16178.pdf}. "Tools for estimating fake/non-prompt lepton
+backgrounds with the ATLAS detector at the LHC"}
+
+\pablo{Incorporar también esto \url{https://cds.cern.ch/record/1045637/files/arXiv:0707.0928.pdf}. Tau Tagging at Atlas and CMS }
+
+
+%%%%%%%
+%    Jets     %
+%%%%%%%
+\section{Jets}
+\label{sec:Chap3:Reco:jets}
+At accelerator based detectors, quarks and gluons are detected by the jets of hadronic particles that they produce
+in the detector soon after they are created (remember that, as stated in Section \ref{sec:chap1:QCD}, free quarks
+are suppressed due to color confinement).
+An exception to this rule are the top quarks, whose lifetime is smaller than the hadronisation time by two orders of
+magnitude and, hence, they are detected by its decay products. 
+For the gluons and the rest of quarks, hadronisiation showers (Section \ref{sec:Chap2:CALO:Shower}) 
+take place and jet clustering algorithms merge the clusters and tracks produced by these jets
+to reconstruct them.
+In the majority of ATLAS analyses, the ``\Akt'' algorithm is used \cite{Cacciari:2008gp} to analyse the data
+from hadronic collisions. Modelling the jet as a cone, the algorithm uses a specific choice of radius parameter 
+($R$) defining the radial size of the jet. 
+The distance between all pairs of objects $i$ and $j$ ($d_{ij}$) and the distance between the 
+objects and beam pipe ($d_{iB}$) are used in: 
+
+\begin{align*}
+	d_{ij} 	&= min(k^{2p}_{ti}, k_{tj^{2p}}) \frac{\Delta_{ij}^{2}}{R^{2}} \\ \label{eq:chap3:antikt_1}
+	d_{iB} 	&= k^{2p}_{ti}
+\end{align*}
+where
+\begin{equation*}
+	\Delta_{ij}^{2} = (y_{i} - y_{j})^{2} - (\phi_{i} - \phi_{j})^2
+\end{equation*}
+and $k_{ti}$, $y_i$ and $\phi_{i}$ are respectively the transverse momentum, the rapidity and
+the azimuthal angle of object $i$. The parameter $p$ accounts for the relative power of the energy 
+versus geometrical ($\Delta_{ij}$) scales. For the \Akt, $p$ is set to $-1$. Other clustering algorithms
+use different choices of $p$ such as $p=0$ (Cambridge/Aachen algorithm) or $p=1$ (inclusive $k_t$ 
+algorithm). 
+
+The algorithm iterates over the topological-cluster (or, simply, top-clusters) objects of the calorimeter as it follows:
+First it  proceeds to identify the smallest distances with among all the combinations of $d_{ij}$ and $d_{iB}$.
+If the distance is a $d_{iB}$, the entity $i$ is labeled as ``jet'' and removed from the list of entities. 
+If, on the contrary, it is a $d_{ij}$, the objects $i$ and $j$ are merged together.  This way, before clustering
+among themselves,  soft components  (low-\pT) tend to be merged to the hard ones (high-\pT). 
+Then the distances are recalculated and the process repeated. This is done iteratively until all entities are
+assigned to a particular jet.
+
+If a hard particle has no hard neighbours within a $2R$ distance, all soft particles will be assigned to it, 
+resulting in a perfectly conical jet. But if another hard particle is present in that $2R$ distance, then there
+will be two hard jets and it will be impossible for both to be perfectly conical.
+
+\pablo{Work in progress}
+
+
+Typically,  the cone size $R$ is selected to be 0.4 or 0.6, though the most standard used in ATLAS is 0.4.
+%Depending on $R$, the jets can be classified into small-$R$ jets and large-$R$ jets.
+If $R=1$, the jet is labeled a Large-\textit{R} and if $R=0.4$ then as Small-\textit{R} jet.
+%FastJet
+
+
+%\subsubsection{Small-\textit{R} jets}
+%\subsubsection{Largel-\textit{R} jets}
+%\subsubsection{Track jet reconstruction} %https://cds.cern.ch/record/2798837/files/CERN-THESIS-2021-243.pdf
+
+\subsection{Jet energy calibration and resolution}
+The jet calibrations and the associated uncertainties are clearly extremely important in many top
+analyses.
+This often makes them the leading experimental uncertainties in Top analyses
+%https://indico.cern.ch/event/1139204/contributions/4836258/attachments/2438485/4176809/Presentation.pdf
+
+%%
+% B jets
+%%
+\section{Bottom quark induced jets}
+\label{sec:Chap3:Reco:Bjets}
+The identification of jets originating from the hadronisation of \bquarks (\bjets) is referred to as \btag. 
+The goal of \btag is to discriminate \bjets from jets produced by \ensuremath{c\text{-quarks}} (\ensuremath{c\text{-jets}}) 
+or by gluons or quarks of other flavours (referred to as "light" jets). 
+
+In general, it is impossible to determine which quark flavour was produced or even or whether the jet was
+originated by a quark or a gluon. However, if a $\Pbottom$ quark is created, the hadronisation will produce
+a jet of hadrons, one of which will be a $\Pbottom$-type hadron (B hadron). The B hadrons turn out to be 
+relatively-long-lived particles ($1.5 \times 10^{-12}\,$s \cite{Workman:2022ynf}). If this larger longevity is combined with the Lorentz 
+time-dilation that particles experience when produced in high energy collisions, it results in the B hadron 
+traveling on average a few milimeters before disintegrating.  
+%B-hadron lifetime: https://pdg.lbl.gov/2022/listings/rpp2022-list-B-plus-minus.pdf
+
+As a result, the experimental signature of a $\Pbottom$ quark is a jet of particles emerging from the point of
+collision (primary vertex) and a secondary vertex resulting from $\Pbottom$-quark decay that is several mm 
+away from the primary vertex as Figure \ref{fig:Chap3:b_jet_production} shows. 
+Therefore, the capacity to resolve secondary vertices from the parent vertex is
+crucial for identifying $\Pbottom$-quark jets. Other features that are used to identify the \bjets are its high mass,
+the properties of the \Pbottom-quark fragmentation and the fact that the decay of
+a B hadron will on average have a higher charged track multiplicity in the decay 
+than other hadron decays.
+
+\begin{figure}
+	\centering
+ 	 \includegraphics[width = 0.7\textwidth]{Chapter3/b_jet_production}
+	 \caption{Illustration of the production of a \bjet with the characteristic 
+	 second vertex\cite{Connelly:2017wlp}.}
+	\label{fig:Chap3:b_jet_production}
+\end{figure}
+
+The identification of \bjets involves a two-step process. Initially, low-level algorithms 
+are employed to reconstruct the primary characteristics of the \bjets. Subsequently, 
+the outcomes of these algorithms are combined in high-level algorithms that consist 
+of multivariate classifiers. The various low-level algorithms can be categorised into 
+three groups:
+
+\begin{itemize}
+	\item Impact-parameter-based algorithms:
+	These algorithms employ the properties of individual tracks associated with a jet. 
+	Tracks originating from $\Pbottom$-type hadron decay have distinct characteristics, 
+	such as large impact parameters ($d_0$,$z_0$). Algorithms like IP2D and 
+	IP3D\cite{ATLAS:2017bcq} use the impact parameter significances of tracks within a
+	jet to distinguish between \bjets and light-jets. Multivariate Analysis\footnote{MVA is 
+	a statistical approach that analyses multiple variables together to identify patterns and 
+	relationships in data. In this thesis, the MVA methods mentioned are the BDTs and NNs.}
+	(MVA) methods are used by 
+	other algorithms such as the RNN1P algorithm\cite{ATLAS:2017gpy}, which exploits 
+	spatial and kinematic correlations among tracks originating from the same B hadron
+	 using a recurrent neural network\footnote{A neural network is a mathematical 
+	machine learning model composed of interconnected artificial neurones that use activation 
+	functions and weights to process input data, perform nonlinear transformations, and learn 
+	from training examples through iterative adjustments of the weights to solve various tasks, 
+	such as pattern recognition and regression. It performs similar tasks as those of the BDT 
+	(see Appendix \ref{chap:Appendix:BDT}).} (NN).
+	
+	\item Secondary-vertex-based algorithms: 
+	These type of algorithms use information from secondary vertices to create 
+	discriminative variables for \btag. For instance, SV1\cite{ATLAS:2017kle} is 
+	a likelihood-based tagger that considers the invariant mass of particles in the
+	secondary vertex, the ratio of track energies, the number of two-track vertices,
+	and the $\Delta R$ separation between the primary-secondary vertex 
+	and the jet direction.
+	
+	\item Decay-chain reconstruction: These algorithms aim to reconstruct the 
+	complete decay chain of the B hadron. The JetFitter algorithm\cite{ATLAS:2018nnq} is and example
+	of these type. It uses the topology of weak \Pbottom- and \Pcharm-hadron decays 
+	within the jet. It employs a Kalman filter\cite{Fruhwirth:1987fm} to find a common line 
+	connecting the primary, bottom, and charm vertices, enabling the reconstruction of 
+	the B hadron's flight path and vertex positions.
+\end{itemize}
+
+High-level taggers, such as MV2 and DL1\cite{ATLAS:2017bcq}, use the outcomes 
+of low-level algorithms to determine the probability of a jet being classified as a 
+\Pbottom-, \Pcharm-, or light-jet. MV2 employs a BDT architecture, while DL1 utilises 
+a Deep Neural Network. These high-level algorithms incorporate input from the IP3D, 
+SV1, and JetFitter algorithms, along with the kinematic characteristics of the jets, 
+including \pT and $\eta$. While MV2 is specifically rained to separate \bjets from
+\Pcharm- and light-jet, the DL1 algorithm  provides a multidimensional output which
+not only tags the \bjets but also the \Pcharm- and light-jet. 
+
+One of the algorithms that compose the DL1 series is the \texttt{DL1r} NN.
+Its implementation as a multi-class NN architecture allows for a more compact 
+memory usage compared to the previous BDT-based ATLAS MV2c10 
+algorithm\cite{ATLAS:2019bwq}. The NN topology is comprised of fully connected 
+hidden layers, and the hyperparameters are optimised to enhance the performance 
+of \btag. The ultimate \texttt{DL1r} \btag discriminant is formulated as follows:
+
+\begin{equation}
+\label{eq:Chap3:DL1r_discriminant}
+	D_{\text{DL1r}}=ln \left(\frac{p_{b}}{f_{c} \cdot p_{c}+( 1 - f_{c})\cdot p_{ \text{light} }} \right)
+\end{equation}
+
+where $p_{b}$, $p_{c}$, $p_{\text{light}}$ and $f_{c}$ represent respectively the \bjet,
+\Pcharm-jet and light-flavour jet probabilities, and
+the effective \Pcharm-jet fraction in the background training sample\cite{ATLAS:2022qxm}. 
+% In our analysis we use the DL1r tagger, it is described in \url{https://arxiv.org/pdf/2211.16345.pdf}
+
+%%%%%%%
+%    MET    %
+%%%%%%%
+\section{Missing transverse energy}
+According to the principle of momentum conservation, the total sum of transverse 
+momenta of all detected particles should be zero in the transverse plane. However, 
+the presence of undetected particles can lead to an imbalance in this calculation, 
+resulting in the phenomenon known as missing transverse momentum (\MET). 
+This \MET is typically associated with SM neutrinos, but it could also arise from 
+other weakly-interacting particles, including potential candidates for DM, which escape detection.
+
+Therefore, the measurement of the \MET plays a crucial role in various analyses, such as the 
+study of top-quark polarisation (see Section \ref{sec:Chap1:Top:Polarisation}), which involves a 
+final state with one neutrino, and in the search for \tHq processes presented in this work. 
+It is important to note that the presence of fake missing transverse momentum can also occur due 
+to particles escaping the detector's acceptance or being poorly reconstructed due to limitations in 
+detector acceptance, finite detector resolution, presence of dead regions, or any sources of noise.
+
+The \MET is reconstructed by calculating the magnitude of the negative vector sum 
+of the transverse momenta of all detected particles\cite{ATLAS:2018txj} \cite{ATLAS:2018ghb}. 
+This includes contributions from various particles such as leptons, photons, jets, and soft-event 
+signals\footnote{Soft-event signals refer to reconstructed charged-particle tracks that 
+are associated with the hard scattering vertex but not with any specific hard object.}.
+
+
+
+%%%%%%%
+%    OLR    %
+%%%%%%%
+\section{Overlap removal}
+\label{sec:Chap3:Reco:OverlapRemoval}
+In ATLAS, the reconstruction of physics objects within the detector is primarily 
+performed independently for each object. 
+Ambiguity in the observed detector signatures can lead to the double-counting 
+of signals, causing multiple physics objects to be defined simultaneously. This
+is what is known as overlap. 
+For instance, charged particle tracks in the inner tracking volume accompanied by 
+energy deposits in the calorimeters could be interpreted as both an electron and a hadronic jet.
+This ambiguity can arise from misidentification and duplication of objects or from 
+the production of particles in close proximity (non-isolation), which may bias the 
+reconstruction of one or both objects.
+
+To address these reconstruction ambiguities, overlap removal is an essential step in 
+all ATLAS analyses. In previous analyses of Run 2 data, overlap removal was 
+implemented based on the geometric proximity ($\Delta R$) between reconstructed 
+objects. However, a recent advancement in the ATLAS core software introduced 
+Global Particle Flow (GPF) links between jet constituents and physics objects that 
+share a common detector element, such as a track or calorimeter cluster. These GPF links 
+offer a cleaner approach for removing overlaps between jets and other physics objects. 
+By explicitly examining shared detector signals among physics objects, it becomes possible to 
+identify instances of double-counting of energy. If such overlaps are found, a set of criteria can 
+be applied to determine which objects should be vetoed, ensuring accurate event reconstruction.
+
+
+
+
+
+
+
+%Source: \url{https://indico.cern.ch/event/1131431/contributions/5059616/attachments/2512765/4319357/Ting_AIPabstract.pdf}
+
+
+%POSTAMBLE
+\begin{comment}
+asdf
+%\end{document}
+%ENDPOSTAMBLE
+\end{comment}

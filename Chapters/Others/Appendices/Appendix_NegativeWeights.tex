@@ -1,0 +1,197 @@
+%PREAMBLE
+\begin{comment}
+%\documentclass[11pt]{article}
+%\input{latex/mycommands.tex}
+%\begin{document}
+asdf
+%ENDPREAMBLE
+\end{comment}
+
+\chapter{Effect of negative weights}
+%\tableofcontents
+\label{chap:Appendix:NegWeights}
+
+\pablo{Igual esto se puede integrar en la sección \ref{sec:Chap3.1:Data:Model}. }
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%         Neg Weights  - Intro         %
+%%%%%%%%%%%%%%%%%%%%%
+\section{Negatively weighted events}
+\label{chap:Appendix:NegWeights:intro}
+%\begin{itemize}
+%	\item What is a weight in a MC event?
+%	\item Why are there negatively weighted events?
+%	\item Why are negative weights problematic?
+%\end{itemize}
+
+The weight in a MC simulated sample refers to a factor assigned to each 
+event in the simulation to account for various effects such as event generation, 
+detector response, and data-to-simulation discrepancies. These weights are used 
+to scale the simulated events in order to better match the observed data or to accurately 
+model specific physical processes or background contributions. The weights 
+are derived based on theoretical calculations, detector simulations, and calibration 
+procedures, and they are crucial for obtaining accurate predictions and comparisons 
+with experimental data in analyses at ATLAS.
+
+Since these weights are used to adjust the event yields and distributions to match the
+expected values based on theoretical predictions and experimental observations, 
+negative weights can arise in MC simulations. These negative weights reflect the cancellation 
+of positive and negative contributions to ensure the correct overall probability distribution. While 
+negative weights pose challenges for statistical analysis and interpretation, they are necessary 
+to accurately reproduce the expected physics processes and their interference effects. 
+
+
+%It is important to handle negative weights properly in data analyses to avoid biases and ensure 
+%reliable results. Various techniques and strategies are employed to mitigate the impact of negative
+%weights, such as reweighting, rescaling, or event selection methods that minimise their impact on the final analysis.
+
+
+% Good source: https://arxiv.org/pdf/2110.15211.pdf
+
+The negative weight can result problematic
+Samples containing negatively weighted events have a reduced statistical power \cite{Danziger:2021xvr}.
+Additionally, the presence of negatively weighted events, as opposed to exclusively positive-weight 
+event samples, implies processing a significantly larger number of events to achieve comparable 
+statistical significance. This issue is particularly pronounced during the final stage of detector simulation, 
+where each event can require hours of CPU time\cite{Andersen:2021mvw}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%         Neg Weights  - Uncertainty         %
+%%%%%%%%%%%%%%%%%%%%%
+\section{Statistical uncertainty of negative weights}
+Assume that there is a sample of $N$ Monte Carlo simulated events. Of these,
+a fraction $x$ have negative weighs and, therefore, a fraction $(1-x)$ has a positive weight.
+The effective number of events is $(N_{+} - N_{-})$, being $N_{+} = (1-x)N$ the amount of
+positively weighted events and $N_{-} = xN$ the same for the negative weights.
+
+The statistical fluctuations are calculated in terms of $x$ and the standard deviation 
+($\sigma_{N}=\sqrt{N}$). The number of positive and negative events can fluctuate
+randomly between $\pm \sigma_{-}$ for the later and  $\pm \sigma_{+}$ for the former.
+Here, $\sigma_{-} = \sqrt{xN} = \sqrt{x}\,N$ and $\sigma_{+}= \sqrt{1-x}\,N$
+
+The variance ($V=\sigma^{2}$) of the sample is then
+\begin{equation*}%\label{eq:Appendix:NegWeights:varaince}
+%\begin{split}
+	V(N_{+} - N_{-}) = xV(N) + (1-x)V(N)= V(N)
+%\end{split}
+\end{equation*}
+and the fractional uncertainty
+\begin{equation*}%\label{eq:Appendix:NegWeights:StdDev}
+%\begin{split}
+	\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}} = \frac{\sigma_N}{(1-x)N - xN}
+	= \frac{1}{1-2x}\frac{\sigma_n}{N}
+%\end{split}
+\end{equation*}
+When the fraction of negative events is $x=0$, $\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}
+= \frac{\sigma_n}{N}$ as expected. In contrast, if $x=0.5$ the fractional uncertainty is infinite,
+as expected.
+
+For the signal \tHq \dileptau MC signal sample the fraction of negative weights is between 0.3 and 0.4 depending on the production used.
+\begin{itemize}
+	\item $x=0.3$	$\rightarrow$ $\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}
+	 = \frac{1}{0.2}\frac{\sigma_n}{N} = 5.0 \frac{\sigma_n}{N}$
+
+	 \item $x=0.4$	$\rightarrow$ $\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}
+	 = \frac{1}{0.4}\frac{\sigma_n}{N} = 2.5 \frac{\sigma_n}{N}$
+\end{itemize}
+
+% All events VS positive weights only
+The uncertainty of the effective number of events can be compared to that of using only the 
+positively weighted events. If the two fractional uncertainties are divided:
+
+\begin{equation*}
+%\begin{split}
+	\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}=
+	\frac{\frac{1}{1-2x}\frac{\sigma_n}{N}}{\frac{1}{\sqrt{(1-x)N}}} =
+	\frac{\sqrt{1-x}}{1-2x} \frac{\sigma_n}{N} = \frac{\sqrt{1-x}}{1-2x}
+%\end{split}
+\end{equation*}
+In the range of $x$ values for the \dileptau simulated signal events. 
+
+\begin{minipage}[t]{0.57\linewidth}
+\begin{itemize}
+	\item $x=0.3$	$\rightarrow$ 
+	$\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}= 2.09$
+	 \item $x=0.4$	$\rightarrow$ 
+	$\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}= 3.87$
+\end{itemize}
+\end{minipage}
+\hfill
+\raisebox{-1\baselineskip}{\includegraphics[width=0.35\textwidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_err}}
+
+
+
+In Figure \ref{fig:Appendix:NegWeights:Distributions}, several $\Delta R$ distributions generated using all the events
+and just the positively weighted ones. As expected, the uncertainty bands are bigger for the 'All events' than for the
+'Positive events'.  These histograms were produced to verify that using only the events with positive weights in
+the training of the BDT for lepton assignment in the SS scenario (Section \ref{sec:ChaptH:Sig:LepAsign}) was not 
+biasing the result. The size of the error bands is calculated by ROOT as the square root of the quadratic sum of the 
+weights, as explained below.
+
+
+\begin{figure}
+\centering
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.99\linewidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_SS_err_deltaR_b_LightLep1}
+  \caption{$\Delta R$(Leading light-favoured lepton, leading $b$-tagged jet)}
+\end{subfigure}%
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.99\linewidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_SS_err_DeltaRLeadingLeptonClosestBjet}
+  \caption{$\Delta R$(Leading lepton, closest $b$-tagged jet)}
+\end{subfigure} \hfill%
+
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.99\linewidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_SS_err_deltaR_tau_LightLep1}
+  \caption{$\Delta R$(\tauhad, Leading light-favoured lepton)}
+\end{subfigure}%
+\begin{subfigure}{.44\textwidth}
+  \centering
+  \includegraphics[width=.99\linewidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_SS_err_deltaR_tau_LightLep2}
+  \caption{$\Delta R$(\tauhad, sub-leading light-favoured lepton)}
+\end{subfigure}%
+\caption{Some normalised distributions for all the signal events in the \dilepSStau (black) and just the positively weighted events (green).  For each bin, the error band is calculated as the square root of the quadratic sum of the weights.}
+\label{fig:Appendix:NegWeights:Distributions}
+\end{figure}
+% Plots produced with /lhome/ific/p/pamarag/Work/data/Draw3r.py
+% https://ned.ipac.caltech.edu/level5/Leo/Stats_contents.html
+
+
+\subsection{Errors in binned histograms}
+If a bin of a histogram has $n$ entries of weighted events $w_i$ with $i=1, 2, ..., n$, the 
+size of the bar is $\sum_{i=1}^{n} w_i$. Therefore, the error of that bar is 
+\begin{equation}
+\sqrt{\sum_{i=1}^{n} w^{2}_{i}}
+\end{equation}
+
+This expression for the error of a bin in a histogram is based on error propagation and intrinsic poissonian statistics only.
+The variance, i.e.  the error on the weighted number of events" in that bin, is given by error propagation:
+\begin{equation*}
+V(\sum_{i=1}^{n} w_i) = \sqrt{(\sum_{i=1}^{n} w^{2}_{i}})^{2} = \sum_{i=1}^{n} w^{2}_{i} = \sum_{i=1}^{n}  V(w_i)
+\end{equation*}
+The variance of the weight $w_i$, $V(w_i)$, is determined only by the statistical fluctuation of the number of events 
+considered: $V(w_{i}) =w^{2}_{i}$. 
+% Why the bin error for weighted histogram is equal to the square root of their the sum of the 
+% bin weight square https://www-zeuthen.desy.de/~wischnew/amanda/discussion/wgterror/working.html
+
+
+\section{Negative weights in MVA methods}
+Events coming from the MC generator can be produced with (unphysical) negative weights in some phase-space 
+regions. Such occurrences are frequently inconvenient to deal with, and whether or not they are handled effectively 
+is dependent on the MVA method's actual implementation. 
+Within the ROOT TMVA library, probability and multi-dimensional probability density 
+estimators, as well as BDTs, are among the methods that correctly include occurrences with negative weights.
+In cases where a method does not properly treat events with negative weights, it is advisable to ignore such events 
+for the training but to include them in the performance evaluation to not bias the results.
+
+%POSTAMBLE
+\begin{comment}
+asdf
+%\end{document}
+%ENDPOSTAMBLE
+\end{comment}

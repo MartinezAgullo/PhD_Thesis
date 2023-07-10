@@ -1,0 +1,277 @@
+\newcommand{\pablo}[1]{\textcolor{blue}{{\bf  #1}}}
+\newcommand{\carlos}[1]{\textcolor{red}{{\bf  #1}}}
+\newcommand{\fabio}[1]{\textcolor{purple}{{\bf  #1}}}
+\newcommand{\susana}[1]{\textcolor{green}{{\bf  #1}}}
+
+% HEP names :: https://ctan.javinator9889.com/macros/latex/contrib/hepnames/hepnames.pdf
+
+\DeclarePairedDelimiter\bra{\langle}{\rvert}
+\DeclarePairedDelimiter\ket{\lvert}{\rangle}
+\DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+
+\newcommand*{\yt}{\ensuremath{y_{t}}\xspace}
+\newcommand*{\tchannel}{\ensuremath{t}-channel\xspace}
+\newcommand*{\schannel}{\ensuremath{s}-channel\xspace}
+%\newcommand*{\lepT}{\ensuremath{\Pl_{\Pt}}\xspace}
+%\newcommand*{\lepH}{\ensuremath{\Pl_{\PHiggs}}\xspace}
+
+% Add external packages
+\usepackage[italic]{hepnicenames}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%  From NA-HIGG-2020-02-INT1-defs.sty    %
+%%%%%%%%%%%%%%%%%%%%%%%
+% Basic tHq-related macros
+%\newcommand*{\tHq}{\ensuremath{\Pqt{}\PH{}\Pq}\xspace}
+%\newcommand*{\tHq}{\ensuremath{\Ptop \PHiggs \Pq}\xspace}
+%\newcommand*{\tHq}{\Pqt{}\PH{}\Pq}
+\newcommand*{\tHq}{\ensuremath{tHq}\xspace}
+\newcommand*{\tH}{\ensuremath{\Pqt{}\PH{}}\xspace}
+\newcommand*{\tHqsec}{\texorpdfstring{\Pqt{}\PH{}\Pq}{tHq}}
+\newcommand*{\tHqML}{\ensuremath{\Pqt{}\PH{}\Pq\,(\text{ML})}\xspace}
+\newcommand*{\tHqbb}{\ensuremath{\Pqt{}\PH{}\Pq\,(\bbbar)}\xspace}
+\newcommand*{\tbarHq}{\Paqt{}\PH{}Pq}
+\newcommand*{\tHbb}{\ensuremath{\tHq (\PH \to \bbbar)}\xspace}
+\newcommand*{\tHtautau}{\ensuremath{\tHq (\PH \to \Pgt{}\Pgt)}\xspace}
+\newcommand*{\dR}{\ensuremath{\Delta R}\xspace}
+\newcommand*{\trexfitter}{TRExFitter\xspace}
+\newcommand*{\thqloop}{\texttt{tHqLoop}\xspace}
+%\newcommand*{\BDT}{\ensuremath{\text{BDT}}\xspace}
+
+
+\newcommand*{\MpT}{\ensuremath{\vec{p}_{\text{T}}^{\text{miss}}}\xspace}
+\newcommand*{\mtw}{\ensuremath{m_{\text{T}}(\Pl,\MET)}}
+\newcommand*{\mlb}{\ensuremath{m_{\Pl\Pqb}}}
+\newcommand*{\mOSSF}{\ensuremath{m_{\text{OSSF}}}\xspace}
+
+% Background processes
+\newcommand*{\ttX}{\ensuremath{\Pqt{}\Paqt{}+X}\xspace}
+\newcommand*{\ttH}{\Pqt{}\Paqt{}\PH}
+%\newcommand*{\ttH}{\ensuremath{\Pqt{}\Paqt{}\PH}\xspace}
+\newcommand*{\ttZ}{\Pqt{}\Paqt{}\PZ}
+\newcommand*{\ttW}{\Pqt{}\Paqt{}\PW}
+\newcommand*{\ttWj}{\ensuremath{t\bar{t}W+j}\xspace}
+\newcommand*{\tZq}{\Pqt{}\PZ{}\Pq}
+\newcommand*{\tWZ}{\Pqt{}\PW{}\PZ}
+\newcommand*{\tWH}{\Pqt{}\PW{}\PH}
+\newcommand*{\tHW}{\Pqt{}\PW{}\PH}
+\newcommand*{\tW}{\Pqt{}\PW}
+\newcommand*{\Wt}{\Pqt{}\PW}
+\newcommand*{\diboson}{diboson\xspace}
+\newcommand*{\Diboson}{Diboson\xspace}
+\newcommand*{\triboson}{triboson\xspace}
+\newcommand*{\Triboson}{Triboson\xspace}
+\newcommand*{\Vjets}{\ensuremath{V\text{+\,jets}}\xspace}
+
+\newcommand*{\ttt}{\ensuremath{ttt}\xspace}
+\newcommand*{\tttt}{\ensuremath{t\bar{t}t\bar{t}}\xspace}
+\newcommand*{\ggH}{\ensuremath{ggH}\xspace}
+\newcommand*{\qqH}{\ensuremath{qqH}\xspace}
+\newcommand*{\WH}{\ensuremath{WH}\xspace}
+\newcommand*{\ZH}{\ensuremath{ZH}\xspace}
+
+% Fake leptons
+\newcommand*{\elHF}{\ensuremath{e_{\text{HF}}}\xspace}
+\newcommand*{\muHF}{\ensuremath{\mu_{\text{HF}}}\xspace}
+\newcommand*{\elCo}{\ensuremath{e_{\text{conv}}}\xspace} 
+\newcommand*{\kelHF}{\ensuremath{\mu(e_{\text{HF}})}\xspace}
+\newcommand*{\kmuHF}{\ensuremath{\mu(\mu_{\text{HF}})}\xspace}
+\newcommand*{\kelCo}{\ensuremath{\mu(e_{\text{conv}})}\xspace} 
+
+% Signal regions
+\newcommand*{\dileptau}{\ensuremath{2\Pl+1\tauhad}\xspace}
+\newcommand*{\dilepOStau}{\ensuremath{2\Pl\,\text{OS}+1\tauhad}\xspace}
+\newcommand*{\dilepSStau}{\ensuremath{2\Pl\,\text{SS}+1\tauhad}\xspace}
+
+\newcommand*{\onelep}{\ensuremath{1\Pl}\xspace}
+\newcommand*{\dilep}{\ensuremath{2\Pl}\xspace}
+\newcommand*{\dilepOS}{\ensuremath{2\Pl\,\text{OS}}\xspace}
+\newcommand*{\dilepSS}{\ensuremath{2\Pl\,\text{SS}}\xspace}
+%\newcommand*{\SS}{\ensuremath{\text{SS}}\xspace}
+%\newcommand*{\OS}{\ensuremath{\text{OS}}\xspace}
+
+\newcommand*{\trilep}{\ensuremath{3\Pl}\xspace}
+\newcommand*{\lepditau}{\ensuremath{1\Pl+2\tauhad}\xspace}
+
+
+
+
+\newcommand*{\lumi}{\ensuremath{\mathcal{L}}\xspace}
+\newcommand*{\lumiunits}{$\,$ cm$^{2} \,$s$^{-1}$\xspace}
+
+
+%Other
+\newcommand*{\CM}{\ensuremath{\sqrt{s}}\xspace}
+ 
+\newcommand*{\Wtb}{\ensuremath{Wtb}\xspace}
+%\newcommand*{\tWb}{\WtB}
+\newcommand*{\pfour}{\ensuremath{\boldsymbol{\textrm{p}}}\xspace} 
+
+\newcommand*{\tchan}{\ensuremath{t}-channel}
+\newcommand*{\mtop}{\ensuremath{m_{top}}\xspace}
+%\newcommand*{\mH}{\ensuremath{m_H}\xspace}
+
+%\newcommand*{\PWplus}{\ensuremath{\PW^{+}}\xspace}
+%\newcommand*{\PWminus}{\ensuremath{\PW^{-}}\xspace}
+%\newcommand*{\Pgamma}{\ensuremath{\gamma}\xspace}
+
+ \newcommand*{\greekphys}{\ensuremath{\varphi\upsilon\sigma\iota\kappa \eta}\xspace}
+ \newcommand*{\greekatom}{\ensuremath{\alpha \tau o \mu o \nu}\xspace}
+ \newcommand{\emu}{\ensuremath{\Pe/\Pmu}\xspace}
+
+\newcommand*{\momentum}{\ensuremath{\overrightarrow{p}}\xspace} 
+\newcommand*{\CP}{\ensuremath{\mathcal{CP}}\xspace}
+
+% Decays (Please, check latex/atlasprocess.sty and latex/atlasparticle.sty for more definitions!)
+\newcommand{\bb}{\ensuremath{\Pqb\Paqp}\xspace}
+\newcommand{\WW}{\ensuremath{\PW\PW^{*}}\xspace}
+\newcommand{\ZZ}{\ensuremath{\PZ\PZ^{*}}\xspace}
+\newcommand{\Higgsdecays}{\ensuremath{\PH \rightarrow b\bar{b}, \WW, \ZZ, \tau\tau}\xspace}
+\newcommand{\Higgsdecayslep}{\ensuremath{\PH \rightarrow \WW, \ZZ, \tau\tau}\xspace}
+\newcommand{\HWW}{\ensuremath{\PH \rightarrow \WW}\xspace}
+\newcommand{\HZZ}{\ensuremath{\PH \rightarrow \ZZ}\xspace}
+
+% reconstruction definitions
+\newcommand{\pnutop}{\ensuremath{\vec{p^{\Pnu, \text{top}}}}\xspace}
+\newcommand{\pnutopx}{\ensuremath{p^{\Pnu, \text{top}}_x}\xspace}
+\newcommand{\pnutopy}{\ensuremath{p^{\Pnu, \text{top}}_y}\xspace}
+\newcommand{\pnutopz}{\ensuremath{p^{\Pnu, \text{top}}_z}\xspace}
+\newcommand{\pnutopT}{\ensuremath{p^{\Pnu, \text{top}}_{\text{T}}}\xspace}
+\newcommand{\phinutop}{\ensuremath{\phi^{\Pnu, \text{top}}}\xspace}
+\newcommand{\pltop}{\ensuremath{\vec{p^{\Plepton, \text{top}}}}\xspace}
+\newcommand{\pltopx}{\ensuremath{p^{\Plepton, \text{top}}_x}\xspace}
+\newcommand{\pltopy}{\ensuremath{p^{\Plepton, \text{top}}_y}\xspace}
+\newcommand{\pltopz}{\ensuremath{p^{\Plepton, \text{top}}_z}\xspace}
+\newcommand{\pltopT}{\ensuremath{p^{\Plepton, \text{top}}_{\text{T}}}\xspace}
+\newcommand{\philtop}{\ensuremath{\phi^{\Plepton, \text{top}}}\xspace}
+\newcommand{\phibtop}{\ensuremath{\phi^{\Pbottom, \text{top}}}\xspace}
+\newcommand{\tauvis}{\ensuremath{\Ptau_{\text{vis}}}\xspace}
+
+\newcommand{\leptop}{\ensuremath{\Plepton^{\text{top}}}\xspace}
+\newcommand{\lepH}{\ensuremath{{\Plepton^{\PH}}}\xspace}
+\newcommand{\Hvismass}{\ensuremath{m_{\PH}^{\text{vis}}}\xspace}
+\newcommand{\toprecomass}{\ensuremath{m_{\text{top}}^{\text{reco}}}\xspace}
+% \newcommand{\toprecomass}{\ensuremath{\Pqt_{\text{reco}}^{\text{m}}\xspace}}
+% \newcommand{\Hvismass}{\ensuremath{\PH_{\text{vis}}^{\text{m}}\xspace}}
+\newcommand{\MMC}{\texttt{MissingMassCalculator}\xspace}
+
+% luminosity (2015)
+\newcommand{\lumiFifteenRelUnc}{1.13} % in [%]
+\newcommand{\lumitagFifteen}{{\small\texttt{OfLumi-13TeV-008}}}
+%\newcommand{\lumiFifteenInPbNoUnits}{3219.56}
+%\newcommand{\lumiFifteenInFbNoUnits}{3.2}
+\newcommand{\lumiFifteenInPbNoUnits}{3244.54} % final luminosity recommendation for Run 2 analyses (https://twiki.cern.ch/twiki/bin/viewauth/Atlas/LuminosityForPhysics#2015_2018_13_TeV_proton_proton_f)
+\newcommand{\lumiFifteenInFbNoUnits}{3.2}
+%\newcommand{\dataperiodsFifteen}{D--J}
+\newcommand{\dataperiodsFifteen}{D--H,J}
+\newcommand{\firstdatarunFifteen}{276262}
+\newcommand{\lastdatarunFifteen}{284484}
+\newcommand{\datarunsFifteen}{\firstdatarunFifteen--\lastdatarunFifteen}
+\newcommand{\dataeventsFifteen}{220.58M}
+
+% luminosity (2016)
+\newcommand{\lumiSixteenRelUnc}{0.89} % in [%]
+\newcommand{\lumitagSixteen}{{\small\texttt{OfLumi-13TeV-009}}}
+%\newcommand{\lumiSixteenInPbNoUnits}{32988.1}
+%\newcommand{\lumiSixteenInFbNoUnits}{33.0}
+% final luminosity recommendation for Run 2 analyses (https://twiki.cern.ch/twiki/bin/viewauth/Atlas/LuminosityForPhysics#2015_2018_13_TeV_proton_proton_f)
+\newcommand{\lumiSixteenInPbNoUnits}{33402.2}
+\newcommand{\lumiSixteenInFbNoUnits}{33.4}
+%\newcommand{\dataperiodsSixteen}{A--L}
+\newcommand{\dataperiodsSixteen}{A--G,I,K,L}
+\newcommand{\firstdatarunSixteen}{297730}
+\newcommand{\lastdatarunSixteen}{311481}
+\newcommand{\datarunsSixteen}{\firstdatarunSixteen--\lastdatarunSixteen}
+\newcommand{\dataeventsSixteen}{1057.84M}
+
+% luminosity (2017)
+\newcommand{\lumiSeventeenRelUnc}{1.13} % in [%]
+\newcommand{\lumitagSeventeen}{{\small\texttt{OfLumi-13TeV-010}}}
+%\newcommand{\lumiSeventeenInPbNoUnits}{44307.4}
+%\newcommand{\lumiSeventeenInFbNoUnits}{44.3}
+% final luminosity recommendation for Run 2 analyses (https://twiki.cern.ch/twiki/bin/viewauth/Atlas/LuminosityForPhysics#2015_2018_13_TeV_proton_proton_f)
+\newcommand{\lumiSeventeenInPbNoUnits}{44630.6}
+\newcommand{\lumiSeventeenInFbNoUnits}{44.6} 
+%\newcommand{\dataperiodsSeventeen}{B--K}
+\newcommand{\dataperiodsSeventeen}{B--F,H,I,K}
+\newcommand{\firstdatarunSeventeen}{325713}
+\newcommand{\lastdatarunSeventeen}{340453}
+\newcommand{\datarunsSeventeen}{\firstdatarunSeventeen--\lastdatarunSeventeen}
+%%%\newcommand{\datarunsSeventeen}{324320--341649}
+\newcommand{\dataeventsSeventeen}{1340.80M}
+
+% luminosity (2018)
+\newcommand{\lumiEightteenRelUnc}{1.10} % in [%]
+\newcommand{\lumitagEightteen}{{\small\texttt{OfLumi-13TeV-010}}}
+%\newcommand{\lumiEightteenInPbNoUnits}{58450.1}
+%\newcommand{\lumiEightteenInFbNoUnits}{58.5}
+% final luminosity recommendation for Run 2 analyses (https://twiki.cern.ch/twiki/bin/viewauth/Atlas/LuminosityForPhysics#2015_2018_13_TeV_proton_proton_f)
+\newcommand{\lumiEightteenInPbNoUnits}{58791.6}
+\newcommand{\lumiEightteenInFbNoUnits}{58.8}
+\newcommand{\lumiEightteenInPb}{\SI{\lumiEightteenInPbNoUnits}{\per\pb}}
+\newcommand{\lumiEightteenInFb}{\SI{\lumiEightteenInFbNoUnits}{\per\fb}}
+%\newcommand{\dataperiodsEightteen}{B--Q}
+\newcommand{\dataperiodsEightteen}{B--D,F,I,K,L,M,O,Q}
+\newcommand{\firstdataruEightteen}{348885}
+\newcommand{\lastdatarunEightteen}{364292}
+\newcommand{\datarunsEightteen}{\firstdataruEightteen--\lastdatarunEightteen}
+%%%\newcommand{\datarunsEightteen}{348197--364292}
+\newcommand{\dataeventsEightteen}{1716.77M}
+
+% luminosity (2015+2016+2017)
+%\newcommand{\lumiInPb}{80515.06~\invpb}
+% \newcommand{\partlumi}{\SI{80.52}{\per\fb}}
+%\newcommand{\datafirstyear}{2015}
+%\newcommand{\datalastyear}{2017}
+
+% luminosity (2015+2016+2017+2018)
+%
+% https://twiki.cern.ch/twiki/bin/viewauth/Atlas/LuminosityForPhysics#2015_2018_13_TeV_proton_proton_f
+% final luminosity recommendation for Run 2 analyses (central value + uncertainty)
+\newcommand{\lumiRelUnc}{0.83} % in [%]
+\newcommand{\lumiInPbNoUnits}{140068.94} % in pb-1
+\newcommand{\lumiInFbNoUnits}{140} % in fb-1
+\newcommand{\lumiWithUnc}{\ensuremath{140.1 \pm 1.2}\,\si{\per\fb}} % in fb-1
+%
+% old recommendation
+%\newcommand{\lumiRelUnc}{1.7} % in [%]
+%\newcommand{\lumiInPbNoUnits}{138965.16} % in pb-1
+%\newcommand{\lumiInFbNoUnits}{139} % in fb-1
+%\newcommand{\lumiWithUnc}{\ensuremath{\lumiInFbNoUnits \pm 2.4}\,\si{\per\fb}} % in fb-1
+\newcommand{\dataeventsAll}{4335.99M}
+%
+\newcommand{\lumiInPb}{\SI{\lumiInPbNoUnits}{\per\pb}}
+%\newcommand{\lumi}{\SI{\lumiInFbNoUnits}{\per\fb}}
+\newcommand{\datafirstyear}{2015}
+\newcommand{\datalastyear}{2018}
+
+% % tunes and PDF sets
+\def\cteq{CTEQ6L1\xspace}
+\def\ctten{CT10\xspace}
+\def\cttennlo{CT10\,NLO\xspace}
+\def\cttennnlo{CT10\,NNLO\xspace}
+\def\ctfourteennlo{CT14\,NLO\xspace}
+\def\ctfourteennnlo{CT14\,NNLO\xspace}
+\def\nnpdfnnlo{NNPDF3.0\,NNLO\xspace}
+\def\nnpdfnlofourflav{NNPDF3.0\,NLO\,nf4\xspace}
+\def\nnpdfnlo{NNPDF3.0\,NLO\xspace}
+\def\nnpdftwonlo{NNPDF2.3\,NLO\xspace}
+\def\nnpdftwo{NNPDF2.3\,LO\xspace}
+\def\nnpdftwofiveflav{NNPDF2.3\,5f\,FFN\xspace}
+\def\mstw{MSTW2008\,NLO\xspace}
+\def\a14{A14\xspace}
+\def\auet{AUET2\xspace}
+\def\aznlo{AZNLO\xspace}
+\def\mmhtnnlo{MMHT2014\,NNLO\xspace}
+\def\mmhtnlo{MMHT2014\,NLO\xspace}
+\def\mmhtlo{MMHT2014\,LO\xspace}
+\def\mstwnlo{MSTW2008\,68\%\,CL\,NLO \xspace}
+\def\mstwnnloninety{MSTW2008\,90\%\,CL\,NNLO \xspace}
+\def\ueee{UE-EE-5\xspace}
+
+
+
+
+ 
+\endinput
+

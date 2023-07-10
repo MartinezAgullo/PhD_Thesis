@@ -1,0 +1,174 @@
+
+\chapter*{Preface}
+\markboth{Preface}{Preface}
+\addcontentsline{toc}{chapter}{Preface} 
+
+
+%%% STRUCTURE: IDEA 1
+% Introduction: 	SM has many open questions
+% 			Top quark and top Higgs are very singular particles that can help answer these questions. These
+%			are the object of analysis of this work.
+% Higgs: 	New field of research
+% Top: 	Window for new phys, 
+%
+% Analsis: Contributions to two analyses are presented in this work.
+%		- tHq studies: motivation to do so, challenging, channels, MVA
+%		- Polarisation:  	In QCD tops are unpolarised but in EW and tWb vertex can be only studied in top decay
+%					In EW top quarks are highly polarised due to the V-A nature and the tWb vertex can be
+%					studied in both production and decay
+% 					Lifetime ($10^{-25}\,$s) << depolarisation scale ($10^{-21}\,$s) , therefore, the decay
+%					products preserve the spin information of the top quark.
+%					This information is accesible via angular distributions in the top quark rest frame
+%					
+
+
+The Standard Model of particle physics is both incredibly successful and glaringly incomplete theory. It brings together all  
+elementary particles that make up the known universe in a single theory. Among these, the top quark and the Higgs boson are of special
+interest because they can help to answer some of the open questions. The object of study of this thesis focusses in these two 
+singular particles and its interplay. 
+
+%This is done trough two different analyses. On one hand the measurement of the top-quark polarisation
+%and, on the other hand, the search of the associated production of a Higgs boson and a single-top quark. 
+
+The studies presented at this dissertation have been carried using an integrated luminosity of 139$\,$fb$^{-1}$ 
+of proton-proton collision data at center-of-mass energy of 13$\,$TeV collected by the ATLAS detector during the 
+Large Hadron Collider (LHC) Run 2.  Located at the European Organization for Nuclear Research,
+the LHC is the most powerful particle accelerator in the world and ATLAS on of its largest detectors. The experimental 
+setup in which this work is contextualised is described in Chapter \ref{chap:ATLAS}. The data and generation
+of Monte Carlo simulations within ATLAS is described in Chapter \ref{chap:DataAndMC}. The reconstruction 
+and identification of physical objects is explained in Chapter \ref{chap:ObjectReconstuction}.
+
+\begin{comment}
+%Measurement of polarisation
+\paragraph{Measurement of the top-quark polarisation}\mbox{}\\
+The top quark is the heaviest elementary particle discovered so far, with a mass of cd
+$\mtop = 172.76 \pm 0.30 \,$GeV \cite{pdgTop}. Due to its large mass, it presents some unique features. 
+Being one of the most relevant the fact that it is the only quark that decays before hadronising. This allows to 
+measure its properties through its decay products. At LHC the top quark can be produced either via the strong
+interaction, resulting in quark-antiquark pairs (\ttbar), or by the electroweak interaction, which produces them singly. 
+In the second scenario, the single-top quarks are created with their spin aligned in a particular direction.
+My contribution to the measurement of the polarisation observables is presented in Chapter \ref{chap:Polarisation}.
+The result of this work is presented in reference \cite{ATLAS:2021vhx}.
+
+
+
+
+%Search of tHq production%
+\paragraph{Search for associated production of a Higgs boson and a single top quark}\mbox{}\\
+\end{comment}
+
+The discovery of a Higgs boson by the ATLAS \cite{20121_ATLAS_HiggsDiscovery} and CMS \cite{201230_CMS_HiggsDiscovery} experiments in 2012 opened 
+a new field for exploration in the realm of particle physics. In order to better understand 
+Standard Model, it is of prominent interest to determine the Yukawa coupling of 
+the Higgs boson to the top quark (\yt), being the latter the most massive fundamental particle 
+and, consequently, the one with the largest coupling to the Higgs boson.
+
+% Higgs boson prediction by Englert and Brout \cite{Englert:1964et}, and Higgs \cite{Higgs:1964pj}
+
+The direct measurement of \yt is only possible at the LHC via two associated
+Higgs productions: with a top-quark-antiquark pair (\ttH) and with a single-top quark with an additional parton (\tHq).
+While the \ttH just permits the determination of the magnitude of \yt, the only way of simultaneously 
+measuring its sign and magnitude is through the \tH production \cite{Demartin:2015uha}. The possible observation of an excess 
+of signal events with respect to the Standard Model prediction, would be an 
+evidence of new physics in terms of CP-violating \yt coupling.
+
+In this work it is presented a search for the \tHq production in a final state with two light-flavoured-charged 
+leptons (electrons or muons) and one hadronically-decaying \Ptau lepton (named \dileptau$\,$ channel).
+This search is exceptionally challenging due to the extremely small cross-section of the \tHq process
+(70$\,$fb \cite{LHCHiggsCrossSectionWorkingGroup:2016ypw}), and of the \dileptau final-state channel, in particular, which only accounts 
+for a 3.5\% of the total \tHq production.
+
+Therefore, to distinguish the \tHq signal events from background events, machine-learning techniques
+are used. Particularly, boosted-decision trees are employed to define signal-enriched regions as well
+as control regions that constrain the most important background precesses. The most relevant backgrounds
+are those related to top-quark-antiquark-pair production without and with and additional boson
+(\ttbar, $t\bar{t}H$, $t\bar{t}W$ and $t\bar{t}Z$) and $Z$ boson plus jets. 
+
+Additionally, to help identifying signal events within the data,  the reconstruction of the event plays an important role. 
+Different tools are used to retrieve the four momentum of the top quark and Higgs boson from the 
+reconstructed objects. This information can be later used to build variables that help separating the
+signal events from the processes that mimic the \dileptau signature. 
+The reconstruction of the events is also enhanced by similar machine-learning methods
+since in the scenario in which the light-flavour leptons have the same sign, a priori, 
+it is not possible to determine which lepton is originated from the Higgs boson and 
+which from the top quark. 
+
+Significant suppression of the background events with jets wrongly selected as leptons  
+or non-prompt leptons originating from heavy-flavour decays
+is achieved by demanding electrons and muons to pass strict identification and isolation requirements. 
+Simultaneously, hadronic-$\tau$ leptons are demanded to pass the requirement of a
+recurrent-neural-network-based discriminator to reduce misidentifications from jets.
+
+The tools and methods developed for the associated \tHq production search are described in Chapter \ref{chap:Analysis_tH}.
+
+
+
+
+
+
+
+%- \ttH sensitive to the \yt module \\
+%- \tHq sesntive both to the sign and magnitude of \yt
+
+
+%The top quark is the heaviest elementary particle discovered so far, with a mass of 
+%\ $\mtop = 172.76 \pm 0.30$ GeV \cite{pdgTop}, followed by the Higgs boson, with 
+%$\mH = 125.25 \pm 0.17$ GeV \cite{pdgHiggs}.
+%The main topic of this thesis is the study of the top quark, specially its interaction with the Higgs boson.
+%This project has been developed in the context of ATLAS experiment, which is one of the four detectors 
+%operating at the Large Hadron Collider (LHC) oft the European Organization for Nuclear Research (CERN). 
+ 
+
+%This thesis describes the search for the associated production of a Higgs boson and a single top quark ($\tHq$) in
+%the final state with three leptons, being two of them light leptons (\Pe / $\mu$) and the other one a 
+%hadronically-decaying  tau quark (\tauhad). The examined channel is referred as \dileptau and is further divided in
+%two sub-channels attending to the relative electric charge between the light leptons (\dilepSStau and \dilepOStau).
+ %The research carried targets SM Higgs bosons decaying to \Htautau, \HWW and \HZZ.
+
+%This analysis uses an integrated luminosity of 139 fb$^{-1}$ of proton-proton collision data at centre-of-mass energy
+%of 13 TeV collected by ATLAS during LHC Run 2. The ATLAS detector is one of the four detectors at the Large
+%Hadron Collider (LHC) of the European Organization for Nuclear Research (CERN). 
+
+
+%This analysis presents a great challenge due to the difficulty of distinguish the \tHq production in the \dileptau 
+%channels from other SM processes with much higher cross-sections. The \tHq process has an extremely small 
+%cross-section ($70\,$fb at $13\,$TeV) and the \dileptau channel accounts only for the 3.5\% of the total production.
+
+
+
+%Additional studies are carried  to assign origin the light-flavoured leptons, i.e. whether these came from the Higgs
+%boson or the top quark.  To do so, a gradient boosted decision tree is used. 
+
+%Moreover, due to the arduousness of separating the \tHq from the backgrounds, multivariate techniques are 
+%used. With them are defined signal-enriched regions and control regions to constrain the most important 
+%background processes, which are those related to top-quark-antiquark-pair production (\ttbar, \ttH, 
+%\ttW and \ttZ) and \PZ boson plus jets.
+
+
+
+%The possible observation of a an excess of signal events with respect to the Standard Model predictions, would be a 
+%clear evidence of new physics in terms of \CP-violating Yukawa couplings between the top quark and the Higgs 
+%boson.
+
+
+
+
+%The \tHq search has required the development not only of the simulation and analysis tools (MC generated samples
+%for signal and background, analysis software, etc) but also of the methodology (mva methods).
+
+
+%Furthermore, other channels (defined by their final state) are being studied in the context of \tHq research
+
+
+%\paragraph{Other considerations}\mbox{}\\
+%During this thesis the ``god-given'' units are used. In this system (name natural system) the Planck constant and the 
+%speed of light have the same magnitude and dimensions ($\hbar=c=1$), implying that: 
+%\begin{center}
+%[length] = [time] = [energy]$^{-1}$ = [mass]$^{-1}$.
+%\end{center}
+%In the international system (SI) units, the values are $\hbar = 1.055 \times10^{-34}$ Js and $c = 2.998 \times10^{8}$ m/s. 
+%An exception is made for the Chapter \ref{chap:ATLAS}, where the SI is used for describing the design of the LHC
+%and ATLAS.
+
+%\pablo{Conceptos triviales que también debería introducir en algún momento \url{http://opendata.atlas.cern/books/current/get-started/_book/GLOSSARY.html}}
+

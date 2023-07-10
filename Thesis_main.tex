@@ -1,0 +1,336 @@
+% Pablo Martínez-Agulló PhD thesis
+% Thesis template based on ATLAS INTERNAL NOTE template and Pablo Villanueva-Domingo PhD thesis, which was based on the Miguel Garcia Folgado thesis, which was based on the Miguel Escudero Abenza thesis, which probably was based in someone else thesis.
+% I basically add the external bibsources and mycommands.tex.
+
+
+% Started on : 10 January 2022
+% 
+
+
+
+%\documentclass[a4paper,11pt,oneside]{book}
+\documentclass[a4paper,12pt,twoside,openright]{book}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern}
+
+\usepackage{lineno}
+%\linenumbers
+
+\usepackage[hang,flushmargin]{footmisc} % Disables indentation for footnotes, has to be loaded prior to hyperfer
+
+\usepackage[toc]{appendix}
+
+
+\usepackage{bm}
+\usepackage[skip=10pt,font=footnotesize,bf]{caption}
+\usepackage{url}
+\usepackage{amsmath,amssymb}
+\usepackage{wasysym} %for using the command \clock
+\usepackage{mathtools}
+\usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=red, linktoc=all]{hyperref}
+\usepackage{bookmark}
+\usepackage{graphicx}
+ \usepackage{wrapfig}
+ \usepackage{multicol}
+\usepackage{epsfig,verbatim,xspace,multirow,mathtools}
+\usepackage{booktabs}
+
+\usepackage{csquotes}
+\usepackage[british]{babel}
+\usepackage{fancyhdr}
+\usepackage{indentfirst}
+\usepackage{epigraph}
+\usepackage[export]{adjustbox}
+
+\usepackage{comment}
+\usepackage{array}
+\usepackage{subcaption}
+
+%\usepackage{tikz-feynman}
+\usepackage[compat=1.0.0]{tikz-feynman}
+%\usepackage{feynman}
+
+\usepackage{dsfont} %To type the \mathds{R}
+
+\renewcommand{\floatpagefraction}{.75}
+
+%\usepackage[normalem]{ulem} %Tachar texto
+\usepackage{ulem} %Tachar
+
+
+% In order to include the pdfs of the papers
+\usepackage[final]{pdfpages}
+
+% Size of the distance between paragraphs
+\setlength{\parskip}{0.6em}
+
+% Commands for the Equation reference
+\def\eqref#1{{(\ref{#1})}}
+
+
+% Specify where ATLAS LaTeX style files can be found.
+%\RequirePackage{latex/atlaslatexpath}
+% Style file with biblatex options for ATLAS documents.
+%\usepackage{biblatex}
+\usepackage[backend=bibtex,
+    %backend=biber, 
+    natbib=true,
+    style=numeric,
+    sorting=none
+]{biblatex}
+%\bibliographystyle{jhep} %
+\usepackage{latex/atlasbiblatex}
+\addbibresource{bib/ATLAS-SUSY.bib}
+\addbibresource{bib/ATLAS-useful.bib}
+\addbibresource{bib/ATLAS.bib}
+\addbibresource{bib/CMS.bib}
+\addbibresource{bib/ConfNotes.bib}
+\addbibresource{bib/PubNotes.bib}
+\addbibresource{biblio_thesis.bib}
+
+
+\graphicspath{{./Figures/}}
+\usepackage[hepparticle, hepprocess, jetetmiss, xref=false, unit=false]{latex/atlasphysics}
+\input{latex/mycommands.tex} % Set of commands
+
+
+% To get the subsubsections labelled
+\setcounter{secnumdepth}{3}
+
+
+% Text format distribution
+\setlength{\textwidth}{135mm}
+\setlength{\textheight}{220mm}
+\setlength{\oddsidemargin}{12.2mm}
+\setlength{\evensidemargin}{12.2mm}
+\setlength{\topmargin}{7mm}
+\makeatletter
+\def \cleardoublepage {\clearpage \if@twoside
+\ifodd \c@page
+\else
+\null\thispagestyle{empty}\clearpage
+\fi
+\fi}
+\makeatother
+
+% For headings
+\pagestyle{fancy}
+
+% with this we ensure that the chapter and section
+% headings are in lowercase.
+\renewcommand{\chaptermark}[1]{%
+\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{%
+\markright{\thesection\ #1}}
+\fancyhf{}  % delete current header and footer
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt} % space for the rule
+\fancypagestyle{plain}{%
+\fancyhead{} % get rid of headers on plain pages
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt} % and the line
+}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+
+\raggedbottom
+\clubpenalty=10000
+\widowpenalty=10000
+
+\begin{document}
+\sloppy	% Justify text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Inner cover
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Others/InsideCover}
+
+\frontmatter % Roman page number
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Certification page
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Others/Certifico}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Dedicatoria
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\cleardoublepage
+%\vspace*{4cm} 
+%\hspace*{200pt} \\
+%\hspace*{250pt} \textit{A mare,} \\
+%\hspace*{250pt} \textit{als yayos,} \\
+%\hspace*{250pt} \textit{a los panas,} \\
+%\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Quote
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+\vspace*{4cm} 
+\hspace*{200pt} \\
+%\hspace*{200pt} \textit{C'est quoi ce bordel ???} \\
+%\hspace*{200pt} ---\textsc{Daniel Bosson} \\
+\hspace*{165pt} \textit{Ja que no s'entén el que dius,} \\
+\hspace*{165pt} \textit{que s'entenga la lletra.} \\
+\hspace*{170pt} ---\textsc{Rosita Candela-Esclapez (1947)} \\
+\vspace*{4cm} 
+\cleardoublepage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Preface
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Others/Preface}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Acknowledgements
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{urlcolor=black}
+\fancyfoot[C]{\thepage}
+\include{Chapters/Others/Acknowledgements}
+\hypersetup{urlcolor=blue}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CONTENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Others/Contents}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PART I:  Search of tHq processes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lhead[{\bfseries \thepage}]{ \rightmark}
+\rhead[ Chapter \thechapter. \leftmark]{\bfseries \thepage}
+
+%\part{Search for rare associated production of a Higgs boson and a single top quark in the \dileptau final state}\thispagestyle{empty}
+%\label{partI}
+%I may remove the PartsI and PartII and leave just the chapters but this "part" structure may be adequate to include the polarisation studies
+
+\mainmatter % Resets the page number
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction: Theoretical framework
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_1/Chapter_1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  CERN, LHC and ATLAS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_2/Chapter_2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Data and simulated events
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_3/Chapter_3_1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Object reconstruction and identification
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_3/Chapter_3_2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Analysis Polarisation 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/Chapter_4/Chapter_2_Polarisation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Analysis tHq 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_5/Chapter_tH}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Chapters/Chapter_6/Chapter_Conclusion} 
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PART II: Polarisation of single top t-channel
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lhead[{\bfseries \thepage}]{ \rightmark}
+%\rhead[ Chapter \thechapter. \leftmark]{\bfseries \thepage}
+
+%\part{Probing the top quark polarisation in the single top t-channel production }\thispagestyle{empty}
+%\label{partII}  
+
+%\setcounter{chapter}{0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction: Polarisation
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/Chapter_Polarisation/Chapter_1_Polarisation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Analysis tools
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Chapters/Chapter_Polarisation/Chapter_2_Polarisation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+%\appendix
+%\addcontentsline{toc}{part}{Appendices}
+
+\begin{appendices}
+\input{Chapters/Others/Appendices/Appendix_NegativeWeights}
+\input{Chapters/Others/Appendices/Appendix_BDT}
+\end{appendices}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Abbreviations 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Chapters/Others/Abbreviations}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cleardoublepage
+
+\phantomsection
+
+
+\addcontentsline{toc}{chapter}{{Bibliography}}
+
+
+\renewcommand{\headrulewidth}{0.5pt}
+
+
+\lhead[{\bfseries \thepage}]{Bibliography}
+\rhead[{Bibliography}]{\bfseries \thepage}
+
+\printbibliography
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Summary:   Resúmenes en castellano y valenciano
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setcounter{chapter}{0}
+%\part{Thesis Summary}
+%\label{partIII}
+
+%\include{Chapters/Others/Summary}
+%\include{Chapters/ThesisSummary/Summary_Spanish}
+\include{Chapters/ThesisSummary/Summary_Valencian}
+
+
+% Ending doublepage
+\cleardoublepage
+\thispagestyle{empty}
+\renewcommand{\headrulewidth}{0pt}
+$\,$
+\cleardoublepage
+
+% CONTRAPORTADA
+\input{Chapters/Others/Abstract}
+
+\end{document}

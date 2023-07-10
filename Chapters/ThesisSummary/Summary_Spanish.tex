@@ -1,0 +1,150 @@
+
+\lhead[{\bfseries \thepage}]{ \rightmark}
+\rhead[Resumen \leftmark]{\bfseries \thepage}
+
+%\markboth{Resumen de la tesis}{Resumen de la tesis}
+%\addcontentsline{toc}{part}{Resumen de la tesis} 
+\label{partIII}
+
+%\begin{comment}
+ \newcounter{betasect}
+
+ \renewcommand\thesection{%
+ \ifnum\value{betasect}=1%
+A%%
+ \else
+\ifnum\value{betasect}=2%
+B%%
+\else
+\ifnum\value{betasect}=3%
+C%%
+\else
+\ifnum\value{betasect}=4%
+D%%
+\else
+ \arabic{section}%%
+ \fi\fi\fi\fi}%
+
+ \newenvironment{csection}{%
+ \setcounter{betasect}{1}%%
+ }{%
+ \setcounter{betasect}{0}%%
+ }%
+
+ \newenvironment{bsection}{%
+ \setcounter{betasect}{2}%%
+ }{%
+ \setcounter{betasect}{0}%%
+ }%
+%\end{comment}
+
+
+\setcounter{section}{0}
+
+\chapter*{Búsqueda de la producción asociada de un bosón de Higgs y un quark top en el estado final con un tau hadrónico}
+\addcontentsline{toc}{chapter}{Resumen de la tesis} 
+\label{chap:resumen_cast}
+
+\section{Marco teórico}
+\subsection{El Model Estándar}
+El Modelo Estándar de Física de Partículas (SM, por sus siglas en inglés) es un marco teórico que describe los
+constituyentes básicos de la materia y sus interacciones. Es el modelo más ampliamente aceptado y confirmado experimentalmente en la física de partículas. 
+
+El SM incluye dos tipos de partículas elementales, los fermiones y bosones. 
+Los fermiones son partículas subatómicas que obedecen las reglas de la mecánica cuántica 
+estadística de Fermi-Dirac. Este tipo de partícula se caracteriza por tener un spin semientero 
+y obedecer el principio de exclusión de Pauli, el cual establece que dos fermiones no pueden 
+ocupar el mismo estado cuántico al mismo tiempo. Los fermiones se dividen en quarks y leptones. 
+Ambos tipos de fermiones son los constituyentes básicos de la materia pero son distintos entre sí.
+
+Por un lado, los quarks son partículas que tienen carga eléctrica fraccionaria y
+son la unidad fundamental de los protones y los
+neutrones. Estas partículas se combinan en grupos para formar hadrones (mesones y bariones). Los bariones
+incluyen los protones y los neutrones, que son las partículas subatómicas más abundantes en la materia. Los 
+mesones tienen un número par de quarks, lo que hace que tengan spin entero y sean bosones.
+Los quarks se dividen en seis \textit{sabores}  (no confundir con la sensación que producen
+las sustancias con gusto) diferentes: arriba, abajo, encanto, extraño, arriba y abajo. 
+La forma más habitual de referirse a estos es por sus nombres en ingles: up, down, charm, strange,
+top y bottom. 
+
+Por otro lado, los leptones son partículas elementales que no interactúan fuertemente.
+Los leptones están divididos en dos clases: neutrinos y leptones cargados.
+Los neutrinos son partículas muy ligeras y se les conoce por su interacción débil con la materia.
+Los leptones cargados (electron, muón y tauón) tienen carga eléctrica entera. A diferencia de los quarks,
+este tipo de partículas no se combinan entre sí para formar otras aunque, sí que que lo hacen con 
+hadrones para formar, por ejemplo, los átomos.
+
+
+Los otros elementos que componen el SM son los bosones, partículas de spin entero
+que median las interacciones fundamentales de la física. Los bosones de gauge (spin 1)
+son responsables de describir tres de las cuatro fuerzas fundamentales de la 
+naturaleza\footnote{La gravedad queda fuera del SM.}: 
+\begin{itemize}
+	\item Interacción electromagnética: Mediada por el fotón (\Pgamma), es la teoría que estudia los fenómenos 
+		eléctricos y magnéticos. Todas las partículas cargadas interactúan entre sí a través de esta fuerza.
+		Las principales características de la interacción electromagnética son su infinito alcance 
+		y la ausencia de masa para sus portadores. Es responsable de la estabilidad de los átomos, 
+		ya que mantiene unidos a los electrones en su órbita alrededor del núcleo, y de la transmisión 
+		de la luz y otras formas de radiación electromagnética.
+		La teoría que describe esta interacción se denomina electrodinámica cuántica. 
+	\item Interacción nuclear débil: Medida por dos bosones \PW (\PWplus y \PWminus) y el boson \PZ.
+		Esta es responsable de la radioactividad beta, en la que un neutrón se descompone 
+		en un protón, un electrón y un antineutrino. También es la fuerza que media la desintegración
+		del quark top a un quark \Pbottom y un boson \PW. Además, la interacción nuclear débil es 
+		crucial en el proceso de fusión en las estrellas, donde se combinan protones para formar 
+		elementos más pesados.
+		Las fuerzas nuclear débil y electromagnéticas son descritas simultáneamente por
+		la teoría  electrodébil.
+	\item Interacción nuclear fuerte: Mediada por el gluón, es responsable de mantener unidos los protones y 
+		neutrones en el núcleo atómico. Es la interacción más fuerte de la naturaleza pero su rango de acción
+		está limitado a distancias subatómicas.	
+		Debido al confinamiento por color de la teoría nuclear fuerte ni los gluones ni los quarks aparecen 
+		aislados (salvo a altas energías). 
+		La teoría que describe esta interacción se llama cromodinámica cuántica. Esta teoría, al igual que la
+		electrodinámica cuántica y la teoría electrodébil, está basada en el formalismo de la 
+		teoría cuántica de campos.	
+\end{itemize}
+
+
+\subsection{La física del quark top}
+\subsection{La física del bosón de Higgs}
+\section{Dispositivo experimental}
+\subsection{El gran colisionador de hadrones}
+El Gran Colisionador de Hadrones (LHC, por sus siglas en inglés) es un acelerador de partículas que se encuentra
+en el CERN (Centro Europeo para la Investigación Nuclear o Laboratorio Europeo de Física de Partículas 
+Elementales), en Ginebra, Suiza. Fue diseñado para colisionar protones y iones pesados con alta energía, lo que
+permite a los científicos estudiar la estructura subatómica de la materia y buscar nuevas partículas.
+
+El LHC es una máquina de vanguardia que utiliza tecnología avanzada para acelerar partículas hasta velocidades 
+cercanas a las de la luz antes de chocarlas entre sí. Estos choques generan partículas secundarias que se 
+detectan mediante una red de detectores situados en su interior. Los datos recopilados de estas colisiones se 
+utilizan para investigar la física de partículas.  Llegando a energías de $\CM = 13\,$TeV, el LHC es el mayor 
+acelerador de partículas construido y constituye una herramienta clave para el avance de la ciencia.
+
+Los cuatro principales detectores que rodean el LHC son: ATLAS, CMS, LHCb y ALICE. El primero
+de estos es el experimento en el cual se desarrolla esta tesis.
+
+\subsection{El detector ATLAS}
+ATLAS es uno de los principales detectores del LHC y se utiliza para medir las propiedades de las partículas resultantes de las colisiones de hadrones. ATLAS tiene una estructura cilíndrica y es uno de los más grandes
+detectores de partículas del mundo, midiendo aproximadamente 46 metros de largo y 25 metros de diámetro. 
+Está compuesto por varios componentes y subcomponentes. Cada uno de estos sistemas se encarga de 
+registrar un tipo de información diferente. En orden dentro hacia fuera, ATLAS está compuesto por:
+\begin{itemize}
+	\item Detector interno (Inner Detector, ID)
+	\begin{itemize}
+		\item Pixel
+		\item SCT
+		\item TRT	
+	\end{itemize}
+	\item Imán solenoidal:
+	\item Calorímetro electromagnético (ECAL):
+	\item Calorímetro hadrónico (HCAL):
+	\item Muon Spectrometer (MS):
+\end{itemize}
+
+\section{Búsqueda de procesos \tH  con un con final \dileptau}
+\subsection{Selección de eventos}
+\subsection{Estimación del fondo}
+\subsection{Fontes de incertidumbre}
+\subsection{Resultados}
+\section{Conclusiones}
