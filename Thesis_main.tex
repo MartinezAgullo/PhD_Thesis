@@ -6,10 +6,12 @@
 % Started on : 10 January 2022
 % 
 
+% Instrucciones de formato
 
 
 %\documentclass[a4paper,11pt,oneside]{book}
-\documentclass[a4paper,12pt,twoside,openright]{book}
+%\documentclass[a4paper,12pt,twoside,openright]{book} %For upload
+\documentclass[12pt,twoside,openright]{book} %For print
 \usepackage{color}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
@@ -38,7 +40,11 @@
 \usepackage{booktabs}
 
 \usepackage{csquotes}
-\usepackage[british]{babel}
+\usepackage[catalan, main=british]{babel} %main language last
+\addto\captionscatalan{%
+  \renewcommand{\figurename}{Figura}%
+  \renewcommand{\tablename}{Taula}%
+}
 \usepackage{fancyhdr}
 \usepackage{indentfirst}
 \usepackage{epigraph}
@@ -47,6 +53,9 @@
 \usepackage{comment}
 \usepackage{array}
 \usepackage{subcaption}
+\usepackage{placeins} % \FloatBarrier
+\usepackage{pifont} % \xmark symbol
+\newcommand{\xmark}{\ding{55}}
 
 %\usepackage{tikz-feynman}
 \usepackage[compat=1.0.0]{tikz-feynman}
@@ -57,7 +66,11 @@
 \renewcommand{\floatpagefraction}{.75}
 
 %\usepackage[normalem]{ulem} %Tachar texto
-\usepackage{ulem} %Tachar
+\usepackage[normalem]{ulem} 
+% - ulem para tachar
+% - normalem para que el highlight sea
+%   en cursiva y no subrayado (útil en bibliography)
+	
 
 
 % In order to include the pdfs of the papers
@@ -74,12 +87,18 @@
 %\RequirePackage{latex/atlaslatexpath}
 % Style file with biblatex options for ATLAS documents.
 %\usepackage{biblatex}
-\usepackage[backend=bibtex,
+\usepackage[
+    backend=bibtex,
     %backend=biber, 
     natbib=true,
-    style=numeric,
-    sorting=none
+    style=numeric-comp,
+    sorting=none, %All entries are processed in citation order
+    autopunct = true, % testinng
+    block = space,
+    maxbibnames = 5,
+    backref = false
 ]{biblatex}
+% See "Preamble options" in https://mirrors.ibiblio.org/CTAN/macros/latex/contrib/biblatex/doc/biblatex.pdf
 %\bibliographystyle{jhep} %
 \usepackage{latex/atlasbiblatex}
 \addbibresource{bib/ATLAS-SUSY.bib}
@@ -100,12 +119,28 @@
 \setcounter{secnumdepth}{3}
 
 
+% Set custom page size (mesura imprenta)
+\usepackage{geometry}
+\geometry{
+    width=17.5cm,
+    height=25cm,
+    %inner=2.5cm,  % wider inner margin for binding
+    %outer=2cm,    % outer margin
+    top=1.7cm,
+    bottom=2cm,
+    includeheadfoot
+}
+
 % Text format distribution
-\setlength{\textwidth}{135mm}
-\setlength{\textheight}{220mm}
+%\setlength{\textwidth}{135mm} %A4
+%\setlength{\textheight}{220mm} %A4
+\setlength{\textwidth}{148mm} % A5 width
+\setlength{\textheight}{210mm} % A5 height
 \setlength{\oddsidemargin}{12.2mm}
 \setlength{\evensidemargin}{12.2mm}
 \setlength{\topmargin}{7mm}
+
+
 \makeatletter
 \def \cleardoublepage {\clearpage \if@twoside
 \ifodd \c@page
@@ -136,6 +171,9 @@
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 
 
+% \linespread{1.5} % The UV requieres 1.5 but it would make the document 560 pages
+% https://www.uv.es/uvweb/doctorat-fisiologia/ca/tesi-doctoral/tesi-doctoral/format-tesi-1285901652027.html
+ 
 \raggedbottom
 \clubpenalty=10000
 \widowpenalty=10000
@@ -191,7 +229,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypersetup{urlcolor=black}
 \fancyfoot[C]{\thepage}
-\include{Chapters/Others/Acknowledgements}
+%\include{Chapters/Others/Acknowledgements}
 \hypersetup{urlcolor=blue}
 
 
@@ -282,12 +320,20 @@
 \begin{appendices}
 \input{Chapters/Others/Appendices/Appendix_NegativeWeights}
 \input{Chapters/Others/Appendices/Appendix_BDT}
+\input{Chapters/Others/Appendices/Appendix_thqLoop}
+\input{Chapters/Others/Appendices/Appendix_TopPartons}
+\input{Chapters/Others/Appendices/Appendix_BDT_Variables}
+%\input{Chapters/Others/Appendices/Appendix_OtherFits}
+\input{Chapters/Others/Appendices/Appendix_AdditionalResults}
+
+
+
 \end{appendices}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Abbreviations 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{Chapters/Others/Abbreviations}
+%\input{Chapters/Others/Abbreviations}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -314,13 +360,21 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Summary:   Resúmenes en castellano y valenciano
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{otherlanguage}{catalan}
+%{
+%\renewcommand{\tablename}{Tabula}
+%\renewcommand{\figurename}{Figura}
+%}
 \setcounter{chapter}{0}
+\setcounter{figure}{0}
+
 %\part{Thesis Summary}
 %\label{partIII}
 
 %\include{Chapters/Others/Summary}
 %\include{Chapters/ThesisSummary/Summary_Spanish}
 \include{Chapters/ThesisSummary/Summary_Valencian}
+\end{otherlanguage}
 
 
 % Ending doublepage
@@ -331,6 +385,6 @@ $\,$
 \cleardoublepage
 
 % CONTRAPORTADA
-\input{Chapters/Others/Abstract}
+%\input{Chapters/Others/Abstract}
 
 \end{document}
