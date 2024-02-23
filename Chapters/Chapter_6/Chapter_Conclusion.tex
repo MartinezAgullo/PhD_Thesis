@@ -14,21 +14,232 @@ asdf
 \label{chap:Conclusion}
 \vspace*{0.1 cm} 
 \hspace*{200pt} \\
-\hspace*{175pt} \textit{Terminamos.} \\
-\hspace*{200 pt}     ---\textsc{Mi ex} \\% \textit{} \\
+%\hspace*{175pt} \textit{Terminamos.} \\
+%\hspace*{200 pt}     ---\textsc{Mi ex} \\% \textit{} \\
+\hspace*{0.25\textwidth} \textit{Cuando el río es lento y se cuenta con una buena } \\
+\hspace*{0.25\textwidth} \textit{bicicleta o caballo sí es posible bañarse dos (y hasta tres, } \\
+\hspace*{0.25\textwidth} \textit{de acuerdo con las necesidades higiénicas de cada } \\
+\hspace*{0.25\textwidth} \textit{quién) veces en el mismo río.} \\
+\hspace*{205pt} ---\textsc{Augusto Monterroso,} \\% \textit{} \\
+\hspace*{240 pt}     \textsc{Heraclitana (1978)} \\% \textit{} \\
 \vspace*{2cm} 
 
 
 %%%%%%%%%%%%%%%
 %         Conclusion              %
 %%%%%%%%%%%%%%%
-To comment
+This thesis presents the study to measure of  the direct production of a Higgs boson in association
+with a single-top quark, focusing on final states with two light-flavour leptons and one hadronically-decaying-\Ptau 
+lepton, employing the ATLAS detector. Attending to the relative charge between the light lepton, 
+this investigation is divided in two channels: \dilepOStau and \dilepSStau.
+
+The search for such a rare process is motived by the intricate interplay between two fundamental 
+particles: the Higgs boson and the top quark. On on hand te Higgs boson plays a critical role in our understanding 
+of mass acquisition by particles through the Spontaneous Symmetry Breaking mechanism.
+On the other hand, top quark, notable for being the most massive particle in the SM and the only one that 
+decays before its hadronisation. Therefore, the Yukawa coupling between these two particles is expected 
+to be the largest in the SM and it can be measured trough this interaction.  This measurement is central
+to the experimental program of the LHC and it could hint at possible 
+CP violation, influencing the \tHq production cross-section.
+ 
+In this thesis the theoretical foundation of physics of the top quark and Higgs boson are
+discussed, a review of the ATLAS detector and its performance is given, and the simulation chain 
+and object reconstruction are described. Then, the search of the \tHq production is carefully detailed. 
+
+This analysis uses proton-proton collisions at $\CM=13$~TeV from the ATLAS detector during Run 2 of the LHC
+with a total integrated luminosity of 140 fb$^{-1}$. The parton-level information is implemented and used to
+reconstruct the \tHq process. The origin of the light-lepton is assed via the use of BDT. 
+Then the rate of misidentified particles is addressed using the template fit method to correct
+the MC yields. 
+
+Afterwards, by using several BDTs, the SRs, CRs and VRs of the analysis are defined.
+Utilising these regions, a profile-likelihood-binned fit with Asimov data and real data  is 
+conducted to determine the normalisation of the \ttW process and the signal strength of 
+the \tHq production. 
+The culmination of this analysis is the determination of limits on the \tHq production cross-section.
+The \tHq signal-strength values are shown in Table~\ref{tab:Conclusion:SignalStrength}.
+The expectation is obtained using Asimov data and the observed is obtained with the fit
+to the real data. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c}
+\cline{2-3}
+            		& \multicolumn{2}{c}{$\mu_{\tHq}$} 		\\ \cline{2-3}
+            		& Expected       & Observed			\\ \midrule
+\dilepOStau 	& $\pm 21.58$  &  $-19.73 \pm 20.16$  	\\
+\dilepSStau 	& $\pm 7.20$ 	&  $-2.59 \pm 5.44$          	\\ \bottomrule
+\end{tabular}
+\caption{Expected and observed signal strength values for the two \dileptau channels.
+The uncertainty is the combination of the statistical and systematic effects.}
+\label{tab:Conclusion:SignalStrength}
+\end{table}
+
+This result is fully compatible with the SM. 
+The limits at 95\% CL on the \tHq cross-section are in Table~\ref{tab:Conclusion:UpperLimit}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c}
+\cline{2-3}
+            		& \multicolumn{2}{c}{$\mu_{\tHq}^{\text{CL95}}$} \\ \cline{2-3}
+            		& Expected       				& Observed       \\ \midrule
+\dilepOStau 	& $57.98^{+39.38}_{-21.07}$		&    34.49            \\
+\dilepSStau 	& $18.88^{+33.83}_{-11.6}$		&    13.8            \\ \bottomrule
+\end{tabular}
+\caption{Values of the upper limits of the signal strength at 95\% CL for the two \dileptau channels.}
+\label{tab:Conclusion:UpperLimit}
+\end{table}
+
+
+Looking ahead, the prospects for enhancing the outcomes of this analysis are promising, driven by several anticipated developments:
 \begin{itemize}
-	\item Discuss why \tHq was used for defining the regions and \tH 
-	for the fits. This is due to historical reasons
-	\item Discuss the results obtained in chapter 6
-	\item Present the results using the combination of BDT and NN
+	% Identificar mejor la identificación de taus es muy difícil pero lo que se podría hacer es mejorar la 
+	% determinación de los fake factors (se puede hacer con más estadística o con un método mejor).
+	% Nuestro sistemático dominante se debe al método de determinación de fake factors, mejorar el método
+	% llevaría a reducir este sistemático.
+	%\item The normalisation of fake factors\pablo{poner algo de cómo reducir el impacto de los fake taus}
+	\item The upcoming high-luminosity Run 3 promises increased statistical significance of the analysis.
+		This will be very beneficial since in the \dilepSStau channel (the one with the best sensitivity)
+		the statistical uncertainty is the dominant. In the \dilepOStau the uncertainty due to the statistical
+		sample is similar to the systematic uncertainty and more data events will undoubtedly enrich this search.
+
+	\item The current techniques to estimate the rates of backgrounds due to misidentified objects will also
+		benefit from an increase on the statistical sample since these are data-driven methods.
+		
+	\item With more statistics we could explore splitting the regions used in the fit calculations
+		according to the track multiplicity of the \tauhad (1-prong or 3-prong) . %1-prong // 3-rpong
+		Since jets with different origin mimic differently the \tauhad depending on its prongness,
+		it can be beneficial to explore this classification when defining the regions used in
+		the profiled-likelihood fit.
+		%the different relative background conntributions in all regions
+		%considered in the fit.
+		
+	\item Currently there is a mild tension between the simulation and the experimental results for \ttW. 
+		Therefore, progress in the simulation techniques or better understanding of these process will
+		further refine the analysis. This will be useful in the \dilepSStau channel, where this is the second
+		most important background.
 \end{itemize}
+
+
+Additionally, this analysis can be extended in several ways.
+First, the region definition can be improved by combining the BDTs described in this
+thesis with the NNs that are also being used by the ongoing ATLAS analysis. 
+Secondly, incorporating the \tWH processes in the signal would allow to perform
+a more complete \tH search and, hence, the inverted-top-Yukawa-coupling hypothesis 
+can be properly tested.
+
+From the two channels explored in this thesis, the \dilepSStau one is the 
+one that can add more sensitivity to future combinations with other
+\tHq channels. 
+
+%More studies to be done:
+%\begin{itemize}
+	%\item Comment the results using an alternative region definition based on combination of BDT and NN
+	%\item Discuss using \tH instead of \tWH
+	%\item Discuss further studies using the inverted \yt
+	%\item Añadir más datos mejorará la precisión estadísitica de los dos canals pero, sobre todo del canal SS 
+	%	donde la statdística es la principal unncertainty conn diferencia. En OS la incertidumbre estadística 
+	%	es un poco mayor que la sistemàtica.
+	%\item Al tener más datos también podríamos separar los \tauhad en un 1prong y 3 prong. Esto nos permite
+	%	explorar nuevas técnicas de ajuste. Los 1prong y 3 prong tienen distintos tipos de fondo
+	%\item Las técnicas de estimación de tau-fake-SFs también pueden mejorar al mejorar la estadística
+	%\item Los resultados obtenidos para esta tesis son comparables a los de otros
+	%	canales (poner resultados Jesús). A mí me sale -3.78 $\pm$ 5 y a él algo compatible en 2LSS (5,1 $\pm$ 4.8) y en el 3L (6.3 $\pm$ 7.1)
+		
+%\end{itemize}
+
+\begin{comment}
+\pablo{En estos párrafos hay snipets de cosas de estadística}
+
+
+\paragraph{Comments about hypothesis rejection}\mbox{}\\
+%https://arxiv.org/pdf/1007.1727.pdf
+In the search of a new signal process one defines:
+\begin{itemize}
+	\item Null hypothesis ($H_0$):  Taking into account only the backgrounds
+	\item Alternative hypothesis ($H_1$): Considering both the backgrounds and the signal
+\end{itemize}
+When setting limits, the model with signal-plus-background hypothesis
+plays the role of $H_0$, which is tested against the background-only hypothesis, $H_1$.
+The level of agreement between the data and a hypothesis $H$ is given by the $p$-value.
+The $p$-value is defined as the probability, under the assumption of $H$, of finding data of 
+equal or greater incompatibility with the predictions of $H$. One can regard the hypothesis 
+as excluded if its $p$-value is observed below a specified threshold.
+
+Rejecting the background-only hypothesis in a statistical sense is only part of discovering 
+a new phenomenon. A widely used procedure to establish discovery (or exclusion) in particle physics is based
+on a frequentist significance test using a likelihood ratio as a test statistic. In addition to
+parameters of interest such as the rate (cross section) of the signal process, the signal and
+background models will contain in general nuisance parameters whose values are not taken
+as known a priori but rather must be fitted from the data.
+
+Let's consider the distribution of a kinematic variable measured at the experiment. 
+This distribution can be presented in a binned histogram. The expected number
+of events the $i^{th}$ bin is given by:
+\begin{equation*}
+	n_{i}^{exp} = \mu s_{i}^{exp} + b_{i}^{exp}
+\end{equation*}
+Where $\mu$ is the signal strength and, if $\mu=0$ corresponds tothe background-only hypothesis .
+The $s_{i}$ + $b_{i}$ are defined as:
+\begin{equation*}
+  s_{i}^{exp} = s_{\text{tot}}^{exp} \int_{\text{bin } i} f_s(x; \theta_s) \,dx
+\end{equation*}
+\begin{equation*}
+  b_{i}^{exp} = b_{\text{tot}}^{exp} \int_{\text{bin } i} f_b(x; \theta_b) \,dx
+\end{equation*}
+The integral over $x$ runs over the kinematic distribution. The functions 
+$f_s(x; \theta_s$ nad $f_b(x; \theta_s)$ are the probability density functions 
+(pdfs) of the variable $x$ for signal and background events.
+
+
+% Bayesian vs frequentist
+\paragraph{Bayesian vs frequentist}\mbox{}\\
+From the frequentist point of view the probability is defined as the fraction of times an 
+event occurs, in the limit of very large number ($N \to \infty$) of repeated trials
+\begin{equation*}
+	 \mathcal{P} = \lim_{N \to \infty} \frac{\text{Number of favorable cases}}{N}
+\end{equation*}
+where $N$ is the number of trials. Even though this infinity can be conceptually unpleasant, for 
+LHC experiments, the amount of events is so large that this $\mathcal{P}$ definition becomes
+acceptable \cite{Lista:2016chp}. 
+
+In contrast, for the Bayesian (or subjective) probability expresses the degree of belief that a 
+claim is true. Starting from a prior probability, following some observation, the probability can 
+be modified into a posterior probability. The more information an individual receives, the more 
+Bayesian probability is insensitive on prior probability \cite{Lista:2016chp}.
+
+The Bayes theorem \cite{Bayes:1764vd} states that considering two events $A$ and $B$, the probability of $A$
+to happen given that $B$ takes places is
+\begin{equation*}
+	 \mathcal{P}(A|B)= \frac{\mathcal{P}(B|A)\mathcal{P}(A)}{\mathcal{P}(B)}
+\end{equation*}
+where $\mathcal{P}(B|A)$ is the conditional probability of $B$ given $A$ and $\mathcal{P}(B)$ 
+the probability of the event $B$ to happen. 
+Here, $\mathcal{P}(A)$ has the role of prior probability while $\mathcal{P}(A|B)$ is known
+as posterior probability.
+
+
+
+\paragraph{Signal strenght}\mbox{}\\
+The signal strength is defined as the ratio between the measured process
+and its SM prediction. For the $\tHq$, the production signal-strength is: 
+\begin{equation*}
+	\mu_{\tHq} = \frac{\sigma_{\tHq}}{(\sigma_{\tHq})_{SM}} \, .
+\end{equation*}
+For particular decay mode $f$ its signal strength is:
+\begin{equation*}
+	\mu^{f} = \frac{BR^f}{(BR^f)_{SM}} \, , 
+\end{equation*}
+being $BR^f$ the branching ratio for the $f$ decay mode. %The subscript SM refers to the SM prediction.
+Since cross-section and the BR cannot be separated without further assumptions, only the product
+can measured experimentally, leading to the combined signal strength:
+\begin{equation*}
+	\mu_{\tHq}^{f} = \frac{\sigma_{\tHq}\cdot BR^f}{(\sigma_{\tHq})_{SM} \cdot (BR^f)_{SM}} = \mu_{\tHq} \cdot \mu^{f} \, .
+\end{equation*}
+In out particular case $f$ is \dilepOStau or \dilepSStau. 
+\end{comment}
+ 
 
 
 %POSTAMBLE

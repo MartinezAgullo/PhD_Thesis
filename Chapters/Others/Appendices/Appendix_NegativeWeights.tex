@@ -11,7 +11,7 @@ asdf
 %\tableofcontents
 \label{chap:Appendix:NegWeights}
 
-\pablo{Igual esto se puede integrar en la sección \ref{sec:Chap3.1:Data:Model}. }
+%\pablo{Igual esto se puede integrar en la sección~\ref{sec:Chap3.1:Data:Model}. }
 
 
 %%%%%%%%%%%%%%%%%%%%%
@@ -25,22 +25,17 @@ asdf
 %	\item Why are negative weights problematic?
 %\end{itemize}
 
-The weight in a MC simulated sample refers to a factor assigned to each 
+The weight in a MC-simulated sample refers to a factor assigned to each 
 event in the simulation to account for various effects such as event generation, 
 detector response, and data-to-simulation discrepancies. These weights are used 
-to scale the simulated events in order to better match the observed data or to accurately 
-model specific physical processes or background contributions. The weights 
-are derived based on theoretical calculations, detector simulations, and calibration 
+to scale the simulated events to better match the observed data or to accurately 
+model specific physical processes or background contributions.  These negative weights reflect the cancellation 
+of positive and negative contributions to ensure the correct overall probability distribution. 
+The weights are derived based on theoretical calculations, detector simulations, and calibration 
 procedures, and they are crucial for obtaining accurate predictions and comparisons 
 with experimental data in analyses at ATLAS.
-
-Since these weights are used to adjust the event yields and distributions to match the
-expected values based on theoretical predictions and experimental observations, 
-negative weights can arise in MC simulations. These negative weights reflect the cancellation 
-of positive and negative contributions to ensure the correct overall probability distribution. While 
-negative weights pose challenges for statistical analysis and interpretation, they are necessary 
+While negative weights pose challenges for statistical analysis and interpretation, they are necessary 
 to accurately reproduce the expected physics processes and their interference effects. 
-
 
 %It is important to handle negative weights properly in data analyses to avoid biases and ensure 
 %reliable results. Various techniques and strategies are employed to mitigate the impact of negative
@@ -49,12 +44,14 @@ to accurately reproduce the expected physics processes and their interference ef
 
 % Good source: https://arxiv.org/pdf/2110.15211.pdf
 
-The negative weight can result problematic
-Samples containing negatively weighted events have a reduced statistical power \cite{Danziger:2021xvr}.
-Additionally, the presence of negatively weighted events, as opposed to exclusively positive-weight 
+The negative weighs can result in samples with reduced statistical power~\cite{Danziger:2021xvr}.
+Therefore, the presence of negatively-weighted events, as opposed to exclusively positive-weight 
 event samples, implies processing a significantly larger number of events to achieve comparable 
 statistical significance. This issue is particularly pronounced during the final stage of detector simulation, 
-where each event can require hours of CPU time\cite{Andersen:2021mvw}.
+where each event can require hours of CPU time~\cite{Andersen:2021mvw}.
+
+Another problem with negative weights arises in the training of ML models, as it is further discussed
+in Appendix~\ref{chap:Appendix:BDT}. 
 
 
 
@@ -62,7 +59,8 @@ where each event can require hours of CPU time\cite{Andersen:2021mvw}.
 %         Neg Weights  - Uncertainty         %
 %%%%%%%%%%%%%%%%%%%%%
 \section{Statistical uncertainty of negative weights}
-Assume that there is a sample of $N$ Monte Carlo simulated events. Of these,
+\label{chap:Appendix:NegWeights:uncert}
+Assume that there is a sample of $N$ MC-simulated events. Of these,
 a fraction $x$ have negative weighs and, therefore, a fraction $(1-x)$ has a positive weight.
 The effective number of events is $(N_{+} - N_{-})$, being $N_{+} = (1-x)N$ the amount of
 positively weighted events and $N_{-} = xN$ the same for the negative weights.
@@ -124,10 +122,10 @@ In the range of $x$ values for the \dileptau simulated signal events.
 
 
 
-In Figure \ref{fig:Appendix:NegWeights:Distributions}, several $\Delta R$ distributions generated using all the events
+In Figure~\ref{fig:Appendix:NegWeights:Distributions}, several $\Delta R$ distributions are generated using all the events
 and just the positively weighted ones. As expected, the uncertainty bands are bigger for the 'All events' than for the
 'Positive events'.  These histograms were produced to verify that using only the events with positive weights in
-the training of the BDT for lepton assignment in the SS scenario (Section \ref{sec:ChaptH:Sig:LepAsign}) was not 
+the training of the BDT for the lepton assignment in the SS scenario (Section~\ref{sec:ChaptH:Sig:LepAsign}) was not 
 biasing the result. The size of the error bands is calculated by ROOT as the square root of the quadratic sum of the 
 weights, as explained below.
 

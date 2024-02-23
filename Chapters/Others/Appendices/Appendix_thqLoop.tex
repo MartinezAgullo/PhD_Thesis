@@ -1,0 +1,28 @@
+\chapter{The \texttt{tHqLoop} framework for post-processing}
+\label{chap:Appendix:tHqLoop}
+
+
+The simulation of the physical process that takes place within ATLAS detector is presented in detail
+in Section \ref{sec:Chap3.1:MC}. All these steps take place within the ATLAS software infrastructure,
+Athena. 
+The simulated event data samples are produced using  the \texttt{SingleTopAnalysis} framework, 
+which is constructed on top of \texttt{AnalysisTop}, which is part of Athena. 
+The output of this production is referred as Single-top NTuples and its generation is executed centrally on 
+the grid for multiple top-quark-focussed analyses. Afterwards, the Single-top NTuples are transferred to the local sites.
+%~\cite{SingleTopAnalysis}
+%~\cite{AnalysisTop}
+
+After this stage, a post-processing software developed specifically for the \tHq search performs, locally,
+several more channel-specific tasks. This software, known as \thqloop, loops over all the events
+from the Single-top NTuples to perform channel-specific tasks.
+Examples of these tasks are the application of tighter object selections, selecting events which are more signal-like,
+the event reconstruction or the computation of additional variables that are needed in the subsequent analysis.
+The \thqloop framework also applies the correct configurations like scale factors, systematic uncertainties and overlap removal.
+Other channel-specific tasks include the assignment of the
+light-lepton origin in the \dilepSStau channel (see Section~\ref{sec:ChaptH:Sig:LepAsign}) or the application of
+scale factors that correct the \tauhad misidentification rate in the \dileptau and \lepditau channels.
+It is precisely with the \thqloop framework that the selection of the final-state objects are selected 
+and, hence, the different channels defined. 
+
+
+

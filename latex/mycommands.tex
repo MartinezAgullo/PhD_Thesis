@@ -1,7 +1,7 @@
 \newcommand{\pablo}[1]{\textcolor{blue}{{\bf  #1}}}
 \newcommand{\carlos}[1]{\textcolor{red}{{\bf  #1}}}
 \newcommand{\fabio}[1]{\textcolor{purple}{{\bf  #1}}}
-\newcommand{\susana}[1]{\textcolor{green}{{\bf  #1}}}
+\newcommand{\susana}[1]{\textcolor{violet}{{\bf  #1}}}
 
 % HEP names :: https://ctan.javinator9889.com/macros/latex/contrib/hepnames/hepnames.pdf
 
@@ -10,10 +10,13 @@
 \DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
 
 \newcommand*{\yt}{\ensuremath{y_{t}}\xspace}
-\newcommand*{\tchannel}{\ensuremath{t}-channel\xspace}
-\newcommand*{\schannel}{\ensuremath{s}-channel\xspace}
+\newcommand*{\tchannel}{\ensuremath{t\text{-channel}}\xspace}
+\newcommand*{\schannel}{\ensuremath{s\text{-channel}}\xspace}
 %\newcommand*{\lepT}{\ensuremath{\Pl_{\Pt}}\xspace}
 %\newcommand*{\lepH}{\ensuremath{\Pl_{\PHiggs}}\xspace}
+
+%\newcommand*{\muR}{\ensuremath{\mu_{\text{R}}}\xspace}
+%\newcommand*{\muF}{\ensuremath{\mu_{\text{F}}}\xspace}
 
 % Add external packages
 \usepackage[italic]{hepnicenames}
@@ -36,7 +39,6 @@
 \newcommand*{\dR}{\ensuremath{\Delta R}\xspace}
 \newcommand*{\trexfitter}{TRExFitter\xspace}
 \newcommand*{\thqloop}{\texttt{tHqLoop}\xspace}
-%\newcommand*{\BDT}{\ensuremath{\text{BDT}}\xspace}
 
 
 \newcommand*{\MpT}{\ensuremath{\vec{p}_{\text{T}}^{\text{miss}}}\xspace}
@@ -45,10 +47,14 @@
 \newcommand*{\mOSSF}{\ensuremath{m_{\text{OSSF}}}\xspace}
 
 % Background processes
-\newcommand*{\ttX}{\ensuremath{\Pqt{}\Paqt{}+X}\xspace}
+\newcommand*{\ttX}{\ensuremath{\Pqt{}\Paqt{}X}\xspace}
+\newcommand*{\tX}{\ensuremath{\Pqt{}X}\xspace}
+
+%\newcommand*{\ttX}{\Pqt{}\Paqt{}+X}
 \newcommand*{\ttH}{\Pqt{}\Paqt{}\PH}
 %\newcommand*{\ttH}{\ensuremath{\Pqt{}\Paqt{}\PH}\xspace}
 \newcommand*{\ttZ}{\Pqt{}\Paqt{}\PZ}
+\newcommand*{\ttV}{\ensuremath{\Pqt{}\Paqt{}V}\xspace}
 \newcommand*{\ttW}{\Pqt{}\Paqt{}\PW}
 \newcommand*{\ttWj}{\ensuremath{t\bar{t}W+j}\xspace}
 \newcommand*{\tZq}{\Pqt{}\PZ{}\Pq}
@@ -103,13 +109,15 @@
 %Other
 \newcommand*{\CM}{\ensuremath{\sqrt{s}}\xspace}
  
-\newcommand*{\Wtb}{\ensuremath{Wtb}\xspace}
-%\newcommand*{\tWb}{\WtB}
+\newcommand*{\Wtb}{\ensuremath{tWb}\xspace}
+\newcommand*{\tWb}{\Wtb}
+%\newcommand*{\tWb}{\ensuremath{tWb}\xspace}
 \newcommand*{\pfour}{\ensuremath{\boldsymbol{\textrm{p}}}\xspace} 
 
 \newcommand*{\tchan}{\ensuremath{t}-channel}
-\newcommand*{\mtop}{\ensuremath{m_{top}}\xspace}
+\newcommand*{\mtop}{\ensuremath{m_{\Ptop}}\xspace}
 %\newcommand*{\mH}{\ensuremath{m_H}\xspace}
+%\newcommand*{\HT}{\ensuremath{H_{\text{T}}}\xspace}
 
 %\newcommand*{\PWplus}{\ensuremath{\PW^{+}}\xspace}
 %\newcommand*{\PWminus}{\ensuremath{\PW^{-}}\xspace}
@@ -120,7 +128,8 @@
  \newcommand{\emu}{\ensuremath{\Pe/\Pmu}\xspace}
 
 \newcommand*{\momentum}{\ensuremath{\overrightarrow{p}}\xspace} 
-\newcommand*{\CP}{\ensuremath{\mathcal{CP}}\xspace}
+%\newcommand*{\CP}{\ensuremath{\mathcal{CP}}\xspace}
+\newcommand*{\CP}{CP\xspace}
 
 % Decays (Please, check latex/atlasprocess.sty and latex/atlasparticle.sty for more definitions!)
 \newcommand{\bb}{\ensuremath{\Pqb\Paqp}\xspace}
@@ -135,22 +144,22 @@
 \newcommand{\pnutop}{\ensuremath{\vec{p^{\Pnu, \text{top}}}}\xspace}
 \newcommand{\pnutopx}{\ensuremath{p^{\Pnu, \text{top}}_x}\xspace}
 \newcommand{\pnutopy}{\ensuremath{p^{\Pnu, \text{top}}_y}\xspace}
-\newcommand{\pnutopz}{\ensuremath{p^{\Pnu, \text{top}}_z}\xspace}
-\newcommand{\pnutopT}{\ensuremath{p^{\Pnu, \text{top}}_{\text{T}}}\xspace}
-\newcommand{\phinutop}{\ensuremath{\phi^{\Pnu, \text{top}}}\xspace}
+\newcommand{\pnutopz}{\ensuremath{p_{z}(\Pnu_{\text{top}})}\xspace}
+\newcommand{\pnutopT}{\ensuremath{\pT(\Pnu_{\text{top}})}\xspace}
+\newcommand{\phinutop}{\ensuremath{\phi(\Pnu_{\text{top}})}\xspace}
 \newcommand{\pltop}{\ensuremath{\vec{p^{\Plepton, \text{top}}}}\xspace}
 \newcommand{\pltopx}{\ensuremath{p^{\Plepton, \text{top}}_x}\xspace}
 \newcommand{\pltopy}{\ensuremath{p^{\Plepton, \text{top}}_y}\xspace}
 \newcommand{\pltopz}{\ensuremath{p^{\Plepton, \text{top}}_z}\xspace}
-\newcommand{\pltopT}{\ensuremath{p^{\Plepton, \text{top}}_{\text{T}}}\xspace}
-\newcommand{\philtop}{\ensuremath{\phi^{\Plepton, \text{top}}}\xspace}
-\newcommand{\phibtop}{\ensuremath{\phi^{\Pbottom, \text{top}}}\xspace}
+\newcommand{\pltopT}{\ensuremath{\pT(\Plepton_{\text{top}})}\xspace}
+\newcommand{\philtop}{\ensuremath{\phi(\ell_{\text{top}})}\xspace}
+\newcommand{\phibtop}{\ensuremath{\phi(b_{\text{top}})}\xspace}
 \newcommand{\tauvis}{\ensuremath{\Ptau_{\text{vis}}}\xspace}
 
 \newcommand{\leptop}{\ensuremath{\Plepton^{\text{top}}}\xspace}
 \newcommand{\lepH}{\ensuremath{{\Plepton^{\PH}}}\xspace}
 \newcommand{\Hvismass}{\ensuremath{m_{\PH}^{\text{vis}}}\xspace}
-\newcommand{\toprecomass}{\ensuremath{m_{\text{top}}^{\text{reco}}}\xspace}
+\newcommand{\toprecomass}{\ensuremath{\mtop^{\text{reco}}}\xspace}
 % \newcommand{\toprecomass}{\ensuremath{\Pqt_{\text{reco}}^{\text{m}}\xspace}}
 % \newcommand{\Hvismass}{\ensuremath{\PH_{\text{vis}}^{\text{m}}\xspace}}
 \newcommand{\MMC}{\texttt{MissingMassCalculator}\xspace}
