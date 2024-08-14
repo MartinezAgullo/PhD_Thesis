@@ -100,31 +100,28 @@ For the signal \tHq \dileptau MC signal sample the fraction of negative weights 
 The uncertainty of the effective number of events can be compared to that of using only the 
 positively weighted events. If the two fractional uncertainties are divided:
 
-\begin{equation*}
-%\begin{split}
-	\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}=
-	\frac{\frac{1}{1-2x}\frac{\sigma_n}{N}}{\frac{1}{\sqrt{(1-x)N}}} =
-	\frac{\sqrt{1-x}}{1-2x} \frac{\sigma_n}{N} = \frac{\sqrt{1-x}}{1-2x}
-%\end{split}
-\end{equation*}
-In the range of $x$ values for the \dileptau simulated signal events. 
 
-\begin{minipage}[t]{0.57\linewidth}
+\begin{minipage}[t]{0.3\textwidth}
+  \centering\raisebox{\dimexpr \topskip-\height}{%
+  \includegraphics[width=\textwidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_err}}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.7\textwidth}
+\begin{flushleft}
 \begin{itemize}
 	\item $x=0.3$	$\rightarrow$ 
 	$\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}= 2.09$
 	 \item $x=0.4$	$\rightarrow$ 
 	$\frac{\frac{\sigma(N_{+} - N_{-})}{N_{+} - N_{-}}}{\frac{\sigma(N_+)}{N_x}}= 3.87$
 \end{itemize}
+\end{flushleft}
 \end{minipage}
-\hfill
-\raisebox{-1\baselineskip}{\includegraphics[width=0.35\textwidth]{Appendices/Appendix_NegativeWeigts/PosVsAll_err}}
+
 
 
 
 In Figure~\ref{fig:Appendix:NegWeights:Distributions}, several $\Delta R$ distributions are generated using all the events
-and just the positively weighted ones. As expected, the uncertainty bands are bigger for the 'All events' than for the
-'Positive events'.  These histograms were produced to verify that using only the events with positive weights in
+and just the positively weighted ones. As expected, the uncertainty bands are bigger for the ``All events'' than for the
+``Positive events''.  These histograms were produced to verify that using only the events with positive weights in
 the training of the BDT for the lepton assignment in the SS scenario (Section~\ref{sec:ChaptH:Sig:LepAsign}) was not 
 biasing the result. The size of the error bands is calculated by ROOT as the square root of the quadratic sum of the 
 weights, as explained below.

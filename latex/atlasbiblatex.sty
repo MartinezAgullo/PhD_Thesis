@@ -21,7 +21,8 @@
   family=ABIB,
   prefix=ABIB@
 }
-\DeclareStringOption[ragged]{block}
+%\DeclareStringOption[ragged]{block}
+\DeclareStringOption[none]{block}
 \DeclareStringOption[5]{maxbibnames}
 \DeclareBoolOption[true]{articletitle}
 \DeclareBoolOption[false]{titlequote}
@@ -29,7 +30,7 @@
 \DeclareBoolOption[true]{eprint}
 \DeclareBoolOption[false]{address}
 \DeclareBoolOption[false]{location}
-\DeclareBoolOption[true]{backref}
+\DeclareBoolOption[false]{backref}
 \DeclareStringOption[2016]{texlive}
 \ProcessKeyvalOptions*
 
@@ -173,8 +174,8 @@
 
   % You can include the following line(s) if you want to shorten your
   % bibliography by not including url fields
-  % \AtEveryBibitem{\clearfield{url}}
-  % \AtEveryCitekey{\clearfield{url}}
+   % \AtEveryBibitem{\clearfield{url}}
+  %  \AtEveryCitekey{\clearfield{url}}
 
   % Do not add "In:"
   \renewbibmacro{in:}{}

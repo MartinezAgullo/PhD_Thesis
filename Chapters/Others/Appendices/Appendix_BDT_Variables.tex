@@ -1,9 +1,12 @@
 \chapter{Distribution of kinematic variables}
 \label{chap:Appendix:BDT_Variables}
-In this appendix, the distributions of the variables used to train the BDT models are presented.
+In this appendix are presented all the distributions 
+of the variables used to train the BDT model, with
+the exception of those already presented in 
+Chapter~\ref{chap:Analysis_tH}.
 
-For the BDTs for region definition, this appendix complements the information provided
-in Section~\ref{sec:ChaptH:EventSelection:BDT:Variables}. 
+%For the BDTs for region definition, this appendix complements the information provided
+%in Section~\ref{sec:ChaptH:EventSelection:BDT:Variables}. 
 
 
 
@@ -30,6 +33,49 @@ Then, uncertainty bands correspond exclusively to the statistical error.
 In the case of the distributions containing negatively-weighted events, 
 the calculation of the statistical uncertainty is described in Appendix~\ref{chap:Appendix:NegWeights:uncert}
 
+
+\begin{figure}[h]
+    \centering
+    % First row
+    \begin{subfigure}[b]{0.44\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chapter5_tHq/LeptAssociation/NegativeWeights/PosVsAll_SS_err_m_Hvis_opt1}
+        \caption{$m^{\text{opt1}}_{\text{vis}}(H)$}
+        \label{fig:Appendix:BDTVARS:LeptonAssignment:m_Hvis_opt1}
+    \end{subfigure}
+    \hfill 
+    \begin{subfigure}[b]{0.44\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chapter5_tHq/LeptAssociation/NegativeWeights/PosVsAll_SS_err_deltaEta_tau_LightLep1}
+        \caption{$\Delta \eta(\tauhad, \ell_{1})$}
+        \label{fig:Appendix:BDTVARS:LeptonAssignmen:dEta1}
+    \end{subfigure}
+    
+    % Second row
+    \begin{subfigure}[b]{0.44\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chapter5_tHq/LeptAssociation/NegativeWeights/PosVsAll_SS_err_m_Hvis_opt2}
+        \caption{$m^{\text{opt2}}_{\text{vis}}(\PHiggs)$}
+        \label{fig:Appendix:BDTVARS:LeptonAssignmen:m_H2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.44\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Chapter5_tHq/LeptAssociation/NegativeWeights/PosVsAll_SS_err_deltaEta_tau_LightLep2_fixed}
+        \caption{$\Delta \eta(\tauhad, \ell_{2})$}
+        \label{fig:Appendix:BDTVARS:LeptonAssignmen:dEta2}
+    \end{subfigure}
+    \caption{Normalised distributions of the highest ranked variables for the light-lepton assignment. 
+    The black distribution is obtained using all events and the green one corresponds to the escenario in
+    which only the positively weighted events are used. The comparison between the Type$\,$1 and Type$\,$2
+    categories for these variables is presented on
+    Figure~\ref{fig:ChaptH:LepAsign:SS:BDT:inputFeatuerRanked}.}
+    \label{fig:Appendix:BDTVARS:LeptonAssignmen:Top$}
+\end{figure}
+
+
+
+\begin{comment}
 %% 1
 \begin{figure}[h]
 \centering
@@ -97,6 +143,7 @@ the calculation of the statistical uncertainty is described in Appendix~\ref{cha
 \caption{Normalised distributions for $\Delta \eta(\tauhad, \ell_{2})$.}
 \label{fig:Appendix:BDTVARS:LeptonAssignment:deltaEta_tau_LightLep2}
 \end{figure}
+\end{comment}
 
 %% 5
 \begin{figure}[h]
@@ -200,18 +247,47 @@ real and simulated data events.
 
 When training an ML model, it is important to use variables that provide good modelling, i.e., good data/MC agreement.
 For most of the distributions presented in the rest of the appendix, while the data/MC agreement is far from being exact,  
-it is compatible with the uncertainty.
+it is compatible with the uncertainty. The variables are presented in their order of importance within the BDT (see
+Figure~\ref{fig:ChaptH:EventSelection:BDT:Rankings:tHqOS})
 
 %\pablo{In this section i want that the separation plots separate tHq and the rest of the precesses.}
 
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_tHq_OS}
+%\caption{Ranking of features for the BDT$(\tHq|_{\text{OS}})$}
+%\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_tHq_OS}
+%\end{figure}
+
+
+
 \begin{figure}[h]
+\centering
+\begin{subfigure}{.47\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_tHq_OS}
-\caption{Ranking of features for the BDT$(\tHq|_{\text{OS}})$}
-\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_tHq_OS}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_tHq_OS/Separation/a01_PR_had_tau_pt_2L1TAU_OS}
+  \caption{}
+\end{subfigure}%
+\begin{subfigure}{.47\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_tHq_OS/Separation/a02_PR_m_nfjets_2L1TAU_OS}
+  \caption{}
+\end{subfigure}
+\caption{Separation plot for the two most discriminant variables of the BDT$(\tHq|_{\text{OS}})$.
+The original distributions for these features are presented in Figure~\ref{fig:ChaptH:EventSelection:BDT:Top:tHqOS}.
+In (a), the transverse momentum of the hadronically-decaying \Ptau-lepton is showed.
+The reconstructed \tauhad is more boosted when it is produced from the Higgs-boson decay than in the main backgrounds. In (b), the number of forward jets present in the final state is swhon. A forward jet
+is defined as a jet reconstructed within $2.5 < |\eta| < 4.5$.  The jets more forward than $|\eta| < 4.5$ are
+not detected.
+The forward jets are selected with the \textit{forward Jet Vertex Tagger}~\cite{ATLAS:2017ywy}.
+The spectator-quark-initiated jet in the \tHq production is quite forward, so the multiplicity of forward jets peaks at one. 
+In contrast, \ttbar and \Zjets do not have forward jets in hard-scattering process. }
+\label{fig:Appendix:BDTVARS:tHqOS:BestTwo}
 \end{figure}
 
 
+
+\begin{comment}
 \begin{figure}[h]
 \centering
 \begin{subfigure}{.45\textwidth}
@@ -253,6 +329,8 @@ Note that there is a tendency to have an excess of data over the MC as the forwa
 This discrepancy is not present on the SR(\tHq) but only on the dedicated regions for \ttbar and \Zjets.}
 \label{fig:Appendix:BDTVARS:tHqOS:a02_PR_m_nfjets}
 \end{figure}
+\end{comment}
+
 
 \begin{figure}[h]
 \centering
@@ -271,7 +349,7 @@ This discrepancy is not present on the SR(\tHq) but only on the dedicated region
 the reconstructed \tauhad rarely is the leading lepton. In contrast, for the \tHq production, the 
 flavour of the leading lepton is more distributed.
 There is a disagreement between data and MC prediction for the events in which the \tauhad is the leading lepton (third bin), this
-can be linked with the phenomena observed in Figure~\ref{fig:Appendix:BDTVARS:tHqOS:a01_PR_had_tau_pt}, in which the modelling
+can be linked with the phenomena observed in Figure~\ref{fig:ChaptH:EventSelection:BDT:Top:tHqOS:pt}, in which the modelling
 of the \pt(\tauhad) misbehave for large \pT. } 
 \label{fig:Appendix:BDTVARS:tHqOS:a03_PR_type_lep1}
 \end{figure}
@@ -587,16 +665,48 @@ can discriminate between these two backgrounds.
 As well as for the distributions above, the uncertainties included here correspond
 to both the statistical and systematic ones, and the lower panel presents the ratio 
 between the collected data and the MC simulation. 
+The variables are presented in their order of importance for the BDT$(\ttbar|_{\text{OS}})$, as
+Figure~\ref{fig:ChaptH:EventSelection:BDT:Rankings:ttbarOS} presents. 
 %\pablo{In this section i want that the separation plots separate ttbar, Zjets and tHq}
 
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=.75\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_ttbar_OS__ReplicateOldModel}
+%\caption{Ranking of features for the BDT$(\ttbar |_{\text{OS}})$. The main purpose of this BDT is to discriminate
+%between the two dominant backgrounds in the \dilepOStau channel \ttbar and \Zjets.}
+%\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_ttbar_OS}
+%\end{figure}
+
+
 \begin{figure}[h]
+\centering
+\begin{subfigure}{.47\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_ttbar_OS}
-\caption{Ranking of features for the BDT$(\ttbar |_{\text{OS}})$. The main purpose of this BDT is to discriminate
-between the two dominant backgrounds in the \dilepOStau channel \ttbar and \Zjets.}
-\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_ttbar_OS}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_ttbar_OS/Separation/a01_PR_lep_top_higgs_mass_2L1TAU_OS}
+  %\caption{}
+\end{subfigure}%
+\begin{subfigure}{.47\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_ttbar_OS/Separation/a02_PR_MET_2L1TAU_OS}
+  %\caption{}
+\end{subfigure}
+\caption{Separation plot for the two input features with highest discriminant power in the BDT$(\ttbar|_{\text{OS}})$.
+The distributions for these two variables showing all processes are presented in Figure~\ref{fig:ChaptH:EventSelection:BDT:Top:ttbarOS}.
+In (a), the invariant mass of the two charged light-flavoured leptons is presented.
+The peak around $m(\ell_{\text{Higgs}}, \ell_{\text{top}})=90$~GeV corresponds to the events in which a 
+\PZ boson is produced. The mass of the \PZ is $m_{\PZ} = (91.1876 \pm 0.0021)$~GeV~\cite{Workman:2022ynf} and %~\cite{pdgZ_mass}
+when the mass of the light leptons produced in the \PZ-boson decay is reconstructed, values close
+to $m_{\PZ}$ are obtained. Therefore, this variable allows us to identify \Zjets processes.
+The \MET separation plot is shown in (b). Note that while this variable provides 
+good discrimination power against \Zjets, it was not able to separate \ttbar and \tHq.
+For this reason, in the studies in which \MET is introduced  for the training of the BDT$(\tHq|_{\text{OS}})$,
+the model becomes specialised in discriminating \tHq and \Zjets but the separation between 
+\tHq and \ttbar gets worse.}
+\label{fig:Appendix:BDTVARS:ttbarOS:BestTwo}
 \end{figure}
 
+
+\begin{comment}
 \begin{figure}[h]
 \centering
 \begin{subfigure}{.45\textwidth}
@@ -636,6 +746,7 @@ the model becomes specialised in discriminating \tHq and \Zjets but the separati
 \tHq and \ttbar gets worse.} 
 \label{fig:Appendix:BDTVARS:ttbarOS:a02_PR_MET}
 \end{figure}
+\end{comment}
 
 \begin{figure}[h]
 \centering
@@ -797,17 +908,45 @@ that this variable was also used in the training of the BDT$^{\text{Lepton Assig
 \label{chap:Appendix:BDT_Variables:SS_tHq}
 The uncertainty bands depicted here encompass both statistical and systematic uncertainties. 
 The lower panel illustrates the ratio between the actual data and the MC-simulated samples.
+The variables are presented in their order of importance within the BDT$(\tHq|_{\text{SS}})$.
+This ranking is presented in Figure~\ref{fig:ChaptH:EventSelection:BDT:Rankings:tHqSS})
 
+
+
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics[width=.75\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_tHq_SS_TestPaPonerEnTesis_SS}
+%\caption{Ranking of features for the BDT$(\tHq|_{\text{SS}})$ }
+%\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_tHq_SS}
+%\end{figure}
 
 
 \begin{figure}[h]
+\centering
+\begin{subfigure}{.47\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/Feature_importance_tHq_SS_TestPaPonerEnTesis_SS}
-\caption{Ranking of features for the BDT$(\tHq|_{\text{SS}})$ }
-\label{fig:Appendix:BDTVARS:tHqOS:Feature_importance_tHq_SS}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_tHq_SS/Separation/a03_PR_lepTop_pt_2L1TAU_SS}
+  %\caption{}
+\end{subfigure}%
+\begin{subfigure}{.47\textwidth}
+  \centering
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/BDT_Results/BDT_Variables_tHq_SS/Separation/a01_PR_DeltaEtaForwardLjetLeadingBjet_2L1TAU_SS}
+  %\caption{}
+\end{subfigure}
+\caption{Separation plot for the two input variables with largest separation power.
+In (a), the \pT of the light-flavoured lepton originated from the top-quark-decay system is presented.
+In (b) is shown the $\Delta \eta$ distance between the forward non-\btagged jet
+and the leading \btagged jet. The forward jet is typically the spectator jet and the \btagged jet is the one that originated
+from the top-quark-decay system. Therefore 
+For the \tHq signal, on average, these two jets are more separated than in the backgrounds.
+This distribution is the same as 
+for Figure~\ref{fig:Appendix:BDTVARS:tHqOS:a10_PR_DeltaEtaForwardLjetLeadingBjet} but for
+the \dilepSStau channel. The distributions for these two variables are presented in Figure~\ref{fig:ChaptH:EventSelection:BDT:Top:tHqSS}.}
+\label{fig:Appendix:BDTVARS:tHqSS:BestTwo}
 \end{figure}
 
 
+\begin{comment}
 \begin{figure}[h]
 \centering
 \begin{subfigure}{.45\textwidth}
@@ -846,7 +985,7 @@ for Figure~\ref{fig:Appendix:BDTVARS:tHqOS:a10_PR_DeltaEtaForwardLjetLeadingBjet
 the \dilepSStau channel.}
 \label{fig:Appendix:BDTVARS:tHqSS:a01_PR_DeltaEtaForwardLjetLeadingBjet}
 \end{figure}
-
+\end{comment}
 
 \begin{figure}[h]
 \centering

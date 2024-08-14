@@ -1,0 +1,564 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {british}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Preface}{v}{chapter*.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgements}{vii}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}The Standard Model of particle physics}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Introduction}{2}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Fermions}{3}{section*.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Bosons}{5}{section*.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Quantum electrodynamics}{6}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Electroweak interaction}{7}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.0.1}Weak interactions and symmetries}{7}{subsubsection.1.3.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{CKM matrix}{8}{section*.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}Electroweak unification}{8}{subsection.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Quantum chromodynamics}{10}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Quarks and colour}{10}{subsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Gauge invariance for \textit {SU(3)}}{11}{subsection.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Particle masses}{12}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}The Englert--Brout--Higgs mechanism}{13}{subsection.1.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The Higgs mechanism in the SM for bosons}{13}{section*.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The Higgs mechanism in the SM for fermions}{15}{section*.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Remarks about the limitations of the Standard Model}{17}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.1}The parameters of the Standard Model}{17}{subsection.1.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.2}Limitations of the Standard Model}{17}{subsection.1.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Matter--antimatter asymmetry}{17}{section*.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Gravity}{18}{section*.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Neutrino masses}{18}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Dark energy}{19}{section*.17}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Dark matter}{19}{section*.18}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Additional issues}{20}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Physics of the top quark and the Higgs boson}{23}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}The top quark}{24}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Top-quark discovery}{24}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Top-quark mass}{25}{section*.20}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Top-quark production at LHC}{25}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2.1}Top-quark--antiquark pairs production}{26}{subsubsection.2.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2.2}Single-top-quark production}{27}{subsubsection.2.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2.3}Associated \ensuremath {\Pqt {}\Paqt {}X}\xspace production}{27}{subsubsection.2.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2.4}Associated \ensuremath {\Pqt {}X}\xspace production}{28}{subsubsection.2.1.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Top-quark decay}{29}{subsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Top-quark properties}{30}{subsection.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.4.1}Top-quark polarisation}{31}{subsubsection.2.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}The Higgs boson}{33}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Discovery of the Higgs boson}{34}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Higgs-boson production at LHC}{34}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Higgs-boson decay}{36}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}The interplay between the top quark and the Higgs boson}{39}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}CP\xspace properties in top-quark--Higgs-boson interactions}{39}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}The \Pqt {}\Paqt {}\PH process}{40}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}The \ensuremath {\Pqt {}\PH {}}\xspace process}{42}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.1}The \ensuremath {\Pqt {}\PH {}}\xspace production modes}{42}{subsubsection.2.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The \ensuremath {tHq}\xspace production}{43}{section*.31}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The \Pqt {}\PW {}\PH production}{45}{section*.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{The \ensuremath {\Pqt {}\PH {}}\xspace production in the \ensuremath {s\text {-channel}}\xspace }{45}{section*.34}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.2}Characterisation of the Higgs boson in the \ensuremath {tHq}\xspace production}{46}{subsubsection.2.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.3}\ensuremath {tHq}\xspace sensibility to \ensuremath {y_{t}}\xspace }{47}{subsubsection.2.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.3.4}Previous results from ATLAS and CMS Collaborations}{48}{subsubsection.2.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}The ATLAS experiment at the LHC of CERN}{51}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}CERN}{52}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Large Hadron Collider}{53}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Machine design}{53}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Accelerator complex}{55}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}LHC experiments}{55}{subsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}LHC computing grid}{57}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}The ATLAS detector}{59}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Coordinate system}{60}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Inner Detector}{60}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Insertable B-Layer}{61}{section*.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pixel Detector}{62}{section*.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Semiconductor Tracker}{62}{section*.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Transition Radiation Tracker}{62}{section*.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Calorimeters}{63}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3.1}Electromagnetic calorimeter}{63}{subsubsection.3.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3.2}Hadronic calorimeter}{65}{subsubsection.3.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.3.3}Forward calorimeter}{65}{subsubsection.3.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Muon Spectrometer}{66}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.5}Magnet system}{68}{subsection.3.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.6}Trigger and Data Acquisition System}{68}{subsection.3.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Performance of the ATLAS detector}{69}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Local coordinate frame and residuals}{70}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Local coordinate frame}{70}{section*.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Residuals}{70}{section*.53}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Track parameters and degrees of freedom}{71}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Track based alignment}{71}{subsection.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.3.1}Global $\chi ^2$ algorithm}{73}{subsubsection.3.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}ID alignment monitoring}{75}{subsection.3.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Recording data and simulating events with the ATLAS detector}{79}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Phenomenology of proton--proton collisions}{80}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Proton structure and parton model}{81}{subsection.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Underlying event}{83}{subsection.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.3}The pile-up effect}{84}{subsection.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.4}Luminosity}{85}{subsection.4.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Recording data with the ATLAS detector}{87}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Cumulative luminosity}{87}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Simulating events within the ATLAS detector}{88}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Steps for simulating event data}{91}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.1}Hard-scattering process}{91}{subsubsection.4.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.2}Parton shower and hadronisation}{91}{subsubsection.4.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Parton shower}{91}{section*.66}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Hadronisation}{93}{section*.67}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.3}Underlying event}{94}{subsubsection.4.3.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.4}Hadron decay}{94}{subsubsection.4.3.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.5}Pile-up}{95}{subsubsection.4.3.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.3.1.6}Simulation of the ATLAS detector, digitisation and reconstruction}{95}{subsubsection.4.3.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Full and fast simulations of the ATLAS detector}{96}{section*.68}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}MC generators}{96}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Object reconstruction and identification}{99}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Tracks and vertices}{100}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Sagitta method}{101}{section*.70}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Charged leptons}{102}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Electrons}{103}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Electrons}{103}{section*.72}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Photons}{106}{section*.75}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Muons}{106}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Hadronically decaying taus}{108}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Jets}{110}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Bottom-quark-induced jets}{111}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Missing transverse energy}{114}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}Overlap removal}{115}{section.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Search for the \ensuremath {tHq}\xspace production with a \ensuremath {\Pgt _{\text {had}}}\xspace in the final state}{117}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Channels of the search of the \ensuremath {tHq}\xspace process}{118}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Data and simulated events }{120}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}ATLAS-collected data samples}{121}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Simulated event samples}{122}{subsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.1}Simulated \ensuremath {tHq}\xspace signal samples}{123}{subsubsection.6.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.2.2.2}Simulated background samples}{124}{subsubsection.6.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Top-quark pairs}{124}{section*.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Single vector boson}{125}{section*.87}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Top-quark pair in association with a single vector boson}{125}{section*.88}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Top-quark pair in association with a Higgs-boson }{126}{section*.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Diboson}{126}{section*.90}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Single-top-quark processes}{127}{section*.91}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Single-top quark in association with a boson}{127}{section*.92}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Other non-dominant processes}{128}{section*.93}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Object definition}{128}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Triggers}{128}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Electrons}{129}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Muons}{129}{subsection.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.4}Hadronically-decaying taus}{130}{subsection.6.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.5}Jets}{130}{subsection.6.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.3.5.1}Identification of \ensuremath {b\text {-tagged}}\xspace jets}{131}{subsubsection.6.3.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.6}Overlap removal}{131}{subsection.6.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.7}Missing transverse momentum}{133}{subsection.6.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Study of the \ensuremath {tHq}\xspace signal process}{133}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.1}Validation of parton-level simulations}{133}{subsection.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.1.1}Comparison between software and calculation results}{134}{subsubsection.6.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.2}Light-lepton-origin assignment}{135}{subsection.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Origin association for \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{136}{section*.100}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Origin association for \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{136}{section*.101}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.1}Labelling the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace with the reconstruction-level and truth-level matching}{138}{subsubsection.6.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.2}BDT input features}{140}{subsubsection.6.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.3}Optimisation of the lepton-assignment BDT hyperparameters}{144}{subsubsection.6.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.4}Treatment of the negatively-weighted events}{144}{subsubsection.6.4.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.5}Training of the lepton-assignment BDT}{145}{subsubsection.6.4.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.6}Model application and classification-threshold selection}{149}{subsubsection.6.4.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.2.7}Results of the BDT-based method for lepton assignment}{149}{subsubsection.6.4.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.4.3}Reconstruction of the top quark and the Higgs boson}{150}{subsection.6.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.3.1}Reconstruction of the top quark}{150}{subsubsection.6.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.4.3.2}Reconstruction of the Higgs boson}{153}{subsubsection.6.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}Background estimation}{154}{section.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.6}Event selection}{159}{section.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.1}Preselection}{160}{subsection.6.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.2}BDTs for region definition}{161}{subsection.6.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.2.1}Negative-weights strategy}{162}{subsubsection.6.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.2.2}Discriminant variables}{163}{subsubsection.6.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.2.3}Hyperparameter optimisation}{172}{subsubsection.6.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.2.4}Performance}{172}{subsubsection.6.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.3}Signal Region}{174}{subsection.6.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.3.1}SR in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{174}{subsubsection.6.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.3.2}SR \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{176}{subsubsection.6.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.6.4}Background dedicated regions}{176}{subsection.6.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.4.1}Background-enriched regions in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{177}{subsubsection.6.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.6.4.2}Background-enriched regions in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{177}{subsubsection.6.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.7}Systematic uncertainties}{183}{section.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7.1}Symmetrisation of systematic uncertainties}{184}{subsection.6.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7.2}Theoretical uncertainties}{184}{subsection.6.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.7.3}Experimental uncertainties}{188}{subsection.6.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.8}Fit results}{191}{section.6.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.1}Likelihood fit}{192}{subsection.6.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Fit for binned distributions}{193}{section*.145}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Implementation of uncertainties}{194}{section*.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.2}Fit strategy}{195}{subsection.6.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.2.1}Parameters of interest}{195}{subsubsection.6.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.2.2}Blinding}{197}{subsubsection.6.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.2.3}Fit types}{197}{subsubsection.6.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.2.4}Pruning}{199}{subsubsection.6.8.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.3}Binning optimisation and distributions for the fit}{199}{subsection.6.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.3.1}Fitted distributions in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{200}{subsubsection.6.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.3.2}Fitted distribution in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{200}{subsubsection.6.8.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.4}Asimov-hypothesis fit in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{203}{subsection.6.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.4.1}Nuisance parameters in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace Asimov fit}{203}{subsubsection.6.8.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.4.2}Asimov-fit results \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{205}{subsubsection.6.8.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.5}Asimov-hypothesis fit in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{207}{subsection.6.8.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.5.1}Nuisance parameters in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace Asimov fit}{208}{subsubsection.6.8.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.5.2}Asimov-fit results \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{209}{subsubsection.6.8.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.6}Full-data fit results in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{211}{subsection.6.8.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.6.1}Nuisance parameters in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace full-data fit}{211}{subsubsection.6.8.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.6.2}Results of the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace full-data fit}{213}{subsubsection.6.8.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.8.7}Full-data fit results in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{217}{subsection.6.8.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.7.1}Nuisance parameters in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace full-data fit}{217}{subsubsection.6.8.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {6.8.7.2}Results of the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace full-data fit}{222}{subsubsection.6.8.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Conclusion}{225}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{231}{section*.182}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Details about the parton-level simulations}{231}{appendix.a.A}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Software package for parton-level information}{231}{section.a.A.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Decay of the Higgs boson and the top quark}{231}{section*.183}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Spectator-quark ambiguity at NLO}{231}{section*.184}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{\Pbottom quarks}{232}{section*.185}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Further decays}{232}{section*.186}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}BR-based calculation for the \ensuremath {tHq}\xspace fractions}{232}{section.a.A.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {B}Boosted Decision Trees}{235}{appendix.a.B}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.1}How does a BDT work?}{235}{section.a.B.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.1.1}Training}{237}{subsection.a.B.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Internal reweighting of events in the training sample}{238}{section*.191}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.1.1.1}Loss functions}{238}{subsubsection.a.B.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{TMVA loss function}{238}{section*.192}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{XGBoost loss functions}{239}{section*.193}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {B.1.1.2}Overtraining}{239}{subsubsection.a.B.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.2}Feature-selection optimisation}{241}{section.a.B.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.3}Treatment of negative weights}{242}{section.a.B.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.3.1}Negative weights in $\text {BDT}^{\text {Lepton Assignment}}$ }{243}{subsection.a.B.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.4}Cross validation and \textit {k}-folding}{244}{section.a.B.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.5}Hyperparameters}{245}{section.a.B.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{XGBoost}{246}{section*.197}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{TMVA ROOT}{248}{section*.199}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.5.1}Hyperparameter optimisation of a BDT with the genetic algorithm}{249}{subsection.a.B.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.6}Other considerations about BDTs}{250}{section.a.B.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Receiver operating characteristic curve}{250}{section*.201}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Precision-Recall curves}{251}{section*.203}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Separation power}{252}{section*.205}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {B.7}Additional plots and tables}{252}{section.a.B.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.7.1}$\text {BDT}^{\text {Lepton Assignment}}$}{253}{subsection.a.B.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.7.2}BDTs for region definition}{253}{subsection.a.B.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.7.3}Correlation between input features}{253}{subsection.a.B.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {B.7.4}Evolution of training}{254}{subsection.a.B.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {C}Distribution of kinematic variables}{259}{appendix.a.C}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.1}BDT$^{\text {Lepton Assignment}}$}{259}{section.a.C.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.2}BDT$(\ensuremath {tHq}\xspace |_{\text {OS}})$}{263}{section.a.C.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.3}BDT$(\Pqt {}\Paqt |_{\text {OS}})$}{273}{section.a.C.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {C.4}BDT$(\ensuremath {tHq}\xspace |_{\text {SS}})$}{279}{section.a.C.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {D}Effect of negative weights}{285}{appendix.a.D}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D.1}Negatively weighted events}{285}{section.a.D.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D.2}Statistical uncertainty of negative weights}{286}{section.a.D.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {D.2.1}Errors in binned histograms}{287}{subsection.a.D.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {D.3}Negative weights in MVA methods}{288}{section.a.D.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {E}Pruning of the non-impactful nuisance parameters}{289}{appendix.a.E}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E.1}Asimov fit in the \ensuremath {2\Pl \,\text {OS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{289}{section.a.E.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {E.2}Asimov fit in the \ensuremath {2\Pl \,\text {SS}+1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace channel}{295}{section.a.E.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{{Bibliography}}{301}{section*.270}%
+\babel@toc {catalan}{}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Resum de la tesi}{325}{appendix*.272}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Marc teòric}{327}{section.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}El Model Estàndard}{327}{subsection.0.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}La física del quark top}{329}{subsection.0.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}La física del bosó de Higgs}{331}{subsection.0.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4}Interacció entre el quark top i el bosó de Higgs}{332}{subsection.0.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.4.1}Caracterització del bosó de Higgs en \ensuremath {\Pqt {}\PH {}}\xspace i sensitivitat cap a \ensuremath {y_{t}}\xspace }{333}{subsubsection.0.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}L'experiment ATLAS de l'LHC al CERN}{334}{section.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}El detector ATLAS}{335}{subsection.0.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Alineament del detector intern d’ATLAS}{336}{subsection.0.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Visor Web de Monitoratge de l'Alineament de l'ID}{337}{subsubsection.0.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Recol·lecció de dades, simulació i reconstrucció d'objectes}{339}{section.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Simulació i adquisició d'esdeveniments en ATLAS}{339}{subsection.0.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Identificació i reconstrucció d'objectes en ATLAS}{341}{subsection.0.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Recerca de processos \ensuremath {tHq}\xspace amb un estat final \ensuremath {2\Pl +1\ensuremath {\Pgt _{\text {had}}}\xspace }\xspace }{343}{section.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Estudis sobre la senyal}{344}{subsection.0.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Validació de les simulacions a nivell de partons}{344}{subsubsection.0.4.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.2}Assignació de l'origen el lleptons lleugers}{346}{subsubsection.0.4.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.3}Reconstrucció del sistema}{350}{subsubsection.0.4.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Estimació del fons}{351}{subsection.0.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Selecció d’esdeveniments}{352}{subsection.0.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}Fonts d’incertesa}{359}{subsection.0.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1}Incerteses teòriques}{359}{subsubsection.0.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.2}Incerteses experimentals}{360}{subsubsection.0.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Resultats}{361}{subsection.0.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.1}Mètode de l'ajust de màxima versemblança}{361}{subsubsection.0.4.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.2}Estratègia d'ajust}{362}{subsubsection.0.4.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Experiment cec}{362}{section*.299}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Tipus d'ajust}{363}{section*.300}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Poda de the NPs}{363}{section*.301}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Configuracions de l'ajust de màxima versemblança}{364}{section*.302}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.3}Ajust d'Asimov}{365}{subsubsection.0.4.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.5.4}Adjust amb totes les dades}{367}{subsubsection.0.4.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusions}{370}{section.0.5}%
+\babel@toc {british}{}\relax 

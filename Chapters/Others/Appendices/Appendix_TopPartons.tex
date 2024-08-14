@@ -12,50 +12,50 @@
 %\paragraph{TopPartons}\mbox{}\\
 The \texttt{TopPartons} package performs the analysis of the parton-level truth information.
 For all particles except the ones in the final state, the information stored in the NTuples
-corresponds to the after-final-state radiation\footnote{The after FSR corresponds to the
- particle right before decaying to its children. In contrast to the FSR, the initial-state radiation (ISR) refers 
- to the particle state when it was produced.The ISR is always more energetic than the FSR since as the
- particle travels it radiates energy.} (FSR).  For the final state particles, the ISR information is saved.
+corresponds to the after FSR. For the final state particles, the ISR information is saved.
 For each particle, the PDG-ID, \pT, $\eta$, $\phi$ and mass are stored. Additionally, some of the $\tau$ related
 variables contain information on whether $\tau$ decays hadronically or leptonically.  If the $\tau$ decays to a 
-light lepton, it stores the PDG-ID of that lepton and if it decays hadronically it stores the PDG-ID of the \PWm for $\tau^-$ 
-and the \PWp for $\tau^+$.
+light lepton, it stores the PDG-ID of that lepton and if it decays hadronically
+ it stores the PDG-ID of the \PWm for $\tau^-$ and the \PWp for $\tau^+$.
 
+%\footnote{The after FSR corresponds to the
+% particle right before decaying to its children. In contrast to the FSR, the initial-state radiation (ISR) refers 
+% to the particle state when it was produced.The ISR is always more energetic than the FSR since as the
+% particle travels it radiates energy.}
 
 \paragraph{Decay of the Higgs boson and the top quark}\mbox{}\\
 First of all, the code searches for the Higgs boson by looking at the PDG-ID of the truth 
 particles. Then, it takes into account all the considered Higgs-boson decays 
 and demands that it has exactly two children. 
 %This is done using the functions \texttt{HiggsAndDecay} of \texttt{CalcThqPartonHistory.cxx} .
-The FSR state of the Higgs boson is stored and its children are studied
+The FSR state of the Higgs boson is stored and its children are studied.
 If the Higgs boson does not decay into 
 $\PWplus\PWminus$, $\Ptauon \APtauon$ or $\PZ\PZ$, the event is discarded. 
 To fill the truth variables it is also required that the top quark decays into $\PW$$\Pbottom$.
 
 
 % Spectator quark ambiguity at NLO 
-\paragraph{Spectator-quark ambiguity at NLO}\mbox{}\\
-The script identifies the
+\paragraph{Spectator-quark ambiguity at NLO}\mbox{}\\{fig:tHq:intro:diltauFeynmanDiagram}
+The algorithm identifies the
 spectator quark, i.e. the quark that comes from the hard-scattering process.
 At NLO, the spectator quark is not well defined from first principles at the parton level 
 and, therefore, there would be no way that one can do a proper parton assignment with NLO generators.
 
 To properly select the spectator light-quark, firstly the top quark is searched and then its parent found\footnote{%
-Note that in \PYTHIA the intermediate quarks are left out so the parent of the top would be the gluon and $q$ in the 
-diagram of Figure~\ref{fig:tHq:TruthFeyman:HfromW}.
-The children of the gluon are the $b$-quark, the top and $q'$.}. 
+Note that in \PYTHIA the intermediate quarks are left out so the parent of the top quark would be the gluon and up quark in the diagram of Figure~\ref{fig:tHq:intro:diltauFeynmanDiagram}.
+Therefore, the children of the gluon are the $b$-quark, the top quark, and spectator quark.}. 
 The spectator quark is selected at parton level from among the light quarks after 
-the QED and QCD radiations that are not products of the top quark decay. 
+the QED and QCD radiations that are not products of the top-quark decay. 
 In case of ambiguities arising from ISR, the spectator quark that minimises the \pT of 
-the combined spectator quark and top quark system is chosen.
+the combined spectator-quark and top-quark system is chosen.
 %   If there are several light-quark candidates, the one with highest \pT is taken as spectator. 
 
-\begin{figure}[htbp!]
-\centering
-\includegraphics[width=.5\textwidth]{Feynman_diagrams/old/tChnnnael_tHq_H_from_W}
-\caption{LO Feynman diagram for the \tHq process}
-\label{fig:tHq:TruthFeyman:HfromW}
-\end{figure}
+%\begin{figure}[htbp!]
+%\centering
+%\includegraphics[width=.5\textwidth]{Feynman_diagrams/old/tChnnnael_tHq_H_from_W}
+%\caption{LO Feynman diagram for the \tHq process}
+%\label{fig:tHq:TruthFeyman:HfromW}
+%\end{figure}
 
 % B-quarks
 \paragraph{\Pbottom quarks}\mbox{}\\
@@ -125,26 +125,58 @@ products have the following general features:
 \section{BR-based calculation for the \tHq fractions}
 \label{sec:ChaptH:Sig:truth:Calculations}
 %\paragraph{Calculations}\mbox{}\\
- On the other side, the BR-based calculations are used to determine the fraction of each decay channel that is present in the \dileptau. This predictions should be match the fractions obtained with \texttt{TopPartons}. I performed this 
-calculations to validate the code
+ On the other side, the BR-based calculations are used to determine the fraction of each decay channel that is present in the \dileptau. This predictions should be match the fractions obtained with the \texttt{TopPartons} package. This 
+calculations are performed to validate the code
 not only for the \dileptau channels but also for the $3\ell$.  By doing so, even a further confirmation
 of the proper functioning of the code is achieved. 
-For the calculations, the 
-BRs of the three Higgs-boson-decay modes that are considered are~\cite{Workman:2022ynf}:
-\begin{itemize}
-	\item  BR(\Htautau)$= 56.65\%$
-	\item  BR(\HWW)$= 5.12\%$ 
-	\item  BR(\ZZ)$= 37.43\%$
-\end{itemize}
-The decay products of each pair of Higgs-boson children are combined and the total decay fractions of %total decay-fractions
-these combinations are computed. To do so, the following decay ratios are used~\cite{Workman:2022ynf}:
+For the calculations, the BRs of the three Higgs-boson-decay modes that are considered are presented in 
+Table~\ref{tab:Appendix:TopPartons:Decay:H}~\cite{Workman:2022ynf}:
+%\begin{itemize}
+%	\item  BR(\Htautau)$= 56.65\%$
+%	\item  BR(\HWW)$= 5.12\%$ 
+%	\item  BR(\ZZ)$= 37.43\%$
+%\end{itemize}
+\begin{table}[h]
+\centering
+\begin{tabular}{ll}
+\toprule
+Decay    	& BR(\%) \\ \midrule
+\Htautau 	& 56.65 \\
+\HWW 	& 5.12  \\
+\HZZ     	& 37.43 \\ \bottomrule
+\end{tabular}
+\caption{Probability of the Higgs boson to decay to each of its three considere decay channels. The percentages are normalised to 100\%.}
+\label{tab:Appendix:TopPartons:Decay:H}
+\end{table}
 
+
+The decay products of each pair of Higgs-boson children are combined and the total decay fractions of %total decay-fractions
+these combinations are computed. To do so, decay ratios presented in Table~\ref{tab:Appendix:TopPartons:Decay:HChildren} are used~\cite{Workman:2022ynf}:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{lc|lc|lc}
+\toprule
+\multicolumn{1}{c}{\Ptau}        		& BR(\%) 	& \multicolumn{1}{c}{\PW}      	& BR(\%) 	& \multicolumn{1}{c}{\PZ}       	& BR(\%) \\ \midrule
+$\tau \rightarrow \Pe \Pnu \Pnu$ 	& 14.82  	& $\PW \rightarrow \Pe \Pnu$   	& 10.71  	& $\PZ \rightarrow \Pe \Pe$     	& 3.36   \\
+$\tau \rightarrow \Pmu \Pnu \Pnu$ 	& 14.39  	& $\PW \rightarrow \Pmu \Pnu$	& 10.63  	& $\PZ \rightarrow \Pmu \Pmu$  & 3.36   \\
+$\tau \rightarrow$ Hadrons         		& 64.74  	& $\PW \rightarrow \Ptau \Pnu$ & 11.38  	& $\PZ \rightarrow \Ptau \Ptau$ & 3.36   \\
+ 							&  		& $\PW \rightarrow$ Hadrons	& 67.41 	& $\PZ \rightarrow \Pnu \Pnu$ 	& 20    \\
+ 							&  		&          					&		& $\PZ \rightarrow$ Hadrons     	& 69.91 \\
+\bottomrule
+\end{tabular}
+\caption{BR of each of the \Ptau lepton,  \PW and \PZ bosons. The percentages of each column are normalised to 100\%. If the \PW or \PZ boson decay to a \Ptau, the are further decayed into either
+a $\emu$ or \tauhad.}
+\label{tab:Appendix:TopPartons:Decay:HChildren}
+\end{table}
+
+\begin{comment}
 \begin{multicols}{2}
 For the \Ptau leptons 
 \begin{itemize}
 	\item  BR($\tau \rightarrow \Pe \Pnu \Pnu)= 17.82\%$
 	\item  BR($\tau \rightarrow \Pmu \Pnu \Pnu)= 17.39\%$
-	\item  BR($\tau \rightarrow$ Hads.)$= 64.74\%$
+	\item  BR($\tau \rightarrow$ Hadrons)$= 64.74\%$
 \end{itemize}
 \columnbreak
 For the \PW bosons
@@ -152,7 +184,7 @@ For the \PW bosons
 	\item  BR($\PW \rightarrow \Pe \Pnu) = 10.71\%$
 	\item  BR($\PW \rightarrow \Pmu \Pnu) = 10.63\%$
 	\item  BR($\PW \rightarrow \Ptau \Pnu) =11.38\%$
-	\item  BR($\PW \rightarrow$ Hads.)$= 67.41\%$
+	\item  BR($\PW \rightarrow$ Hadrons)$= 67.41\%$
 \end{itemize}
 \end{multicols}
 For the \PZ bosons
@@ -161,21 +193,84 @@ For the \PZ bosons
 	\item  BR($\PZ \rightarrow \Pmu \Pmu)= 3.36\%$
 	\item  BR($\PZ \rightarrow \Ptau \Ptau)= 3.36\%$
 	\item  BR($\PZ \rightarrow \Pnu \Pnu)= 20\%$
-	\item  BR($\PZ \rightarrow$ Hads.)$= 69.91\%$
+	\item  BR($\PZ \rightarrow$ Hadrons)$= 69.91\%$
 \end{itemize}
 
-Note that the BRs of the considered decay modes are normalised
-so that its sum is the 100\% ~\cite{Workman:2022ynf}.
-If the \PW or \PZ decays to a \Ptau, it is further decayed into either
-a $\emu$ or \tauhad. 
-For each of the Higgs-boson-decay modes, the possible final states are studied %possible final-states
-and its correspondent fractions are calculated. 
 
+
+Note that the BRs of the considered decay modes are normalised
+so that its sum is the 100\% . 
+\end{comment}
+
+
+For each of the Higgs-boson-decay modes, the possible final states are studied %possible final-states
+and its correspondent fractions are calculated in Table~\ref{tab:Appendix:TopPartons:Decay:HSystem}.
+In the \Htautau column can seen that the \tauhad+\taulep signature is mor probable (45.6\%) than
+the \taulep+\taulep one (12.4\%).  For \HWW, the first two rows take part  in the \dileptau signature when the \tauhad comes from 
+the \Ptop quark in the first item and the \PHiggs boson in the second. 
+For the \ZZ, the $\ZZ \rightarrow 2 \times \emu$ contributes 
+to the \dileptau signature when the \tauhad is produced in the top-quark system. When the top quark decays into a 
+light lepton, the $\ZZ \rightarrow \emu + \tauhad$ mode contributes to the \dileptau final state.
+
+
+\begin{table}[h]
+\begin{adjustbox}{max width=0.99\textwidth}
+\centering
+\begin{tabular}{lc|lc|lc}
+\toprule
+\multicolumn{1}{c}{\Htautau} &
+  BR(\%) &
+  \multicolumn{1}{c}{\HWW} &
+  BR(\%) &
+  \multicolumn{1}{c}{$\PH\rightarrow\PZ\PZ$} &
+  BR(\%) \\   \midrule
+  $\tautau \rightarrow \emu + \emu$ &
+  12.51 &
+  $\WW \rightarrow \emu +\emu$ &
+  6.42 &
+  $\ZZ \rightarrow 4 \times \emu$ &
+  0.52 \\
+$\tautau \rightarrow \emu + \tauhad$ & 45.63 & $\WW \rightarrow \emu +\tauhad$ & 3.73 & $\ZZ \rightarrow 2 \times \emu$ & 12.85 \\
+$\tautau \rightarrow$ Hadrons &
+  41.51 &
+  $\WW \rightarrow \emu$ +$\,$Hadrons &
+  34.17 &
+  $\ZZ \rightarrow \emu +\tauhad$ &
+  12.85 \\
+ &
+   &
+  $\WW \rightarrow$ Hadrons &
+  55.92 &
+  $\ZZ \rightarrow 4 \times \nu$+Hadrons &
+  80.82 \\
+ &
+   &
+   &
+   &
+  $\ZZ \rightarrow 2 \times \tauhad$ &
+  2.82 \\
+ &
+  \multicolumn{1}{l}{} &
+   &
+  \multicolumn{1}{l}{} &
+  $\ZZ \rightarrow 3 \times \emu + \tauhad$ &
+  \multicolumn{1}{c}{0.22}
+ \\ \bottomrule
+\end{tabular}
+\end{adjustbox}
+\caption{Probability of each final-state of the Higgs system. The probabilities of each column are normalised to 100\%.
+This is calculated from the numbers in Table~\ref{tab:Appendix:TopPartons:Decay:HChildren}. }
+\label{tab:Appendix:TopPartons:Decay:HSystem}
+\end{table}
+
+
+
+\begin{comment}
 For \Htautau:
 \begin{itemize}
 	\item  BR($\tautau \rightarrow \emu + \emu)= 12.41\%$
 	\item  BR($\tautau \rightarrow \emu + \tauhad)= 45.63\%$
-	\item  BR($\tautau \rightarrow$ Hads.)$= 41.51\%$
+	\item  BR($\tautau \rightarrow$ Hadrons)$= 41.51\%$
 \end{itemize}
 
 For \HWW the first two elements of the list take part 
@@ -185,11 +280,11 @@ in the second.
 \begin{itemize}
 	\item  BR($\WW \rightarrow \emu +\emu)= 6.42\%$ 
 	\item  BR($\WW \rightarrow \emu +\tauhad)= 3.73\%$
-	\item  BR($\WW \rightarrow \emu$ +$\,$Hads.$)= 34.17\%$
-	\item  BR($\WW \rightarrow$ Hads.)$= 55.92\%$
+	\item  BR($\WW \rightarrow \emu$ +$\,$Hadrons$)= 34.17\%$
+	\item  BR($\WW \rightarrow$ Hadrons)$= 55.92\%$
 \end{itemize}
 
-For the \ZZ the $\ZZ \rightarrow 2 \times \emu$ contributes 
+For the \ZZ, the $\ZZ \rightarrow 2 \times \emu$ contributes 
 to the \dileptau signature when the \tauhad is produced in the
 top-quark system. When the top quark decays into a 
 light lepton, the $\ZZ \rightarrow \emu + \tauhad$ mode contributes
@@ -198,15 +293,15 @@ to the \dileptau final state.
 	\item  BR($\ZZ \rightarrow 4 \times \emu)= 0.52\%$ 
 	\item  BR($\ZZ \rightarrow 2 \times \emu)= 12.85\%$
 	\item  BR($\ZZ \rightarrow \emu +\tauhad)= 12.85\%$
-	\item  BR($\ZZ \rightarrow 4 \times \nu$+Hads.$)= 80.82\%$
+	\item  BR($\ZZ \rightarrow 4 \times \nu$+Hadrons$)= 80.82\%$
 	\item  BR($\ZZ \rightarrow 2 \times \tauhad)= 2.82\%$	
 	\item  BR($\ZZ \rightarrow 3 \times \emu + \tauhad)= 0.22\%$
 \end{itemize}
-
+\end{comment}
 
 For the top-quark system only the $\Ptop \rightarrow \PW + \Pbottom$
 mode is taken into account and the \PW boson is further decayed until there are
-either hadrons, light leptons or a \tauhad. Except when the \PW decays directly
+either hadrons, light leptons or a \tauhad. Except when the \PW boson decays directly
 into hadrons, all modes contribute to the \dileptau channel.
 
 

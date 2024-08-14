@@ -11,7 +11,8 @@
 
 %\documentclass[a4paper,11pt,oneside]{book}
 %\documentclass[a4paper,12pt,twoside,openright]{book} %For upload
-\documentclass[12pt,twoside,openright]{book} %For print
+%\documentclass[12pt,twoside,openright]{book} %For print
+\documentclass[12pt,twoside]{book}
 \usepackage{color}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc} 
@@ -31,7 +32,16 @@
 \usepackage{amsmath,amssymb}
 \usepackage{wasysym} %for using the command \clock
 \usepackage{mathtools}
+
+
+% pdf version
 \usepackage[colorlinks,urlcolor=blue,citecolor=blue,linkcolor=red, linktoc=all]{hyperref}
+
+%print version
+%\usepackage[colorlinks=true, anchorcolor =. , urlcolor=., citecolor=., linkcolor=., menucolor=. , filecolor=. , linktoc=all]{hyperref}
+%\hypersetup{hidelinks = true} 
+
+
 \usepackage{bookmark}
 \usepackage{graphicx}
  \usepackage{wrapfig}
@@ -189,7 +199,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Certification page
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{Chapters/Others/Certifico}
+%\include{Chapters/Others/Certifico}
+\includepdf{Chapters/Others/Certifico_Signed}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Dedicatoria
@@ -214,7 +226,7 @@
 %\hspace*{200pt} ---\textsc{Daniel Bosson} \\
 \hspace*{165pt} \textit{Ja que no s'entén el que dius,} \\
 \hspace*{165pt} \textit{que s'entenga la lletra.} \\
-\hspace*{170pt} ---\textsc{Rosita Candela-Esclapez (1947)} \\
+\hspace*{170pt} ---\textsc{Rosita Candela-Esclapez} \\ %1947
 \vspace*{4cm} 
 \cleardoublepage
 
@@ -229,7 +241,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \hypersetup{urlcolor=black}
 \fancyfoot[C]{\thepage}
-%\include{Chapters/Others/Acknowledgements}
+\include{Chapters/Others/Acknowledgements}
 \hypersetup{urlcolor=blue}
 
 
@@ -318,11 +330,11 @@
 %\addcontentsline{toc}{part}{Appendices}
 
 \begin{appendices}
-\input{Chapters/Others/Appendices/Appendix_NegativeWeights}
-\input{Chapters/Others/Appendices/Appendix_BDT}
-\input{Chapters/Others/Appendices/Appendix_thqLoop}
+%\input{Chapters/Others/Appendices/Appendix_thqLoop}
 \input{Chapters/Others/Appendices/Appendix_TopPartons}
+\input{Chapters/Others/Appendices/Appendix_BDT}
 \input{Chapters/Others/Appendices/Appendix_BDT_Variables}
+\input{Chapters/Others/Appendices/Appendix_NegativeWeights}
 %\input{Chapters/Others/Appendices/Appendix_OtherFits}
 \input{Chapters/Others/Appendices/Appendix_AdditionalResults}
 

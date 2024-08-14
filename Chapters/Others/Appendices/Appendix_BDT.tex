@@ -23,8 +23,8 @@ The information on the different BDTs presented in Chapter~\ref{chap:Analysis_tH
 Section~\ref{sec:BDT:AdditionalMaterial}. In this section, the metrics of the different folds are presented
 separately, the matrices displaying the linear correlation among variables are shown, and the evolution plots
 of the different training are introduced.
-Finally, in Section~\ref{sec:BDT:AltModels}, alternative BDT models that have been trained and tested 
-but not used to obtain our results are presented.
+%Finally, in Section~\ref{sec:BDT:AltModels}, alternative BDT models that have been trained and tested 
+%but not used to obtain our results are presented.
 
 
 %Paragraphs of section intro
@@ -368,7 +368,7 @@ nodes. Nevertheless, for the BDTs some countermeasures can be applied to preserv
 %%%%%%%%%%%%%%
 %   Feature importance algorithm  %
 %%%%%%%%%%%%%%
-\subsection{Feature-selection optimisation}
+\section{Feature-selection optimisation}
 \label{chap:Appendix:BDT:featureOpt}
 The optimisation of the list of input variables is divided into two distinct steps: Obtaining the
 ranking of the most discriminant variables and removing the features that present high correlations.
@@ -399,8 +399,9 @@ in Section~\ref{sec:BDT:AdditionalMaterial:Region:Correlations}.
 \begin{figure}[h]
 \centering
   \centering
-  \includegraphics[width=.9\linewidth]{Appendices/BDT/Optimise_feature_english}
-\caption{Schematic view of the algorithm method for feature-selection optimisation.}
+  \includegraphics[width=.7\linewidth]{Appendices/BDT/Optimise_feature_english}
+\caption{Schematic view of the iterative algorithm method for feature-selection optimisation. The procedure is 
+reaped until all features are dropped.}
 \label{fig:Appendix:BDT:Feature_loop}
 \end{figure}
 
@@ -408,7 +409,7 @@ in Section~\ref{sec:BDT:AdditionalMaterial:Region:Correlations}.
 %%%%%%%%%%%%%%%%%%
 %   Negative weights  treatment    %
 %%%%%%%%%%%%%%%%%%
-\subsection{Treatment of negative weights}
+\section{Treatment of negative weights}
 \label{chap:Appendix:BDT:NegWeigts}
 Negatively weighted events can be problematic when training a BDT
 for several reasons.
@@ -478,7 +479,7 @@ presented in this thesis a $k=5$ is used for both BDTs.
 \begin{figure}[h]
 \centering
   \centering
-  \includegraphics[width=.9\linewidth]{Chapter5_tHq/BDT_generalities/k_folding_cross_validation.png}
+  \includegraphics[width=.85\linewidth]{Chapter5_tHq/BDT_generalities/k_folding_cross_validation.png}
 \caption{Illustration of \textit{k}-folding method for cross validation using 5 folds. For each model, the 
 training folds are presented in green and the test fold in blue. The initial training/test separation is not performed
 in our case due to the scarcity of data.} 
@@ -770,7 +771,7 @@ describes the steps of the GA for hyperparameter optimisation. These are:
 \begin{figure}[h]
 \centering
   \centering
-  \includegraphics[width=.9\linewidth]{Appendices/BDT/Genetic_Algorithm_Legend_English}
+  \includegraphics[width=.9\linewidth]{Appendices/BDT/Genetic_Algorithm_Legend_English_NewPalete}
 \caption{Schematic view of the GA method for hyperparameter optimisation.}
 \label{fig:Appendix:BDT:GA_loop}
 \end{figure}
@@ -781,25 +782,26 @@ describes the steps of the GA for hyperparameter optimisation. These are:
 %   Other considerations   %
 %%%%%%%%%%%%%%
 
-%\begin{comment}
+
 \section{Other considerations about BDTs}
 \label{chap:Appendix:BDT:Concepts}
-\paragraph{Binary splits}\mbox{}\\
-Rather than splitting into two groups at each node, one could consider
-several splits at each stage. Although this has its benefits, it is not a wise 
-general course of action. Multiway splits cause the data to fragment too quickly, 
-leaving the next level below with insufficient data. In the end, binary splits are 
-favoured because they can also be used to create multiclass divides.
+
+%\paragraph{Binary splits}\mbox{}\\
+%Rather than splitting into two groups at each node, one could consider
+%several splits at each stage. Although this has its benefits, it is not a wise 
+%general course of action. Multiway splits cause the data to fragment too quickly, 
+%leaving the next level below with insufficient data. In the end, binary splits are 
+%favoured because they can also be used to create multiclass divides.
 
 
 % Inestability
-\paragraph{Instability of trees}\mbox{}\\
-The large variance of trees is one of their main issues. A little modification in the 
-data can frequently lead to very different results. This is mainly caused by the
-hierarchical structure of the trees, which causes errors in the top split to cascade 
-down to all splits below it. By attempting to employ a more stable split criterion, 
-this can be somewhat mitigated, but the fundamental instability remains. It is the 
-cost of using the data to infer a straightforward, tree-based structure. 
+%\paragraph{Instability of trees}\mbox{}\\
+%The large variance of trees is one of their main issues. A little modification in the 
+%data can frequently lead to very different results. This is mainly caused by the
+%hierarchical structure of the trees, which causes errors in the top split to cascade 
+%down to all splits below it. By attempting to employ a more stable split criterion, 
+%this can be somewhat mitigated, but the fundamental instability remains. It is the 
+%cost of using the data to infer a straightforward, tree-based structure. 
 
 % ROC
 \paragraph{Receiver operating characteristic curve}\mbox{}\\
@@ -831,7 +833,7 @@ causing both the FP and FN rates to increase.}
 \end{subfigure}
 \hfill
 \begin{subfigure}[h]{0.45\linewidth}
-\includegraphics[width=\linewidth]{Appendices/BDT/ROC_AUC_A}
+\includegraphics[width=0.8\linewidth]{Appendices/BDT/ROC_AUC_A}
 \caption{The AUC varies from 0 to 1. While 0.0 corresponds to a model that always fails, a 1.0 
 means that the model is right a 100\% of times.}
 \label{fig:Appendix:BDT:ROC_AUC:AUC}
@@ -862,7 +864,7 @@ the second should be used when there is a moderate to large class imbalance.
 \begin{figure}[h]
 \centering
   \centering
-  \includegraphics[width=.79\linewidth]{Appendices/BDT/precision-recall_pdf}
+  \includegraphics[width=.64\linewidth]{Appendices/BDT/precision-recall_pdf}
 \caption{Precision-recall curves for different models. The one in black corresponds to the
 $\text{BDT}^{\text{Lepton Assignment}}$ model. The larger is the area under the curve,
 the better is the model.}
@@ -875,16 +877,16 @@ which the curve in the precision-recall plot is close to the (1,1) point.
 
 
 % KS test
-\paragraph{Kolmogorov-Smirnov test}\mbox{}\\
-In statistics, the Kolmogorov-Smirnov (KS) test is a non-parametric method for comparing the equality 
-of one-dimensional probability distributions. It is used to assess the similarity between 
-a sample distribution and a reference probability distribution.
+%\paragraph{Kolmogorov-Smirnov test}\mbox{}\\
+%In statistics, the Kolmogorov-Smirnov (KS) test is a non-parametric method for comparing the equality 
+%of one-dimensional probability distributions. It is used to assess the similarity between 
+%a sample distribution and a reference probability distribution.
 
-In the context of multivariate analysis, 
-the distributions tested by the KS are the scores of the test and train. In other words, 
-the test sample. If the score is close to zero, it may imply that the classifier is overtrained.
-In the way it is implemented in TMVA, the ideal value is 0.5, although being above 0.01 is
-considered enough.
+%In the context of multivariate analysis, 
+%the distributions tested by the KS are the scores of the test and train. In other words, 
+%the test sample. If the score is close to zero, it may imply that the classifier is overtrained.
+%In the way it is implemented in TMVA, the ideal value is 0.5, although being above 0.01 is
+%considered enough.
 
 %For any two random samples drawn from the same parent distibution, the
 %KS test value would be distributed uniformly between 0 and 1. So ..
@@ -893,9 +895,9 @@ considered enough.
 %then you'd for you test / training sample 'on average' expect a KS
 %value of 0.5
 
-Some sources argue that KS test requires a large sample to be effective.
-This  may explain the low values in for all folds in the TMVA gradient
-BDT used for the lepton-origin assignment.
+%Some sources argue that KS test requires a large sample to be effective.
+%This  may explain the low values in for all folds in the TMVA gradient
+%BDT used for the lepton-origin assignment.
 % Source about sample size: https://root-forum.cern.ch/t/overtraining-test-obtained-from-tmva/32148
 % Discussion; https://root-forum.cern.ch/t/kolmogorov-smirnov-test-values/32868
 
@@ -913,9 +915,6 @@ where $\hat{y}_{S}$ and $\hat{y}_{B}$ are, respectively, the signal and backgrou
 density functions of $y$.  The 1/2 factor is used to keep $<S^{2}>$ within the [$0, 1$] interval.
 The separation is zero for identical signal and background shapes, and 
 it is one for shapes with no overlap.
-%\end{comment}
-
-
 
 
 
@@ -925,7 +924,10 @@ it is one for shapes with no overlap.
 \section{Additional plots and tables}
 \label{sec:BDT:AdditionalMaterial}
 This section expands the information provided in the main body of the thesis 
-about the training of the different BDT models. 
+about the training of the different BDT models. The models and ROC curves
+of the $\text{BDT}^{\text{Lepton Assignment}}$ are presented in the first
+section. The second section shows, for
+the XGBoost.based BDT, the correlation between the variables and the evolution of the training.
 
 %%%%%%% Extra plots ::   Assignment
 \subsection{$\text{BDT}^{\text{Lepton Assignment}}$}
@@ -934,7 +936,7 @@ Figure~\ref{fig:dileptau:Assignment_appendix:ScoreDistributions} compare the tra
 distributions for the five different models composing the final $\text{BDT}^{\text{Lepton Assignment}}$.
 A good agreement between the distributions of the train and test subsets is observed through all
 the folds. This means that no overtraining in our data.
-See Section~\ref{sec:ChaptH:Sig:LepAsign:SS:BDT:Training} for the descritption
+See Section~\ref{sec:ChaptH:Sig:LepAsign:SS:BDT:Training} for the description
 of the training of these models.
 
 \begin{figure}[h]
@@ -1094,7 +1096,7 @@ are studied for the background processes.}
 \label{sec:BDT:AdditionalMaterial:Region:Evolution}
 The loss values of the training and test offer a deeper understanding of how learning performance 
 evolves across different epochs. These metrics provide useful insight into how the learning performance 
-changes over the number of epochs. This can be helpful in diagnosing  potential learning issues that might 
+changes over the number of epochs. This can help diagnose potential learning issues that might 
 result in an underfitted or overfitted model. %Additionally, they guide the selection of the most appropriate
 %epoch for using the trained model weights during the inferencing stage.
 
@@ -1282,7 +1284,7 @@ This is used to define the CR(\ttbar).}
 \end{comment}
 
 
-
+\begin{comment}
 \FloatBarrier
 %%%%%%%%%%%%%%%%%%
 %             Additional models           %
@@ -1298,7 +1300,7 @@ Apart from the $\text{BDT}^{\text{Lepton Assignment}}$ used for the light-lepton
 described in Section~\ref{sec:ChaptH:Sig:LepAsign}, other ML-based approaches were explored
 as well.  
 Within the gradient BDTs, different configurations are explored regarding the number of folds, the hyperparameters
-and the collection of input variables. Severa l of these offer a similar performance to the chosen $\text{BDT}^{\text{Lepton Assignment}}$.
+and the collection of input variables. Several of these offer a similar performance to the chosen $\text{BDT}^{\text{Lepton Assignment}}$.
 Besides the BDTs, other algorithms such as NN and random forests~\cite{ho1995random} have been teste and, although they showed
 promising performances, none of them are adopted in the final analysis.
 
@@ -1572,6 +1574,7 @@ The closeness between the orange and blue curves in the cumulative-distribution 
 the difficulty to achieve large separations using this model.}
 \label{fig:BDT:AltModels:Result:ttWSS}
 \end{figure}
+\end{comment}
 
 
 

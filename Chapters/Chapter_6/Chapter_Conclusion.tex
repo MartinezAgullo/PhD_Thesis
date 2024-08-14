@@ -28,68 +28,89 @@ asdf
 %%%%%%%%%%%%%%%
 %         Conclusion              %
 %%%%%%%%%%%%%%%
-This thesis presents the study to measure of  the direct production of a Higgs boson in association
+This thesis presents the study to measure the direct production of a Higgs boson in association
 with a single-top quark, focusing on final states with two light-flavour leptons and one hadronically-decaying-\Ptau 
 lepton, employing the ATLAS detector. Attending to the relative charge between the light lepton, 
-this investigation is divided in two channels: \dilepOStau and \dilepSStau.
+this investigation is divided into two channels: \dilepOStau and \dilepSStau.
 
-The search for such a rare process is motived by the intricate interplay between two fundamental 
-particles: the Higgs boson and the top quark. On on hand te Higgs boson plays a critical role in our understanding 
-of mass acquisition by particles through the Spontaneous Symmetry Breaking mechanism.
-On the other hand, top quark, notable for being the most massive particle in the SM and the only one that 
-decays before its hadronisation. Therefore, the Yukawa coupling between these two particles is expected 
-to be the largest in the SM and it can be measured trough this interaction.  This measurement is central
-to the experimental program of the LHC and it could hint at possible 
-CP violation, influencing the \tHq production cross-section.
+The search for such a rare process is motivated by the intricate interplay between two fundamental particles: the Higgs boson and the top quark. On the one hand, the Higgs boson plays a critical role in our understanding  of mass acquisition by particles through the Spontaneous Symmetry Breaking mechanism.
+On the other hand, the top quark is notable for being the most massive particle in the SM and the only one that decays before its hadronisation. Therefore, the Yukawa coupling between these two particles is expected  to be the largest in the SM and it can be measured through this interaction.  This measurement is central to the experimental program of the LHC and it could hint at possible CP violation, influencing the \tHq production cross-section.
  
-In this thesis the theoretical foundation of physics of the top quark and Higgs boson are
-discussed, a review of the ATLAS detector and its performance is given, and the simulation chain 
-and object reconstruction are described. Then, the search of the \tHq production is carefully detailed. 
+In this thesis the theoretical foundation of physics of the top quark and Higgs boson are discussed, a review of the ATLAS detector and its performance is given, and the simulation chain and object reconstruction are described. Then, the search for the \tHq production is carefully detailed. 
 
-This analysis uses proton-proton collisions at $\CM=13$~TeV from the ATLAS detector during Run 2 of the LHC
-with a total integrated luminosity of 140 fb$^{-1}$. The parton-level information is implemented and used to
-reconstruct the \tHq process. The origin of the light-lepton is assed via the use of BDT. 
-Then the rate of misidentified particles is addressed using the template fit method to correct
-the MC yields. 
+This analysis uses proton-proton collisions at $\CM=13$~TeV from the ATLAS detector during Run 2 of the LHC with a total integrated luminosity of 140 fb$^{-1}$. The parton-level information is implemented and used to reconstruct the \tHq process. The origin of the light-lepton is assessed via the use of BDT. 
+Then the rate of misidentified particles is addressed using the template fit method to correct the MC yields. 
+Afterwards, by using several BDTs, the SRs and CRs of the analysis are defined.
+Utilising these regions, a profile-likelihood-binned fit with Asimov data has been used to determine the sensitivity of the analysis. Then, the real data has been incorporated to derive the normalisation factors of the \ttbar and \Zjets productions in the \dilepOStau channel.
+A normalisation factor has been derived as well for \ttbar, \ttW, \ttH and \ttZ all together in the \dilepSStau channel. The profile-likelihood-binned fit with the entire dataset has been used to determine the signal strength of the \tHq production in each channel. Figure~\ref{fig:Conclusion:POIs} presents the results of the direct search for the \tHq production for both the SM and the inverted Yukawa coupling
+%The \tHq signal-strength values are shown in Figure~\ref{fig:Conclusion:POIs}.
+These results on $\mu_{\tHq}$ are fully compatible with the SM. 
+%Regarding the inverted Yukawa coupling, the results obtained do not allow to discard this hypothesis.
+%The used statistical method to evaluate the factor for the alternative cross-section is not ideal to test this hypothesis since thee negative $\mu_{\tHq}$($\yt=-\yt^{\text{SM}}$ is an unphysical result.
+%Still, the observed deviation of $\sim -1\sigma$ form the expected result under this hypothesis does not favour the $\mu_{\tHq}$($\yt=-\yt^{\text{SM}}$ hypothesis.
+%The fact that both sub-channels prefer a cross-section lower than the expected one further solidifies that this scenario is disfavoured.
+In regards to the inverted Yukawa coupling, the findings from our analysis do not provide sufficient grounds to reject this hypothesis outright. The statistical approach employed to assess the signal strength for the alternative cross-section may not be the most effective for testing this hypothesis, particularly because the negative $\mu_{\tHq}$ ($\yt = -\yt^{\text{SM}}$) represents an unphysical outcome. Nevertheless, the observed deviation of approximately $-1\sigma$ from the expected result under this hypothesis does not support the $\mu_{\tHq}$ ($\yt = -\yt^{\text{SM}}$) scenario. The consistent preference for a cross-section lower than anticipated across both sub-channels further solidifies that this scenario is disfavoured.
+% this hypothesis is disfavoured 
+%The exclusion limits derived presented here are not directly comparable with the previous results shown in Table~\ref{tab:Chap2:LastResults}
 
-Afterwards, by using several BDTs, the SRs, CRs and VRs of the analysis are defined.
-Utilising these regions, a profile-likelihood-binned fit with Asimov data and real data  is 
-conducted to determine the normalisation of the \ttW process and the signal strength of 
-the \tHq production. 
+
+\begin{figure}[h] 
+\centering
+  \includegraphics[width=.49\linewidth]{Chapter5_tHq/comb/POI_tH_NORM_ crop}
+  \includegraphics[width=.49\linewidth]{Chapter5_tHq/comb_ytm1/POI_tH_NORM_ crop}
+\caption{Signal strength values for the both the \dilepOStau and the \dilepSStau channels
+under (a) the SM and (b) the inverted Yukawa coupling scenarios.
+The total uncertainty (tot) includes statistical and systematic effects. 
+The statistical uncertainty (stat) is also shown, separately.}
+\label{fig:Conclusion:POIs}
+\end{figure}
+%\begin{table}[h]
+%\centering
+%\begin{tabular}{l|c|c}
+%\cline{2-3}
+%            		& \multicolumn{2}{c}{$\mu_{\tHq}$} 		\\ \cline{2-3}
+%            		& Expected       & Observed			\\ \midrule
+%\dilepOStau 	& $\pm 21.58$  &  $-19.73 \pm 20.16$  	\\
+%\dilepSStau 	& $\pm 7.20$ 	&  $-2.59 \pm 5.44$          	\\ \bottomrule
+%\end{tabular}
+%\caption{Expected and observed signal strength values for the two \dileptau channels.
+%The uncertainty is the combination of the statistical and systematic effects.}
+%\label{tab:Conclusion:SignalStrength}
+%\end{table}
+
+
 The culmination of this analysis is the determination of limits on the \tHq production cross-section.
-The \tHq signal-strength values are shown in Table~\ref{tab:Conclusion:SignalStrength}.
-The expectation is obtained using Asimov data and the observed is obtained with the fit
-to the real data. 
+The observed and expected upper limits on the \tHq cross-section are in Table~\ref{tab:Conclusion:UpperLimit} and Figure~\ref{fig:Conclusion:UpperLimits}. 
+For the expected upper limit  the $1\sigma$ and $2\sigma$ variations are given.
+Both observed limits are compatible with the inverted Yukawa coupling hypothesis. 
+The direct comparison with the results presented in Table~\ref{tab:Chap2:LastResults} is complex since those target \tH and this thesis \tHq. For instance, the most recent exclusion limit~\cite{CMS-PAS-HIG-19-011} is similar to the one obtained in the \dilepSStau channel.
+The Reference~\cite{CMS-PAS-HIG-19-011} limit$_{\text{95CL}}$ is $14.6(\text{obs}) 19.3^{+9.2}_{-6.0}(\text{exp})$ while the one in Table~\ref{tab:Conclusion:UpperLimit} is  $13.83(\text{obs}) 16.94^{+13.28}_{-6.61}(\text{exp})$. 
+%Note that the published result have been obtained by demanding $\mu_{\ttH}=1$.
+
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|c|c}
-\cline{2-3}
-            		& \multicolumn{2}{c}{$\mu_{\tHq}$} 		\\ \cline{2-3}
-            		& Expected       & Observed			\\ \midrule
-\dilepOStau 	& $\pm 21.58$  &  $-19.73 \pm 20.16$  	\\
-\dilepSStau 	& $\pm 7.20$ 	&  $-2.59 \pm 5.44$          	\\ \bottomrule
+\begin{tabular}{l|c|c|c|c}
+\toprule
+\multicolumn{5}{c}{ $\mu_{\tHq}$ upper limit} \\ \midrule
+Channel 		& Observed 	& Expected  	& $1\sigma$   $\text{CL}_{95}$	& $2\sigma$ $\text{CL}_{95}$        \\ \midrule
+\dilepOStau	& 47.51		& 61.2  		& [41.95, 93.48] 			& [30.56,  148.6]  \\ 
+\dilepSStau	& 13.83		&16.94  		& [10.33, 30.22] 			& [6.991,  52.24] \\ 
+\dilepOStau ($\yt=-\yt^{\text{SM}}$)&77.95	& 119.6  & [46.97, 284.9] 	& --- 			  \\
+\dilepSStau ($\yt=-\yt^{\text{SM}}$)&20.79 	& 24.07  & [7.478, 112.5] 	& [3.197,  342.4] \\ \bottomrule
 \end{tabular}
-\caption{Expected and observed signal strength values for the two \dileptau channels.
-The uncertainty is the combination of the statistical and systematic effects.}
-\label{tab:Conclusion:SignalStrength}
-\end{table}
-
-This result is fully compatible with the SM. 
-The limits at 95\% CL on the \tHq cross-section are in Table~\ref{tab:Conclusion:UpperLimit}.
-
-\begin{table}[h]
-\centering
-\begin{tabular}{l|c|c}
-\cline{2-3}
-            		& \multicolumn{2}{c}{$\mu_{\tHq}^{\text{CL95}}$} \\ \cline{2-3}
-            		& Expected       				& Observed       \\ \midrule
-\dilepOStau 	& $57.98^{+39.38}_{-21.07}$		&    34.49            \\
-\dilepSStau 	& $18.88^{+33.83}_{-11.6}$		&    13.8            \\ \bottomrule
-\end{tabular}
-\caption{Values of the upper limits of the signal strength at 95\% CL for the two \dileptau channels.}
+\caption{Observed and expected upper limits for the $\mu_{\tHq}$ for both \dileptau channels derived with the CL method.
+For completion, limits under the inverted Yukawa coupling hypothesis are included as well.}
 \label{tab:Conclusion:UpperLimit}
 \end{table}
+
+
+\begin{figure}[h] 
+\centering
+  \includegraphics[width=.70\linewidth]{Chapter5_tHq/comb/Limits}
+\caption{Observed and expected upper limits for the $\mu_{\tHq}$ for both \dileptau channels. The green and yellow areas represent the  $1\sigma$ ($68\%$ CL) and $2\sigma$ ($95\%$ CL) variations of the expected upper limit.}
+\label{fig:Conclusion:UpperLimits}
+\end{figure}
 
 
 Looking ahead, the prospects for enhancing the outcomes of this analysis are promising, driven by several anticipated developments:
@@ -105,33 +126,42 @@ Looking ahead, the prospects for enhancing the outcomes of this analysis are pro
 		sample is similar to the systematic uncertainty and more data events will undoubtedly enrich this search.
 
 	\item The current techniques to estimate the rates of backgrounds due to misidentified objects will also
-		benefit from an increase on the statistical sample since these are data-driven methods.
+		benefit from an increase in the statistical sample since these are data-driven methods.
+
+	\item As already mentioned, a significant challenge in the analysis presented in this thesis stems from the 
+		lack of agreement observed between the actual data and the MC-event samples. 
+		These discrepancies are attributed to limitations in the application of the template-fit method.
+		Although the caveat in the implementation of the template is identified, a solution to it is not available at the time of composing this thesis.
+		Concerning this obstacle, it may be beneficial to explore alternative methods to estimate the rates of the backgrounds based on misidentified objects.
+
 		
 	\item With more statistics we could explore splitting the regions used in the fit calculations
-		according to the track multiplicity of the \tauhad (1-prong or 3-prong) . %1-prong // 3-rpong
-		Since jets with different origin mimic differently the \tauhad depending on its prongness,
+		according to the track multiplicity of the \tauhad (1-prong or 3-prong). %1-prong // 3-rpong
+		Since jets with different origins mimic differently the \tauhad depending on its prongness,
 		it can be beneficial to explore this classification when defining the regions used in
 		the profiled-likelihood fit.
-		%the different relative background conntributions in all regions
+		%the different relative background contributions in all regions
 		%considered in the fit.
 		
-	\item Currently there is a mild tension between the simulation and the experimental results for \ttW. 
-		Therefore, progress in the simulation techniques or better understanding of these process will
+	\item The impact of the simulated number of events for certain samples is unfortunate. 
+		An improvement is expected from incorporating newer samples which have been simulated with more statistics.
+		While the effect of low MC statistics could be mitigated more sensitive bins with less sensitive bins,
+		after some tests, it is seen that the sensitivity of the analysis decreased by doing so.
+		
+	\item Currently, there is a mild tension between the simulation and the experimental results for \ttW. 
+		Therefore, progress in the simulation techniques or a better understanding of these processes will
 		further refine the analysis. This will be useful in the \dilepSStau channel, where this is the second
 		most important background.
 \end{itemize}
 
 
 Additionally, this analysis can be extended in several ways.
-First, the region definition can be improved by combining the BDTs described in this
-thesis with the NNs that are also being used by the ongoing ATLAS analysis. 
-Secondly, incorporating the \tWH processes in the signal would allow to perform
-a more complete \tH search and, hence, the inverted-top-Yukawa-coupling hypothesis 
-can be properly tested.
+First, the region definition can be improved by combining the BDTs described in this thesis with the NNs that are also being used by the ongoing ATLAS analysis. 
+Secondly, the measurement of the \tHq production in the \dileptau channel can be combined with the measurements in other channels. 
+From the two sub-channels explored in this thesis, the \dilepSStau one is the one that can add more sensitivity to future combinations with other \tHq channels. 
+Finally, incorporating the \tWH processes in the signal would allow to perform a more complete \tH search and, hence, the inverted-top-Yukawa-coupling hypothesis can be properly tested. This work is currently being done, although it is not included in this thesis. The tools and methods developed to analyse the \tHq productions are the same that are employed for the inclusive \tH measurement.
 
-From the two channels explored in this thesis, the \dilepSStau one is the 
-one that can add more sensitivity to future combinations with other
-\tHq channels. 
+
 
 %More studies to be done:
 %\begin{itemize}
@@ -149,13 +179,15 @@ one that can add more sensitivity to future combinations with other
 		
 %\end{itemize}
 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%
+%  Just some snipets about statistics   %
 \begin{comment}
-\pablo{En estos párrafos hay snipets de cosas de estadística}
-
-
 \paragraph{Comments about hypothesis rejection}\mbox{}\\
 %https://arxiv.org/pdf/1007.1727.pdf
-In the search of a new signal process one defines:
+In the search for a new signal process one defines:
 \begin{itemize}
 	\item Null hypothesis ($H_0$):  Taking into account only the backgrounds
 	\item Alternative hypothesis ($H_1$): Considering both the backgrounds and the signal
@@ -189,7 +221,7 @@ The $s_{i}$ + $b_{i}$ are defined as:
   b_{i}^{exp} = b_{\text{tot}}^{exp} \int_{\text{bin } i} f_b(x; \theta_b) \,dx
 \end{equation*}
 The integral over $x$ runs over the kinematic distribution. The functions 
-$f_s(x; \theta_s$ nad $f_b(x; \theta_s)$ are the probability density functions 
+$f_s(x; \theta_s$ and $f_b(x; \theta_s)$ are the probability density functions 
 (pdfs) of the variable $x$ for signal and background events.
 
 

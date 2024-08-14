@@ -45,6 +45,13 @@ D%%
 \addcontentsline{toc}{chapter}{Resum de la tesi} 
 \label{chap:resumen_val}
 
+
+\hspace*{90pt} \textit{Les meves contradiccions són les meves esperances.} \\
+\hspace*{140pt} ---\textsc{Joan Fuster,} \\% \textit{} \\
+\hspace*{160pt} \textsc{Consells, proverbis i insolències (1968)} \\% \textit{} \\
+\vspace*{2cm} 
+
+
 El Model Estàndard (SM) de la física de partícules és una teoria notablement exitosa, 
 però també manifesta limitacions significatives. Aquest model unifica totes les partícules 
 elementals que constitueixen l'univers conegut en una teoria única. Dins d'aquest marc, 
@@ -55,7 +62,7 @@ marc teòric per a l'estudi de la física d'aquestes partícules es presenta a
 la Secció~\ref{chap:resumen_val:Teoria}.
 
 Per dur a terme aquest estudi, s'han utilitzat dades de col·lisions protó--protó ($\Pproton \Pproton$) amb una 
-lluminositat integrada de $140$$\text{fb}^{-1}$, a una energia de centre de masses de 
+lluminositat integrada de $140$~$\text{fb}^{-1}$, a una energia de centre de masses de 
 $13$~TeV, recopilades pel detector ATLAS durant el Run 2 del Gran Col·lisionador 
 d'Hadrons (LHC) l'Organització Europea per a la Recerca Nuclear (CERN). L'ATLAS 
 és el detector més gran de l'LHC, el més potent accelerador de partícules del 
@@ -129,7 +136,7 @@ de la matèria, però són diferents entre si.
  	  \includegraphics[width = 0.7\textwidth]{Chapter1/ZZ_Valencia_SM}
 	  \caption{Model estàndard de les partícules elementals, amb les tres generacions de partícules de 
 	  matèria, els bosons de gauge i el bosó de Higgs. Les superfícies en marró clar indiquen quins 
-	  bosons (roig) s'acoblen a quins fermions (morat i verd)..} 
+	  bosons (roig) s'acoblen a quins fermions (morat i verd).} 
 	\label{fig:resumen_val:Teoria:SM}
 \end{figure}
 
@@ -417,7 +424,7 @@ respectivament els processos els \tH i \ttH.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width = 0.91\textwidth]{Chapter1/xsec_vs_yt_tH_ttH}
+    \includegraphics[width = 0.65\textwidth]{Chapter1/xsec_vs_yt_tH_ttH}
     \caption{Secció eficaç a NLO com a funció de l'angle de mescla de \CP 
     per a la producció $\Ptop X_{0}$ en el canal-$t$ i $\ttbar X_0$ a $\CM = 13$~TeV. 
     La particula $X_0$ representa un bosó de Higgs amb violació de \CP~\cite{Demartin:2015uha}.}
@@ -564,7 +571,7 @@ pel desalineament de l'ID.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width = 0.5\textwidth]{Chapter2/Alignment_residual}
+	\includegraphics[width = 0.33\textwidth]{Chapter2/Alignment_residual}
 	\caption{La línia negra és la trajectòria reconstruida de la partícula que creua l'ID.
 	L'estrella roja representa la mesura en cada capa del detector i les diferències residuals
 	estan representats per la linea blava~\cite{ATLAS:2020ixw}.  }
@@ -882,7 +889,7 @@ asseguren l'ortogonalitat entre canals per a una futura combinació.}
 
 \begin{table}[]
 \centering
-\begin{tabular}{l|lll}
+\begin{tabular}{l|ccc}
 \toprule
 Canal  	& \Htautau & \HWW	& \HZZ \\
 \midrule
@@ -961,9 +968,9 @@ Aquests resultats són recollits a la Taula~\ref{tab:ResumChaptH:TruthSummary}.
 \begin{table}[h]
 \centering
 \begin{adjustbox}{max width=0.95\textwidth}
-\begin{tabular}{l|ll|l}
+\begin{tabular}{l|cc|c}
 \toprule
-       \multicolumn{1}{c|}{Canal de} 	& \multicolumn{2}{c|}{Origin del \tauhad} &    \multirow{2}{*}{Total}     \\ \cline{2-3}
+       \multicolumn{1}{c|}{Canal de} 	& \multicolumn{2}{c|}{Origen del \tauhad} &    \multirow{2}{*}{Total}     \\ \cline{2-3}
       \multicolumn{1}{c|}{desintegració}  			& Quark  top      				& Bosó de Higgs       &   \\ \midrule
 \Htautau 	& 5.06      					& 64.06        		      			& 69.13	\\
 \HWW    	& 9.01         				& 18.01              				& 27.02 	\\
@@ -989,7 +996,7 @@ es donava per als tres canals de desintegració.
 
 \begin{table}[]
 \centering
-\begin{tabular}{l|l|l}
+\begin{tabular}{l|c|c}
 \toprule
 Fracció d'esdeveniments								&   Càlcul teòric   	& Resultat de \texttt{TopPartons} \\
 \midrule
@@ -1269,7 +1276,30 @@ En la nostra anàlisi, diferenciem els esdeveniments de fons en dos tipus: ``red
 	jets erròniament identificats com \tauhad. Açó genera els fons de \ttbar i \Zjets. També inclouen processos amb $VV$ i certes produccions de \ttX.
 \end{itemize}
 
- \pablo{Explicar breument el mètode de l'ajust de plantilla i el mètode de recompte.}
+Conèixer amb precisió la fracció esperada de cada procés de fons és fonamental per a obtenir resultats de qualitat. 
+Mentre que per als fons irreductibles, el nombre d'esdeveniments s'estima amb precisió en les simulacions basades en MC, per als fons reductibles no és trivial determinar la seua abundància. Entre els enfocaments per a l'estimació de les taxes de mal identificació, destaca el \textit{mètode d'ajust de plantilla}. Aquesta estratègia basada en dades per a estimar l'abundància dels diferents fons reductibles implica l'aparellament d'objectes reconstruïts en conjunts de dades simulats amb els corresponents objectes a nivell de partó simulat utilitzant cons de $\dR=0.2$. Fent això, es creen les plantilles per a objectes físics (\Pe, \Pmu, \tauhad, jet iniciat per quark, jet iniciat per gluó i desconegut). Una plantilla és un grup de partícules amb la mateixa etiqueta a nivell de partons. Després es realitza un ajust del MC a les dades per a derivar els factors que reescalaran la mostra de MC. Aquest mètode actua com a nominal. Alternativament, el mètode de recompte s'utilitza per a assignar una incertesa al mètode d'ajust de plantilla.
+La composició a nivell de partó dels objectes reconstruïts es presenta a la Figura~\ref{fig:resum:fakeCharts}. Allí es pot veure que mentre els objectes en el procés \tHq típicament estan ben reconstruïts, el \tauhad reconstruït dels fons no és realment un \Ptau en la majoria dels casos.
+
+
+\begin{figure}[h]
+  \begin{subfigure}[b]{0.99\linewidth}
+       \centering
+       \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_lep1tmp_lephad}
+       \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_lep2tmp_lephad}
+       \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_tau1tmp_lephad}
+       \caption{Total MC}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.99\linewidth}
+      \centering
+      \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_tH_lep1tmp_lephad}
+      \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_tH_lep2tmp_lephad}
+      \includegraphics[width=0.30\linewidth]{Chapter5_tHq/fakes/SR_tH_tau1tmp_lephad}
+      \caption{\tHq}
+  \end{subfigure}
+   \caption{Composition at parton level of the reconstructed leading (left) and sub-leading (middle) leptons, as well as \tauhad (right) passing the selection cuts in the \dileptau analysis with oppositely charged light leptons. The results are calculated using all MC samples and \tHq production.}
+   \label{fig:resum:fakeCharts}
+\end{figure}
+
 
 
 \FloatBarrier
@@ -1347,9 +1377,9 @@ Les SR, CRs i VRs són totes ortogonals entre si i són subespais de la PR
 Per a distingir el procés de senyal \tHq dels fons i crear regions dedicades als fons,
 es construeixen diversos BDTs de gradient per a la classificació binària:
 \begin{itemize}
-	\item BDT$(\tHq|{\text{OS}})$: Entrenat per a discriminar el procés \tHq de tots els fons simultàniament
+	\item BDT$(\tHq|_{\text{OS}})$: Entrenat per a discriminar el procés \tHq de tots els fons simultàniament
 		en el canal \dilepOStau. Aquest BDT es fa servir després per a definir la SR per a tHq en aquest canal.
-	\item BDT$(\ttbar|{\text{OS}})$ Entrenat amb l'objectiu de separar \ttbar i \Zjets en el canal \dilepOStau. 
+	\item BDT$(\ttbar|_{\text{OS}})$ Entrenat amb l'objectiu de separar \ttbar i \Zjets en el canal \dilepOStau. 
 		S'utilitza per a definir les VRs per a aquests dos processos.
 	\item BDT$(\tHq|_{\text{SS}})$: Entrenat per al canal \dilepSStau per a discriminar el procés \tHq de la resta 
 		de processos.
@@ -1361,8 +1391,8 @@ del propi model i la injecció de la puntuació del model. Ací també es fa ser
 $k=5$ per a la validació creuada.
 
 Els esdeveniments simulats amb pesos negatius representen aproximadament un 30\% del total.
-Per al BDT$(\tHq|{\text{OS}})$ i BDT$(\ttbar|{\text{OS}})$, només s'usen els pesos positius.
-Per al BDT$(\tHq|{\text{SS}})$, s'usa el valor absolut del pes a l'entrenament.
+Per al BDT$(\tHq|_{\text{OS}})$ i BDT$(\ttbar|_{\text{OS}})$, només s'usen els pesos positius.
+Per al BDT$(\tHq|_{\text{SS}})$, s'usa el valor absolut del pes a l'entrenament.
 Aquesta elecció és preferida per l'escassetat d'esdeveniments en el canal \dilepSStau.
 
 Pel que fa a la selecció de variables, aquestes són escollides per maximitzar el poder
@@ -1778,7 +1808,7 @@ l'impacte de cada opció als resultats.}
 
 \begin{table}[h]
 \centering
-\begin{tabular}{l|l|c}
+\begin{tabular}{l|c|c}
 \toprule
 		 	& CRs & $k_{p}$ lliures \\ \midrule
 Utilitzat 		& Tots els fons & $k_{\ttbar, \ttX}$ \\ 
@@ -1840,19 +1870,18 @@ NPs, le factors de normalització i la $\mu_{\tHq}$.
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.65\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS/Asimov_CorrMatrix}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/CorrMatrix}
   \caption{}
 \end{subfigure}%
 \hfill
-\begin{subfigure}{.5\textwidth}
+\begin{subfigure}{.35\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS/SingleCR/Asimov_CorrMatrix}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/CorrMatrix}
   \caption{}
 \end{subfigure}%
-\caption{
-Correlació entre els diferents NPs i els POIs en el canals (a) \dilepOStau i (b)  \dilepSStau la sota la hipòtesi d'Asimov. 
+\caption{Correlació entre els diferents NPs i els POIs en el canals (a) \dilepOStau i (b)  \dilepSStau la sota la hipòtesi d'Asimov. 
 Només es mostren els NPs amb almenys una correlació superior al 15\%.} 
 \label{fig:resum:ASIMOV:correlations}
 \end{figure}
@@ -1860,7 +1889,8 @@ Només es mostren els NPs amb almenys una correlació superior al 15\%.}
 
 
 A la Taula~\ref{tab:Resul:Asimov:GroupedSyst} descomposem l'incertesa 
-total en la mesura de $\mu_{\tHq}$ per grups d'incerteses sistemàtics.
+total en la mesura de $\mu_{\tHq}$ per grups d'incerteses sistemàtics sota
+la hipòtesi d'Asimov.
 La influencia de cada NP en la determinació $\mu_{\tHq}$ is presenta
 a la Figura~\ref{fig:resum:ASIMOV:rank}.
 
@@ -1871,28 +1901,28 @@ a la Figura~\ref{fig:resum:ASIMOV:rank}.
 \toprule
 \textbf{Font d'incertesa} & \dilepOStau & \dilepSStau \\
 \midrule
-Incertesa del MC 	& $\pm 7.830$ & $\pm 1.534$ \\
+Incertesa del MC 	& $\pm 7.845$ & $\pm 1.376$ \\
 \midrule
 \textbf{Modelatge} 	& & \\
-Incerteses teòriques & $\pm 12.285$  	& $\pm 1.660$ \\
-
-PDF de \tHq 		& $\pm 4.952$ 		& $\pm 0.609$		\\
-PDF de \tWH 		& $\pm 0.0484$ 	& $\pm 0.0208$	\\
-PDF de \tZq 		& $\pm 0.334$ 		& $\pm 0.185$ 		\\
-PDF de \ttH 		& $\pm 0.522$ 		& $\pm 0.351$ 		\\
-PDF de \ttW 		& $\pm 0.728$ 		& $\pm 2.732$		\\
-PDF de \ttZ 		& $\pm 0.388$ 		& $\pm 0.0949$	\\
-PDF de \ttbar 		& $\pm 0.01171$	& $\pm 0$ 		\\
-PDF de Diboson 	& $\pm 0.958$ 		& $\pm 0.339$ 		\\
+Incerteses teòriques & $\pm 11.917$  	& $\pm 1.262$ \\
+Incerteses a les PDFs&$\pm 7.895$		& $\pm 0.837$ \\
+%PDF de \tHq 		& $\pm 4.952$ 		& $\pm 0.609$		\\
+%PDF de \tWH 		& $\pm 0.0484$ 	& $\pm 0.0208$	\\
+%PDF de \tZq 		& $\pm 0.334$ 		& $\pm 0.185$ 		\\
+%PDF de \ttH 		& $\pm 0.522$ 		& $\pm 0.351$ 		\\
+%PDF de \ttW 		& $\pm 0.728$ 		& $\pm 2.732$		\\
+%PDF de \ttZ 		& $\pm 0.388$ 		& $\pm 0.0949$	\\
+%PDF de \ttbar 		& $\pm 0.01171$	& $\pm 0$ 		\\
+%PDF de Diboson 	& $\pm 0.958$ 		& $\pm 0.339$ 		\\
 \midrule
 \textbf{Experimental} 				& 			& 	\\
-Instrumental 						& $\pm 6.320$  & $\pm 2.188$ \\
-Instrumental: etiquetatge de sabor 		& $\pm 0.319$ 	& $\pm 0.146$ \\
-Instrumental JES i JER 				& $\pm 4.694$ 	& $\pm 3.024$ \\
+Instrumental 						& $\pm 4.917$  & $\pm 0.793$ \\
+Instrumental: etiquetatge de sabor 		& $\pm 0.439$ 	& $\pm 0.163$ \\
+Instrumental JES i JER 				& $\pm 10.851$ 	& $\pm 2.877$ \\
 \midrule
-Factors de normalització 				& $\pm 5.017$ 	& $\pm 5.017$ \\
+Factors de normalització 				& $\pm 10.493$ 	& $\pm 2.725$ \\
 \midrule
-\textbf{Total d'incertesa sistemàtica} 		& $\pm 18.495$ & $\pm 6.023$ \\
+\textbf{Total d'incertesa sistemàtica} 		& $\pm 28.511$ & $\pm 4.614$ \\
 \bottomrule
 \end{tabular}
 \caption{Incerteses sistemàtiques en la mesura de $\mu_{\tHq}$ en els canals \dileptau sota la hipòtesi d'Asimov.}
@@ -1904,13 +1934,13 @@ Factors de normalització 				& $\pm 5.017$ 	& $\pm 5.017$ \\
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS/Asimov_Ranking_tH_NORM}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Ranking_tH_NORM}
   \caption{}
 \end{subfigure}%
 \hfill
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS/SingleCR/Asimov_Ranking_tH_NORM}
+  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Ranking_tH_NORM}
   \caption{}
 \end{subfigure}%
 \caption{Rànquing dels NPs més impactants en l'ajust Asimov en el canals (a) \dilepOStau i (b) \dilepSStau. 
@@ -1926,38 +1956,30 @@ Els rectangles buits mostren l'impacte pre-ajust i els omplerts el post-ajust.
 
 La sensibilitat esperada a la força del senyal i als factors de normalització en el canal \dilepOStau és:
 \begin{align}
-	\Delta \mu_{\tHq} 	&= \pm 21.58 (\text{tot.}) \pm 14.39 (\text{stat.}) \label{eq:resum:ASIMOV:OS:POIs:mu} \\
-	\Delta k_{\ttbar} 	&= \pm 0.07 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:ASIMOV:OS:POIs:ktt} \\
-	\Delta k_{\Zjets} 	&= \pm 0.11 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:ASIMOV:OS:POIs:kzj} \, .
+	\Delta \mu_{\tHq} 	&= ^{+31.52}_{-32.66} (\text{tot.}) ^{+15.87}_{-14.85} (\text{stat.}) \label{eq:resum:ASIMOV:OS:POIs:mu} \\
+	\Delta k_{\ttbar} 	&= \pm 0.04 (\text{tot.}) \pm 0.02 (\text{stat.})\label{eq:resum:ASIMOV:OS:POIs:ktt} \\
+	\Delta k_{\Zjets} 	&= \pm 0.10 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:ASIMOV:OS:POIs:kzj} \, .
 \end{align}
 L'incertesa total (tot.) inclou efectes estadístics i sistemàtics.
 També es mostra separadament l'incertesa estadística (stat.).
 Tant les incerteses estadístiques com les sistemàtiques són comparables
 ($\pm14.39$ per a l'estadística i $\pm15.65$ per a la sistemàtica).
 
-A més de la força del senyal, també es determina un límit superior mitjançant un test estadístic unidireccional.
-Aquest test depèn del valor de $\mu_{\tHq}$, i el límit superior s'obté utilitzant el mètode CLs~\cite{Read:2002hq} per a establir un nivell de confiança del 95\% (CL95). La interpretació de la força del senyal,
-junt amb el límit superior, també es pot expressar en termes de la secció de producció del procés de senyal com segueix:
-\begin{equation*}
-\sigma^{\text{obs}} = \mu_{\tHq} \times \sigma^{\text{pred}} \, ,
-\end{equation*}
-on $\sigma^{\text{pred}}$ és el valor de la secció de producció predita per la teoria.
-Per al canal \dilepOStau, el límit superior esperat en la força del senyal a CL95:
-\begin{equation*}
-\text{limit(exp.)} = 57.98^{+39.38}_{-21.07} \, \mu^{\text{SM}}_{\tHq}\, .
-\end{equation*}
+
+%A més de la força del senyal i els factors de normalització, també podem establir límits superiors a la secció eficaç de producció. Per aquesta tasca fem servir els intervals de confiança. L'interval 1sigma correspon al 68% de certesa i el 2sigma a 95% (95CL).
+%Llavors, un per al límit superior donat amb interval 95CL significa que només hi ha una possibilitat del 5% que el resulta obtinguts siga degut a una fluctuació estadística.
 
 
 La sensibilitat esperada a la força del senyal de \tHq i al factor de normalització $k_{\ttbar, \ttX}$ en el canal \dilepSStau és:
 \begin{align}
-\Delta \mu_{\tHq} &= \pm 7.2 (\text{tot.}) \pm 6.06 (\text{stat.}) \label{eq:resum:Fit:ASIMOV:SS:mu} \\
-\Delta k_{\ttbar, \ttX} &= \pm 0.66 (\text{tot.}) \pm 0.12 (\text{stat.}) \label{eq:resum:Fit:ASIMOV:SS:k} \, .
+\Delta \mu_{\tHq} &= \pm 6.51 (\text{tot.}) \pm 6.06 (\text{stat.}) \label{eq:resum:Fit:ASIMOV:SS:mu} \\
+\Delta k_{\ttbar, \ttX} 	&= \pm 0.16 (\text{tot.}) \pm 0.12 (\text{stat.})\label{eq:resum:Fit:ASIMOV:SS:k} \, .
 \end{align}
-L'error estadístic és el component dominant en la incertesa total de $\mu^{\dilepSStau}{\tHq}$. La sensibilitat a la producció de \tHq millora significativament respecte al canal \dilepOStau (Equació~\ref{eq:ChaptH:ASIMOV:OS:POIs:mu}). Quant a la incertesa en el fons, és major que en el canal \dilepOStau. Això es deu parcialment al fet que la contribució del fons es redueix notablement en el canal \dilepSStau. Tot i això, la major part de la incertesa sobre $k{\ttbar, \ttX}$ es deu a les contribucions sistemàtiques. 
-El límit superior esperat per a $\mu^{\dilepSStau}{\tHq}$ és:
-\begin{equation*}
-\text{limit(exp.)} = 20.27^{+17.75}{-8.3} \, \mu^{\text{SM}}_{\tHq}\, .
-\end{equation*}
+L'error estadístic és el component dominant en la incertesa total de $\mu^{\dilepSStau}{\tHq}$. La sensibilitat a la producció de \tHq millora significativament respecte al canal \dilepOStau (Equació~\ref{eq:resum:ASIMOV:OS:POIs:mu}). Quant a la incertesa en el fons, és major que en el canal \dilepOStau. Això es deu parcialment al fet que la contribució del fons es redueix notablement en el canal \dilepSStau. Tot i això, la major part de la incertesa sobre $k{\ttbar, \ttX}$ es deu a les contribucions sistemàtiques. 
+%El límit superior esperat per a $\mu^{\dilepSStau}{\tHq}$ és:
+%\begin{equation*}
+%\text{limit(exp.)} = 20.27^{+17.75}{-8.3} \, \mu^{\text{SM}}_{\tHq}\, .
+%\end{equation*}
 
 %\subsubsection{Adjust a les regions de cotrol}
 %\label{sec:resum:Resultats:CRonlyBonly}
@@ -1973,23 +1995,115 @@ Un cop explorats els resultats esperats utilitzant només simulacions MC en l'aj
 el següent pas en l'anàlisi és incorporar les dades observacionals reals.
 En el cas de l'ajust a les dades, no s'apliquen condicions ad-hoc a la força del senyal, els factors de normalització o els NPs. 
 Per tant, en contrast amb l'ajust Asimov, els valors de $\mu_{\tHq}$ i els $k_p$ poden divergir d'una, i els $\theta$s poden ser diferents dels seus $\theta^{0}$s (és a dir, desviació o "pull").
+La significancia dels pulls es presenten a Figura~\ref{fig:Resum:fitToData:RankedPull}.
+
+
+\begin{figure}[h]
+\centering
+ \includegraphics[width=.45\linewidth]{Chapter5_tHq/NPs/OS_new/OS_UNBLINDED/Pulls/RankedPullSig/NuisParSigRank}
+  \includegraphics[width=.45\linewidth]{Chapter5_tHq/NPs/SS_new/sS_UNBLINDED/Pulls/RankedPullSig/NuisParSigRank}
+\caption{Les 20 desviacions més grans per als canals (a) \dilepOStau i (b) \dilepSStau ordenades de manera que la desviació més significativa es mostren en primer lloc.} 
+\label{fig:Resum:fitToData:RankedPull}
+\end{figure}
+
+
+A la Taula~\ref{tab:Resul:FullData:GroupedSyst} descomposem l'incertesa 
+total en la mesura de $\mu_{\tHq}$ per grups d'incerteses sistemàtics utlitzant totes les dades.
+
+\begin{table}[h] % Impacte agrupat ASIMOV
+\centering
+\begin{tabular}{l|l|l}
+\toprule
+\textbf{Font d'incertesa} 				& \dilepOStau 		& \dilepSStau \\
+\midrule
+Incertesa del MC 					& $\pm 7.136$ 		& $\pm 0.983$ \\
+\midrule
+\textbf{Modelatge} 					& & \\
+Incerteses teòriques 					& $\pm 24.041$  	& $\pm 1.105$ \\
+Incerteses a les PDFs				& $\pm 7.895$		& $\pm 0.815$ \\
+\textbf{Experimental} 				& 				& 	\\
+Instrumental 						& $\pm 5.408$  	& $\pm 0.716$ \\
+Instrumental: etiquetatge de sabor 		& $\pm 0.455$ 		& $\pm 0.126$ \\
+Instrumental JES i JER 				& $\pm 11.377$ 	& $\pm 2.727$ \\
+\midrule
+Factors de normalització 				& $\pm 10.527$ 	& $\pm 2.235$ \\
+\midrule
+\textbf{Total d'incertesa sistemàtica} 		& $\pm 28.543$ 	& $\pm 4.081$ \\
+\bottomrule
+\end{tabular}
+\caption{Incerteses sistemàtiques en la mesura de $\mu_{\tHq}$ en els canals \dileptau utiitzant totes les dades.}
+\label{tab:Resul:FullData:GroupedSyst}
+\end{table}
+
 
 
 El resultat de l'ajust perfil-semblança amb compartiments en el canal \dilepOStau produeix la següent força del senyal i factors de normalització:
 \begin{align}
-\mu_{\tHq} &= -19.30 \pm 20.16 (\text{tot.}) \pm 13.04 (\text{stat.}) \label{eq:resum:FinalFit:OS:mu} \\
-k_{\ttbar} &= 0.97 \pm 0.9 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:FinalFit:OS:ktt}\\
-k_{\Zjets} &= 1.02 \pm 0.11 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:FinalFit:OS:zjets}\, .
+\mu_{\tHq} &= -22.11^{+29.22}_{-34.08} (\text{tot.}) ^{+14.76}_{-13.72} (\text{stat.})\label{eq:resum:FinalFit:OS:mu} \\
+k_{\ttbar} &= 0.97 \pm 0.03 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:FinalFit:OS:ktt}\\
+k_{\Zjets} &= 1.03 \pm 0.11 (\text{tot.}) \pm 0.02 (\text{stat.}) \label{eq:resum:FinalFit:OS:zjets}\, .
 \end{align}
-L'incertesa total (tot.) inclou efectes estadístics i sistemàtics. L'incertesa estadística (stat.) també es mostra per separat. Els resultats obtinguts són compatibles amb el Model Estàndard. Mentre que les normalitzacions de \ttbar i \Zjets gairebé no són escalades, estant prop de la predicció del SM, el procés de \tHq és escalat negativament per un factor de -19.30. La gran incertesa estadística en el resultat de $\mu^{\dilepOStau}_{\tHq}$ (el $\pm 13.04$ en l'Equació~\ref{eq:ChaptH:FinalFit:OS:mu}) podria ser reduïda si la mostra estadística fos més gran i, per tant, la nostra comprensió de la normalització de \tHq seria millor.
+L'incertesa total (tot.) inclou efectes estadístics i sistemàtics. L'incertesa estadística (stat.) també es mostra per separat. Els resultats obtinguts són compatibles amb el Model Estàndard. Mentre que les normalitzacions de \ttbar i \Zjets gairebé no són escalades, estant prop de la predicció del SM, el procés de \tHq és escalat negativament per un factor de $-22.11$. La gran incertesa estadística en el resultat de $\mu^{\dilepOStau}_{\tHq}$ (el $^{+14.76}_{-13.72}$ en l'Equació~\ref{eq:ChaptH:FinalFit:OS:mu}) podria ser reduïda si la mostra estadística fos més gran.
 
 La força del senyal i $k_{\ttbar,\ttX}$ obtinguts com a resultat de l'ajust perfil-semblança amb compartiments en el canal \dilepSStau són:
 \begin{align}
-\mu_{\tHq} &= -2.59 \pm 5.44 (\text{tot.}) \pm 5.01 (\text{stat.}) \label{eq:resum:FinalFit:SS:mu} \\
-k_{\ttbar,\ttX} &= 0.73 \pm 0.13 (\text{tot.}) \pm 0.10 (\text{stat.}) \label{eq:resum:FinalFit:SS:ktt} \, .\
+\mu_{\tHq} &= -2.67 \pm 5.44 (\text{tot.}) \pm 5.03 (\text{stat.}) \label{eq:resum:FinalFit:SS:mu} \\
+k_{\ttbar,\ttX} &= 0.73 \pm 0.14 (\text{tot.}) \pm 0.10 (\text{stat.}) \label{eq:resum:FinalFit:SS:ktt} \, .\
 \end{align}
 El $\mu^{\dilepSStau}{\tHq}$ és escalat a un valor negatiu que és compatible amb, tenint en compte la incertesa, la predicció del SM (com també és el cas per al $\mu^{\dilepOStau}{\tHq}$ en l'Equació~\ref{eq:ChaptH:FinalFit:OS:mu}). El factor de normalització dels fons amb un parell de quarks top són escalats pels factors $k_{\ttbar,\ttX}$. Aquest factor de normalització és proper a la unitat i és compatible amb la predicció del SM.
 
+
+A més de la força del senyal, també es determina un límit superior mitjançant un test estadístic unidireccional.
+Aquest test depén del valor de $\mu_{\tHq}$, i el límit superior s'obté utilitzant el mètode CLs~\cite{Read:2002hq} per a establir un nivell de confiança del 95\% (95\% CL). La interpretació de la força del senyal,
+junt amb el límit superior, també es pot expressar en termes de la secció de producció del procés de senyal com es mostra a la Taula~\ref{tab:Resum:UpperLimit}.
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c|c|c}
+\toprule
+\multicolumn{5}{c}{Límit superior per $\mu_{\tHq}$} \\ \midrule
+Canal 		& Mesurat 	& Esperat  	& $1\sigma$ $\text{CL}_{95}$       		& $2\sigma$ $\text{CL}_{95}$         \\ \midrule
+\dilepOStau	& 47.51		& 61.2  		& [41.95, 93.48] 	& [30.56,  148.6]  \\ \midrule
+\dilepSStau	& 13.83		&16.94  		& [10.33, 30.22] 	& [6.991,  52.24] \\ \bottomrule
+\end{tabular}
+\caption{Límits superiors observats i esperats per al $\mu_{\tHq}$ per a ambdós canals \dileptau.}
+\label{tab:Resum:UpperLimit}
+\end{table}
+
+
+
+%\begin{equation*}
+%\sigma^{\text{obs}} = \mu_{\tHq} \times \sigma^{\text{pred}} \, ,
+%\end{equation*}
+%on $\sigma^{\text{pred}}$ és el valor de la secció de producció predita per la teoria.
+%Per al canal \dilepOStau, el límit superior esperat en la força del senyal a CL95:
+%\begin{equation*}
+%\text{limit(exp.)} = 66.4^{+39.38}_{-21.07} \, \mu^{\text{SM}}_{\tHq}\, .
+%\end{equation*}
+Un límit superior donat amb interval 95\% CL significa que només hi ha una possibilitat del 5\% que el resultat obtingut siga degut a una fluctuació estadística.
+%exp = 66.4
+% upper 1 = 101.3
+% lower 1 = 45.53
+% upper 2 = 169.4
+% lower 2 = 33.11
+
+Però, què passaria si la física fos diferent de la descrita pel SM i l'acoblament de Yukawa amb el top tingués un signe oposat al del SM? A continuació, els mateixos estudis fets fins ara es realitzen sota l'acoblament de Yukawa invertit. Això es fa utilitzant mostres alternatives per a la producció completa de \tH (és a dir, els processos \tHq + \tWH). Aquestes mostres alternatives han estat produïdes amb $\yt = -1$. Els resultats obtinguts són:
+\begin{align*}
+	 \mu^{\dilepOStau}_{\tHq, \yt=-\yt^{\text{SM}}} &= -10.7^{+11.6}_{-39.4} (\text{tot.}) ^{+5.0}_{-4.8} (\text{stat.})  \\
+	\mu^{\dilepSStau}_{\tHq, \yt=-\yt^{\text{SM}}} &= -0.3 \pm 1.2 (\text{tot.}) \pm 1.1 (\text{stat.})  \,.
+\end{align*}
+Els límits superiors a la força de senyal es presenten a la Taula~\ref{tab:Resum:UpperLimit:ytm1}.
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c|c|c}
+\toprule
+\multicolumn{5}{c}{Límit superior per $\mu_{\tHq}$} \\ \midrule
+Canal 						& Mesurat 	& Esperat  	& $1\sigma$ $\text{CL}_{95}$       	& $2\sigma$ $\text{CL}_{95}$         \\ \midrule
+\dilepOStau ($\yt=-\yt^{\text{SM}}$)	&77.95		& 119.6  		& [46.97, 284.9] 				& --- 			  \\
+\dilepSStau ($\yt=-\yt^{\text{SM}}$)	&20.79 		& 24.07  		& [7.478, 112.5] 				& [3.197,  342.4] \\ \bottomrule
+\end{tabular}
+\caption{També s'inclouen els límits superiors observats i esperats per al $\mu_{\tHq}$ per a ambdós canals \dileptau derivats amb el mètode CL sota la hipòtesi de l'acoblament de Yukawa invertit.}
+\label{tab:Resum:UpperLimit:ytm1}
+\end{table}
 
 
 
@@ -2009,37 +2123,51 @@ En aquesta tesi es discuteixen els fonaments teòrics de la física del quark to
 
 Aquesta anàlisi utilitza col·lisions protó-protó a $\CM=13$~TeV del detector ATLAS durant la Run 2 del LHC amb una lluminositat integrada total de 140 fb$^{-1}$. S'implementa i utilitza la informació a nivell de partó per a reconstruir el procés \tHq. L'origen del lepton lleuger s'avalua mitjançant l'ús de BDT. Després s'aborda la taxa de partícules mal identificades utilitzant el mètode d'ajust de plantilles per a corregir els rendiments de MC.
 
-Posteriorment, utilitzant diversos BDTs, es defineixen les SRs, CRs i VRs de l'anàlisi. Utilitzant aquestes regions, es realitza un ajust bineal de la versemblança amb dades d'Asimov i dades reals per a determinar la normalització del procés \ttW i la força del senyal de la producció de \tHq. La culminació d'aquesta anàlisi és la determinació de límits en la secció de producció de \tHq. Els valors de la força del senyal de \tHq es mostren a la Taula~\ref{tab:Conclusion:resum:SignalStrength}. L'expectativa s'obté utilitzant dades d'Asimov i l'observat s'obté amb l'ajust a les dades reals.
+Posteriorment, utilitzant diversos BDTs, es defineixen les SRs i CRs  de l'anàlisi. Utilitzant aquestes regions, es realitza un ajust  de la versemblança amb dades d'Asimov per determinar la sensibilitat de l'anàlisi. Després, fent servir totes les dades, es calculen els factors de normalització del fons dominants. Finalment, s'obté per a cada canal, els valors de la força del senyal de \tHq. Aquestos es mostren a la Figura~\ref{fig:Resum:POIs}. El valor esperat s'aconsegueix emprant dades d'Asimov i l'observat s'aconsegueix amb l'ajust del MC a les dades reals.
 
 
-\begin{table}[h]
+\begin{figure}[h] 
 \centering
-\begin{tabular}{l|c|c}
-\cline{2-3}
-& \multicolumn{2}{c}{$\mu_{\tHq}$} \\ \cline{2-3}
-& Esperat & Observat \\ \midrule
-\dilepOStau & $\pm 21.58$ & $-19.73 \pm 20.16$ \\
-\dilepSStau & $\pm 7.20$ & $-2.59 \pm 5.44$ \\
- \bottomrule
-\end{tabular}
-\caption{Valors esperats i observats de la força del senyal per als dos canals \dileptau. La incertesa és la combinació dels efectes estadístics i sistemàtics.}
-\label{tab:Conclusion:resum:SignalStrength}
-\end{table}
+  \includegraphics[width=.49\linewidth]{Chapter5_tHq/comb/POI_tH_NORM_ crop}
+  \includegraphics[width=.49\linewidth]{Chapter5_tHq/comb_ytm1/POI_tH_NORM_ crop}\caption{Valors de la força del senyal tant per al canal \dilepOStau com per al \dilepSStau sota (a) el SM i (b) la hipòtesi de l'acoblament de Yukawa invertit. La incertesa total (tot) inclou efectes estadístics i sistemàtics. L'incertesa estadística (stat) es mostra per separat. }
+\label{fig:Resum:POIs}
+\end{figure}
 
-Aquest resultat és completament compatible amb el Model Estàndard. Els límits al 95\% CL en la secció de \tHq es troben a la Taula~\ref{tab:Conclusion:resum:UpperLimit}.
 
-\begin{table}[h]
+%\begin{table}[h]
+%\centering
+%\begin{tabular}{l|c|c}
+%\cline{2-3}
+%& \multicolumn{2}{c}{$\mu_{\tHq}$} \\ \cline{2-3}
+%& Esperat & Observat \\ \midrule
+%\dilepOStau & $\pm 21.58$ & $-19.73 \pm 20.16$ \\
+%\dilepSStau & $\pm 7.20$ & $-2.59 \pm 5.44$ \\
+% \bottomrule
+%\end{tabular}
+%\caption{Valors esperats i observats de la força del senyal per als dos canals \dileptau. La incertesa és la combinació dels efectes estadístics i sistemàtics.}
+%\label{tab:Conclusion:resum:SignalStrength}
+%\end{table}
+
+Aquest resultat és completament compatible amb el Model Estàndard. Els límits al 95\% CL en la secció de \tHq es troben a la Taula~\ref{tab:Resum:UpperLimit} i a la Figura~\ref{fig:Resum:UpperLimits}.
+\begin{figure}[h] 
 \centering
-\begin{tabular}{l|c|c}
-\cline{2-3}
-& \multicolumn{2}{c}{$\mu_{\tHq}^{\text{CL95}}$} \\ \cline{2-3}
-& Esperat & Observat \\ \midrule
-\dilepOStau & $57.98$ & 34.49 \\
-\dilepSStau & $18.88$ & 13.8 \\ \bottomrule
-\end{tabular}
-\caption{Valors dels límits superiors de la força del senyal al 95\% CL per als dos canals \dileptau.}
-\label{tab:Conclusion:resum:UpperLimit}
-\end{table}
+  \includegraphics[width=.67\linewidth]{Chapter5_tHq/comb/Limits}
+\caption{Límits superiors observats i esperats per al $\mu_{\tHq}$ per a ambdós canals \dileptau. Les àrees verdes i grogues representen les variacions de $1\sigma$ i $2\sigma$ del límit superior esperat.}
+\label{fig:Resum:UpperLimits}
+\end{figure}
+
+%\begin{table}[h]
+%\centering
+%\begin{tabular}{l|c|c}
+%\cline{2-3}
+%& \multicolumn{2}{c}{$\mu_{\tHq}^{\text{CL95}}$} \\ \cline{2-3}
+%& Esperat & Observat \\ \midrule
+%\dilepOStau & $57.98$ & 34.49 \\
+%\dilepSStau & $18.88$ & 13.8 \\ \bottomrule
+%\end{tabular}
+%\caption{Valors dels límits superiors de la força del senyal al 95\% CL per als dos canals \dileptau.}
+%\label{tab:Conclusion:resum:UpperLimit}
+%\end{table}
 
 Mirant cap al futur, les perspectives per a millorar els resultats d'aquesta anàlisi són prometedores, impulsades per diversos desenvolupaments anticipats:
 \begin{itemize}

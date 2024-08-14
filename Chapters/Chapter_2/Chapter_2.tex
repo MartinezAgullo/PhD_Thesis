@@ -11,10 +11,10 @@ asdf
 %{\LARGE \textbf{The ATLAS experiment at the Large Hadron Collider of CERN laboratory}\\}
 
 \vspace*{0.1 cm} 
-\hspace*{200pt} \\
-\hspace*{120pt} \textit{Las cebollas tienen capas,} \\
-\hspace*{120pt} \textit{\sout{los ogros} ATLAS tiene capas.} \\
-\hspace*{140pt} ---\textsc{Shrek (2001)} \\% \textit{} \\
+\hspace*{300pt} \\
+\hspace*{220pt} \textit{Las cebollas tienen capas,} \\
+\hspace*{220pt} \textit{\sout{los ogros} ATLAS tiene capas.} \\
+\hspace*{240pt} ---\textsc{Shrek (2001)} \\% \textit{} \\
 \vspace*{2cm} 
 
 %\tableofcontents
@@ -141,7 +141,7 @@ a beam of protons was successfully  directed into the LHC pipes for the first ti
 
 The LHC is a circular hadron accelerator with a circumference of $27\,$km that is 
 located where once was the LEP\footnote{LEP is the accelerator used 
-by CERN from 1989 to 2000~\cite{Myers226776}} collider tunnel.
+by CERN from 1989 to 2000~\cite{Myers226776}.} collider tunnel.
 %The LHC tunnels are almost entirely outside the main site, 
 %being mainly on french territory. %An overall schematic view of the LHC is shown in Figure~\ref{fig:Chap2:OverallLHC}.
 Circular accelerators are more space-efficient than linear ones due to their ability to speed up 
@@ -685,7 +685,7 @@ The angular distance is measured in units of $\dR = \sqrt{(\Delta \eta)^{2}+(\De
 
 \begin{figure}
 	\centering
- 	 \includegraphics[width = 0.75\textwidth]{Chapter2/ATLAS_CoordinateSystem}
+ 	 \includegraphics[width = 0.55\textwidth]{Chapter2/ATLAS_CoordinateSystem}
 	 \caption{Coordinate system of the ATLAS detector in the context of LHC.}
 	\label{fig:Chap2:ATLAS:CoordinateSystem}
 \end{figure}
@@ -1644,8 +1644,8 @@ During the development of this thesis, I have contributed to the alignment of th
 % the refurbishment 
 % of the software package for 
 development of the monitoring software of the track-based ID alignment results obtained at the calibration 
-loop\footnote{The calibration loop, also called 24h loop, is the process of updating the databases with the calibration results.
-The calibration loop is executed every 24 hours.}.
+loop\footnote{The calibration loop, also called 24h loop, is the process of dynamically updating the databases with the calibration results.
+The calibration loop is executed every 24 hours. It is responsible for correcting the most important movements after data collection and before data reprocessing. This is done using a subset of data (\textit{express stream}) processed at Tier-0.}.
 %Cal loop = The process of database updates and primary data quality review is known as the calibration loop~\cite{ATLAS:2019fst} %and show them as a web-based service.  
 
 
@@ -1693,7 +1693,7 @@ The alignment algorithm presented in this section is based on the minimisation o
 
 \begin{figure}
 \centering
-\includegraphics[width = 0.5\textwidth]{Chapter2/Alignment_residual}
+\includegraphics[width = 0.32\textwidth]{Chapter2/Alignment_residual}
 \caption{Schematic representation of a charged particle crossing detector planes~\cite{ATLAS:2020ixw}.  
 The red stars represent the measurements in each plane ($m_i$). The black line is the 
 fitted trajectory for a given set of track parameters. The position of the intersection of the fitted 

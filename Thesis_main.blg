@@ -1,0 +1,193 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Thesis_main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/Others/InsideCover.aux
+A level-1 auxiliary file: Chapters/Others/Preface.aux
+A level-1 auxiliary file: Chapters/Others/Acknowledgements.aux
+A level-1 auxiliary file: Chapters/Others/Contents.aux
+A level-1 auxiliary file: Chapters/Chapter_1/Chapter_1.aux
+A level-1 auxiliary file: Chapters/Chapter_2/Chapter_2.aux
+A level-1 auxiliary file: Chapters/Chapter_3/Chapter_3_1.aux
+A level-1 auxiliary file: Chapters/Chapter_3/Chapter_3_2.aux
+A level-1 auxiliary file: Chapters/Chapter_5/Chapter_tH.aux
+A level-1 auxiliary file: Chapters/Chapter_6/Chapter_Conclusion.aux
+A level-1 auxiliary file: Chapters/ThesisSummary/Summary_Valencian.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated field_info (elt_size=4) to 49660 items from 5000.
+Database file #1: Thesis_main-blx.bib
+Database file #2: bib/ATLAS-SUSY.bib
+Database file #3: bib/ATLAS-useful.bib
+Database file #4: bib/ATLAS.bib
+Database file #5: bib/CMS.bib
+Database file #6: bib/ConfNotes.bib
+Database file #7: bib/PubNotes.bib
+Database file #8: biblio_thesis.bib
+Repeated entry---line 200 of file biblio_thesis.bib
+ : @article{Bothmann:2019yzt
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 525 of file biblio_thesis.bib
+ : @techreport{ATL-PHYS-PUB-2020-017
+ :                                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 947 of file biblio_thesis.bib
+ : @article{Bahr:2008pv
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 961 of file biblio_thesis.bib
+ : @booklet{ATL-PHYS-PUB-2014-021
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 970 of file biblio_thesis.bib
+ : @article{Sjostrand:2014zea
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1480 of file biblio_thesis.bib
+ : @article{Ball:2012cx
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1497 of file biblio_thesis.bib
+ : @booklet{ATL-PHYS-PUB-2016-017
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1504 of file biblio_thesis.bib
+ : @article{Alwall:2014hca
+ :                        ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1524 of file biblio_thesis.bib
+ : @article{Ball:2014uwa
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1542 of file biblio_thesis.bib
+ : @article{STDM-2015-05
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1559 of file biblio_thesis.bib
+ : @article{Sjostrand:2007gs
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1787 of file biblio_thesis.bib
+ : @article{Demartin:2016axk
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1869 of file biblio_thesis.bib
+ : @article{ATLAS:2022swp
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1988 of file biblio_thesis.bib
+ : @article{Bellm:2015jjp
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2551 of file biblio_thesis.bib
+ : @article{Andersson:1983ia
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3469 of file biblio_thesis.bib
+ : @booklet{ATLAS-CONF-2015-007
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3701 of file biblio_thesis.bib
+ : @article{Butterworth:2015oua
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3715 of file biblio_thesis.bib
+ : @article{Martin:2009bu
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3729 of file biblio_thesis.bib
+ : @article{Lai:2010vv
+ :                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3770 of file biblio_thesis.bib
+ : @article{Kant:2014oha
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3798 of file biblio_thesis.bib
+ : @article{Lange:2001uf
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4396 of file biblio_thesis.bib
+ : @article{Cowan:2010js
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5208 of file biblio_thesis.bib
+ : @booklet{ATL-PHYS-PUB-2017-003
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5508 of file biblio_thesis.bib
+ : @article{Frixione:2007vw
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5522 of file biblio_thesis.bib
+ : @article{Artoisenet:2012st
+ :                           ,
+I'm skipping whatever remains of this entry
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Repeated entry---line 5569 of file biblio_thesis.bib
+ : @article{Gleisberg:2008ta
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 5610 of file biblio_thesis.bib
+ : @booklet{ATL-PHYS-PUB-2018-003
+ :                               ,
+I'm skipping whatever remains of this entry
+Biblatex version: 3.16
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 319 entries,
+            6393 wiz_defined-function locations,
+            3350 strings with 67780 characters,
+and the built_in function-call counts, 1508767 in all, are:
+= -- 94906
+> -- 31280
+< -- 6255
++ -- 33946
+- -- 12493
+* -- 104383
+:= -- 150913
+add.period$ -- 0
+call.type$ -- 319
+change.case$ -- 2829
+chr.to.int$ -- 357
+cite$ -- 636
+duplicate$ -- 169102
+empty$ -- 146475
+format.name$ -- 18684
+if$ -- 311708
+int.to.chr$ -- 0
+int.to.str$ -- 961
+missing$ -- 0
+newline$ -- 9780
+num.names$ -- 13520
+pop$ -- 106921
+preamble$ -- 1
+purify$ -- 4417
+quote$ -- 0
+skip$ -- 51904
+stack$ -- 0
+substring$ -- 145976
+swap$ -- 42970
+text.length$ -- 6226
+text.prefix$ -- 4
+top$ -- 1
+type$ -- 10814
+warning$ -- 0
+while$ -- 21524
+width$ -- 0
+write$ -- 9462
+(There were 27 error messages)

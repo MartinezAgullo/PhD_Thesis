@@ -1,8 +1,9 @@
-\chapter{Additional results}
+\chapter{Pruning of the non-impactful nuisance parameters}
 \label{chap:Appendix:AdditionalResults}
-This appendix complements the fit results presented through Section~\ref{sec:ChaptH:Fit}.
-For the two channels, the pruning plots are presented. Additionally, the signal strengths 
-and normalisation factors are shown for each step of the fit procedure. 
+This appendix complements the fit results presented through Section~\ref{sec:ChaptH:Fit}
+presenting the pruning plots for both \dileptau sub-channels.
+%For the two channels, the pruning plots are pres. %Additionally, the signal strengths 
+%and normalisation factors are shown for each step of the fit procedure. 
 
 
 %%%%%%%%%%%%%%%%%%%
@@ -10,38 +11,32 @@ and normalisation factors are shown for each step of the fit procedure.
 %%%%%%%%%%%%%%%%%%%
 \section{Asimov fit in the \dilepOStau channel}
 \label{sec:Appendix:AdditionalResults:OS:Asimov}
-Complementing the Section~\ref{sec:ChaptH:Fit:ASIMOV:OS}, in this appendix
-the pruning of the non-impactful NPs is presented in Section~\ref{sec:Appendix:AdditionalResults:OS:Asimov:Pruning}.
+Complementing Section~\ref{sec:ChaptH:Fit:ASIMOV:OS}, in this appendix
+the pruning of the non-impactful NPs is presented. %in Section~\ref{sec:Appendix:AdditionalResults:OS:Asimov:Pruning}.
 %The plots with the sensitivity to the $\mu_{\tHq}^{\dilepOStau}$ as well as to the $k_{\ttbar}$ and $k_{\Zjets}$  
 %are shown in Section~\ref{sec:Appendix:AdditionalResults:OS:Asimov:NormFactors}.
-
-
 %%%%%%%%%%%%%%%%%%%
 %           Asimov OS  :: Pruning         %
 %%%%%%%%%%%%%%%%%%%
-\subsection{Pruning of NPs in the \dilepOStau Asimov fit}
-\label{sec:Appendix:AdditionalResults:OS:Asimov:Pruning}
-The processes of removing certain NPs that have negligible impact on the
+%\subsection{Pruning of NPs in the \dilepOStau Asimov fit}
+%\label{sec:Appendix:AdditionalResults:OS:Asimov:Pruning}
+The process of removing certain NPs that have negligible impact on the
  profile likelihood fit is shown in this section. 
 For all present NPs is evaluated whether to keep the parameter, to drop
 its normalisation impact, to drop its shape impact or to completely drop the
 NP. The shape contribution is evaluated by observing the  the maximum difference 
 in bin entries between the nominal and the varied distribution, under the same 
 normalisation. Regarding the normalisation contribution, it is evaluated by
-integrating over the nominal and varied distribution and measuring the differences.  
+integrating the nominal and varied distribution and measuring the differences.  
 
 The pruning is shown first for the instrumental NPs in Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:instrumental_general}.
-Here it can be seen that most of NPs are completely pruned. 
+Here it can be seen that most of the NPs are completely pruned. 
 %For the pile-up rewriting and the luminosity only the normalisation is kept in most of cases. 
 Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:instrumental_FTAG} shows that  almost 
-all the NPs dedicated to flavour tagging, JES and JES are fully dropped. %Only a NP related to the \btag and another 
-%of the light tagging are keeping their normalisation. 
-%The JES is fully dropped in the most of cases and, for the JER, either the shape or the full NP tend to 
-%be dropped )
-
+all the NPs dedicated to flavour tagging are fully dropped. The JES effective NPs are doped as well but this
+is not the case for the JER.
 The pruning of the theory-related NPs is presented in 
-Figures~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:Theory},~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:tHqPDF} 
-and~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttZPDF}
+Figures~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:Theory},~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:tHqPDF}  and~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttZPDF}. The PDF uncertainties for \ttH, \ttbar and \ttW are completely dropped. While the PDFs of the diboson and, especially, the \tHq production play an important role.
 
 
 \begin{comment}
@@ -58,7 +53,6 @@ the related NPs are mostly dropped. The shape of the NPs for the PDFs of the \tt
 is dropped in all cases as Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttHPDF}
 exhibits. With \ttZ PDFs, in Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttZPDF},
 there is a similar behaviour as for \tZq.
-
 For \ttbar, the most important background this channel, all except one NPs related to its PDFs are dropped as
 Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttbarPDF} shows. Finally, for the
 diboson PDFs, the shape of its NPs is dropped most of times (see 
@@ -68,8 +62,7 @@ Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:DibosonPDF}).
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_instrumental_general}
-  \includegraphics[width=.85\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_INSTRUMENTAL}	
+  \includegraphics[width=.75\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_INSTRUMENTAL}	
    \caption{Pruning of non-impactful instrumental NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
@@ -80,43 +73,37 @@ Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:DibosonPDF}).
 \begin{figure}[h]
 \begin{subfigure}{0.45\textwidth}
   \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_instrumental_FTAG}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_FTAG}
+  \caption{}
 \end{subfigure}
 \hfill 
 \begin{subfigure}{0.45\textwidth}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_JES}
+  \caption{}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_JER}
+  \caption{}
 \end{subfigure}
-   \caption{Pruning of non-impactful flavour-tagging, JES and JER NPs in the Asimov fit of the \dilepOStau channel.  Grey NPs are 
+   \caption{Pruning of non-impactful (a) flavour-tagging, (b) JES and (c) JER NPs in the Asimov fit of the \dilepOStau channel.  Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:instrumental_FTAG}
 \end{figure}
-
-%\begin{figure}[h]
-%  \centering
-  %\includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_instrumental_JESR}
-%  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_JES}
-%  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_JER}
-%   \caption{Pruning of non-impactful JES and JER NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
-%   not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
-%   component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
-%  \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:instrumental_JESR}
-%\end{figure}
 
 
 \begin{figure}[h]
   \centering
   \begin{subfigure}{0.45\textwidth}
       	\includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_theory}
+	\caption{}
   \end{subfigure}
   \hfill
   \begin{subfigure}{0.45\textwidth}
  	\includegraphics[width=.68\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttH}
+	\caption{}
   	\includegraphics[width=.68\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttbar}  
+	\caption{}
   \end{subfigure}
-   \caption{Pruning of non-impactful modelling NPs as well as the \ttH and \ttbar PDF NPs in the Asimov fit of the \dilepOStau channel. 
+   \caption{Pruning of non-impactful (a) modelling NPs as well as the (b) \ttH and (c) \ttbar PDF NPs in the Asimov fit of the \dilepOStau channel. 
    The modelling NPs due to PDFs are not included in this figure. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
@@ -125,76 +112,47 @@ Figure~\ref{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:DibosonPDF}).
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_tHq_PDF}
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tHq}
-  \includegraphics[width=0.3\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tHq}
-  \includegraphics[width=0.3\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttW}
-  \includegraphics[width=0.3\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tZq}
-   \caption{Pruning of non-impactful \tHq, \ttW and \tZq PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
+  \begin{subfigure}{0.3\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tHq}
+	\caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+    \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttW}
+  	\caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tZq}
+  \caption{}
+  \end{subfigure}
+   \caption{Pruning of non-impactful (a) \tHq, (b) \ttW and (c) \tZq PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:tHqPDF}
 \end{figure}
 
-%\begin{figure}[h]
-%  \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_ttW_PDF}
-%  \includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttW}
-%   \caption{Pruning of non-impactful \ttW PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
-%   not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
-%   component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
-% \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttWPDF}
-%\end{figure}
-
-%\begin{figure}[h]
-%  \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_tZq_PDF}
-%  \includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_tZq}
-%   \caption{Pruning of non-impactful \tZq PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
-%   not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
-%   component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
-%  \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:tZqPDF}
-%\end{figure}
-
-%\begin{figure}[h]
-%  \centering
-  %\includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_ttbar_PDF}
-%  \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttbar}
-%   \caption{Pruning of non-impactful \ttbar PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
-%   not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
-%   component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
-%  \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttbarPDF}
-%\end{figure}
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_ttZ_PDF}
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttZ} 
-  \includegraphics[width=.42\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttZ} 
-  \includegraphics[width=.42\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_VV}
-   \caption{Pruning of non-impactful \ttZ and diboson PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
+  \begin{subfigure}{0.42\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_ttZ} 
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.42\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_VV}
+  \caption{}
+  \end{subfigure}
+   \caption{Pruning of non-impactful (a) \ttZ and (b) diboson PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:ttZPDF}
 \end{figure}
 
-%\begin{figure}[h]
-%  \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_Diboson_PDF}
-%  \includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_PDF_VV}
-%   \caption{Pruning of non-impactful diboson PDF NPs in the Asimov fit of the \dilepOStau channel. Grey NPs are 
-%   not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
-%   component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
-%  \label{fig:Appendix:AdditionalResults:OS:Asimov:Pruning:DibosonPDF}
-%\end{figure}
 
 
 
 \FloatBarrier
 
-
 \begin{comment}
-
 %%%%%%%%%%%%%%%%%%%%%%
 %           Asimov OS  :: NormFactors          %
 %%%%%%%%%%%%%%%%%%%%%%
@@ -318,27 +276,24 @@ considering all uncertainty sources.}
 %%%%%%%%%%%%
 \section{Asimov fit in the \dilepSStau channel}
 \label{sec:Appendix:AdditionalResults:SS:Asimov}
-Complementing the Section~\ref{sec:ChaptH:Fit:ASIMOV:SS}, in this appendix
-the pruning of the non-impactful NPs is presented in Section~\ref{sec:Appendix:AdditionalResults:SS:Asimov:Pruning}.
+Complementing Section~\ref{sec:ChaptH:Fit:ASIMOV:SS}, in this appendix
+the pruning of the non-impactful NPs is presented. % in Section~\ref{sec:Appendix:AdditionalResults:SS:Asimov:Pruning}.
 %The plots with the sensitivity to the $\mu_{\tHq}^{\dilepSStau}$ as well as to the $k_{\ttbar,\ttX}$ normalisation factor 
 %are shown in Section~\ref{sec:Appendix:AdditionalResults:SS:Asimov:NormFactors}.
-
 %%%%%%%%%%%%%%%%%%%
 %           Asimov SS  :: Pruning         %
 %%%%%%%%%%%%%%%%%%%
-\subsection{Pruning}
-\label{sec:Appendix:AdditionalResults:SS:Asimov:Pruning}
-
-
+%\subsection{Pruning}
+%\label{sec:Appendix:AdditionalResults:SS:Asimov:Pruning}
 The pruning of the experimental NPs in the \dilepSStau channel 
 is presented in Figure~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:instrumental_general}.
 For the theory-related NPs is presented these results are shown in
 Figures~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:Theory},~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:tHqPDF} 
-and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}.
+and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}. Note that the PDF uncertainties for \ttH, \ttbar and \ttW are completely dropped.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[height=0.85\textheight]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_INSTRUMENTAL}
+  \includegraphics[height=0.6\textheight]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_INSTRUMENTAL}
    \caption{Pruning of non-impactful instrumental NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
@@ -354,13 +309,16 @@ and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}.
   \centering
   %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/OS/Asimov_Pruning_divided_Pruning_instrumental_FTAG}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/OS_new/OS_ASIMOV/Pruning_FTAG}
+  \caption{}
 \end{subfigure}
 \hfill 
 \begin{subfigure}{0.45\textwidth}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_JES}
+  \caption{}
   \includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_JER}
+  \caption{}
 \end{subfigure}
-   \caption{Pruning of non-impactful flavour-tagging, JES and JER NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
+   \caption{Pruning of non-impactful (a) flavour-tagging, (b) JES and (c) JER NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:instrumental_FTAG}
@@ -373,13 +331,16 @@ and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}.
   \centering
   \begin{subfigure}{0.45\textwidth}
       	\includegraphics[width=.95\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_theory}
+	\caption{}
   \end{subfigure}
   \hfill
   \begin{subfigure}{0.45\textwidth}
  	\includegraphics[width=.68\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttH}
-  	\includegraphics[width=.68\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttbar}  
+	\caption{}
+  	\includegraphics[width=.68\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttbar}
+	\caption{}  
   \end{subfigure}
-   \caption{Pruning of non-impactful modelling NPs as well as the \ttH and \ttbar PDF NPs in the Asimov fit of the \dilepSStau channel. 
+   \caption{Pruning of non-impactful (a) modelling NPs as well as the (b) \ttH and (c) \ttbar PDF NPs in the Asimov fit of the \dilepSStau channel. 
    The modelling NPs due to PDFs are not included in this figure. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
@@ -389,10 +350,19 @@ and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}.
 \begin{figure}[h]
   \centering
   %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_tHq}
-   \includegraphics[width=0.32\textwidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_tHq}\hfill
-   \includegraphics[width=0.32\textwidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttW}\hfill
-   \includegraphics[width=0.32\textwidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_tZq}
-   \caption{Pruning of non-impactful \tHq, \ttW and \tZq PDF NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
+    \begin{subfigure}{0.3\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_tHq}
+	\caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+    \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttW}
+  	\caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.3\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_tZq}
+  \caption{}
+  \end{subfigure}
+   \caption{Pruning of non-impactful (a) \tHq, (c) \ttW and (c) \tZq PDF NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:tHqPDF}
@@ -429,10 +399,15 @@ and~\ref{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}.
 
 \begin{figure}[h]
   \centering
-  %\includegraphics[height=0.9\textheight]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttZ}
-  \includegraphics[width=0.42\textwidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttZ}\hfill
-  \includegraphics[width=0.42\textwidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_VV}
-   \caption{Pruning of non-impactful \ttZ and Diboson PDFs NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
+  \begin{subfigure}{0.42\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_ttZ} 
+  \caption{}
+  \end{subfigure}
+  \begin{subfigure}{0.42\textwidth}
+  \includegraphics[width=\linewidth]{Chapter5_tHq/NPs/SS_new/SS_ASIMOV/Pruning_PDF_VV}
+  \caption{}
+  \end{subfigure}
+   \caption{Pruning of non-impactful (a) \ttZ and (b) Diboson PDFs NPs in the Asimov fit of the \dilepSStau channel. Grey NPs are 
    not present and green ones are kept. Red combinations are completely dropped. For orange NPs only the shape 
    component is kept, while for yellow ones only the normalisation is kept. Additionally, the list of NPs is split by regions.}
   \label{fig:Appendix:AdditionalResults:SS:Asimov:Pruning:ttZPDF}
@@ -479,18 +454,13 @@ Observe that the uncertainties are symmetrical.
 \end{figure}
 
 \FloatBarrier
-\end{comment}
 
-
-\begin{comment}
 %%%%%%%%%%%%%%%%%%
 %          CRONLY BONLY SS        %
 %%%%%%%%%%%%%%%%%%
 \section{CR-only--background-only fit in the \dilepSStau channel}
 \label{sec:Appendix:AdditionalResults:SS:CRBONLY} 
-\end{comment}
 
-\begin{comment}
 %%%%%%%%%%%%%%%%%%%%%%%
 %           CRONLY BONLY SS  :: Pulls          %
 %%%%%%%%%%%%%%%%%%%%%%%
@@ -615,8 +585,6 @@ Observe that the uncertainties are symmetrical.
    The points represent the best-fit value for the NP and the uncertainty bars represent the post-fit uncertainty.}
   \label{fig:Appendix:AdditionalResults:SS:CRBONLY:CRBONLY_NuisPar_VVPDF}
 \end{figure}
-\end{comment}
-
 
 \FloatBarrier
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -645,7 +613,6 @@ considering all uncertainty sources.}
 
 
 
-\begin{comment}
 %%%%%%%%%%%%%%%%%%
 %              Full data fit SS              %
 %%%%%%%%%%%%%%%%%%

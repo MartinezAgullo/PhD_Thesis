@@ -20,9 +20,9 @@ asdf
 
 \vspace*{0.1 cm} 
 \hspace*{200pt} \\
-\hspace*{175pt} \textit{El dos después del uno.} \\
+\hspace*{200pt} \textit{El dos después del uno.} \\
 %\hspace*{175pt} \textit{Primer el u i desrpés el dois.} \\
-\hspace*{175pt} ---\textsc{Isabel Val}\\% \textit{} \\
+\hspace*{225pt} ---\textsc{Isabel Val}\\% \textit{} \\
 \vspace*{2cm} 
 
 %%%%%%%%%%%%%%%%%%%
@@ -154,7 +154,7 @@ modelled with a Gaussian distribution.
 
 \begin{figure}[h]
 \centering
-\includegraphics[width=0.5\textwidth]{Chapter3/Sagitta_method_byMe}
+\includegraphics[width=0.35\textwidth]{Chapter3/Sagitta_method_byMe}
 \caption{The arc represents the path of the particle. The layers of the tracker 
 are drawn in blue. 
 With the sagitta (red) and 
@@ -396,16 +396,14 @@ muon momentum resolution. The uncertainties arising from these corrections are q
 the different ATLAS analyses.
 
 
-
 % Leptons :: Tau
 \subsection{Hadronically decaying taus}
 \label{sec:Chap3:Reco:Tau}
 %The identification of \Ptau-leptons is crucial for many analyses carried at the LHC.
 On the one hand, the leptonically-decaying \Ptau-leptons (\taulep) cannot be differentiated from prompt
-electrons or muons because \Ptau-decay takes place within several milimiters of the IP, 
-i.e., before reaching the detector. Therefore, the \taulep are not identified. 
-On the other hand, identifying hadronically-decaying \Ptau-leptons (\tauhad), while possible, is a challenging task. In this
-section the identification and reconstruction of \tauhad is described.
+electrons or muons because \Ptau-decay takes place within several millimetres of the IP, 
+i.e., before reaching the detector. Therefore, the $\taulep$s are not identified. 
+On the other hand, identifying hadronically-decaying \Ptau-leptons (\tauhad), while possible, is a challenging task. In this section, the identification and reconstruction of \tauhad is described.
 
 %https://cds.cern.ch/record/1609659/files/ATL-GEN-PROC-2013-002.pdf
 The \Ptau-lepton, being the most massive known lepton, exhibits a lifetime of approximately 
@@ -419,11 +417,11 @@ The formation of jets is described in Section~\ref{sec:Chap3:Reco:jets}.
 
 \begin{figure}[h]
 	\centering
- 	 \includegraphics[width = 0.25\textwidth]{Chapter3/tau_jet_tkiz}
+ 	 \includegraphics[width = 0.19\textwidth]{Chapter3/tau_jet_tkiz}
 	 \hspace{0.05\textwidth}
-	 \includegraphics[width = 0.27\textwidth]{Chapter3/tau_jet_tkiz_moreProngs}
+	 \includegraphics[width = 0.21\textwidth]{Chapter3/tau_jet_tkiz_moreProngs}
 	 \hspace{0.05\textwidth}
-	 \includegraphics[width = 0.27\textwidth]{Chapter3/quark_initiated jet}
+	 \includegraphics[width = 0.22\textwidth]{Chapter3/quark_initiated jet}
 	 \caption{Isolation (blue) and signal cones (red) of hadronically-decayed taus in the left
 	 and centre images. For comparison, a quark/gluon-initiated jet is presented on the right.
 	 Note how the \Ptau-jets are more collimated.}
@@ -435,8 +433,8 @@ When the momentum of the \Ptau-lepton is large compared to its mass, a very coll
 (the reconstruction of jets is described in Section~\ref{sec:Chap3:Reco:jets}) is
 produced. %The reconstruction of jets is described with detail in Section~\ref{sec:Chap3:Reco:jets}.
 For example, if the \Ptau-lepton carries a transverse momentum $\pT(\Ptau)>40\,$GeV, around
-90\% of its energy is constrained within a cone of radius $\Delta R=0.2$. Other relevant property is that the \Ptau-lepton
-decays exhibit low charged-track multiplicity of just one or three prongs\footnote{The term ``prong'' refers to 
+90\% of its energy is constrained within a cone of radius $\Delta R=0.2$. Another relevant property is that the \Ptau-lepton
+decays exhibit a low charged-track multiplicity of just one or three prongs\footnote{The term ``prong'' refers to 
 the number of charged particles in the final state of the tau decay. As most detectors use a tracking chamber 
 to identify charged particles, tau decays can be classified into those that provide a single track (1-prong) 
 and those that provide three tracks (3-prong).}. Also, a relevant fraction of the EM energy 
@@ -445,7 +443,7 @@ deposition in the calorimeters is due to photons coming from the decay of neutra
 %In this specific analysis, this is the case when the Higgs boson decays to taus.
 %Although, the top-quark system can decay into a single tau. 
 In Table~\ref{tab:Chap3:Reco:Tau:DecayModes},
-the main \Ptau-decay BR are shown. All these properties are exploited for the \tauhad identification.
+the main \Ptau-decay BRs are shown. All these properties are exploited for the \tauhad identification.
  %The accurate identification and reconstruction of \Ptau-leptons decaying hadronically hold 
  %significant importance in numerous measurements and searches conducted at the LHC.
  
@@ -483,9 +481,7 @@ $\pi^- \omega\nu_{\tau}$ & $1.9494 \pm 0.0645$ \\
 %background in this analysis stems from the misidentification of other objects (mainly gluon-initiated jets) as \tauhad, as it
 %is shown in Section~\ref{sec:ChaptH:Bkg}.
 
-The identification of \tauhad candidates use the calorimetric isolation and shape variables,
-charged tracks isolation and other \Ptau-lepton characteristics suitable for tagging such as the impact parameter,
-decay length and invariant mass.
+%The identification of \tauhad candidates use the calorimetric isolation and shape variables, charged tracks isolation and other \Ptau-lepton characteristics suitable for tagging such as the impact parameter, decay length and invariant mass.
 
 %\begin{figure}
 %	\centering
@@ -499,57 +495,64 @@ decay length and invariant mass.
 %\pablo{Incorporar también esto \url{https://cds.cern.ch/record/1045637/files/arXiv:0707.0928.pdf}. Tau Tagging at Atlas and CMS }
 
 
-The \tauhad reconstruction involves the use of the anti-$k_t$ algorithm~\cite{Cacciari:2008gp}
-with radius $R=0.4$. These \tauhad candidates originate from jet objects with $\ET >10\,$GeV and $|\eta|<2.5$. Subsequently,
-tracks associated with the candidate are determined if they fall within the core region, defined by
-a distance $\Delta R < 0.2$ from the jet barycentre. Additionally, tracks must satisfy specific 
-quality criteria, including minimum \pT cut, hits in the silicon detector, and impact parameters.
-Tracks within an isolation annulus ($0.2 < \Delta R < 0.4$) surrounding the barycentre are also 
-employed to calculate identification variables but these tracks are not associated with the core region of the tau 
-candidate~\cite{ATL-PHYS-PUB-2022-044, Leister:1609659}. The \tauhad candidates are categorised as 1-prong 
-or multi-prong (primarily composed of three tracks). To correctly establish the charge and the number of charged 
-decay products of a \tauhad , the tracks that are
-associated with the \tauhad decay need to be correctly distinguished from the rest
+The \tauhad reconstruction involves the use of the anti-$k_t$ algorithm~\cite{Catani:1993hr, CMS-PAS-JME-09-001, Cacciari:2008gp} with radius $R=0.4$. See Section~\ref{sec:Chap3:Reco:jets} for more details about the anti-$k_t$ algorithm. Local hadronic calibration is used to calibrate the topological clusters that serve as input to the algorithm. The \tauhad candidates are required to have $\pT>5$~GeV and $|\eta|<2.5$~\cite{ATL-PHYS-PUB-2022-044}.  
 
+It is important to properly identify the primary vertex, as \Ptau leptons travel away from the primary vertex before decaying.  
 To ensure optimal performance in high-pile-up scenarios, the Tau Jet Vertex Association~\cite{ATLAS:2014rzk}
 algorithm is employed to determine the primary vertex of the \tauhad. This minimises the
 influence of additional interactions, which could potentially lead to tau tracks failing to 
-meet the $z_0$ impact parameter requirement~\cite{ATLAS:2012voa}.
+meet the $z_0$ impact parameter requirement~\cite{ATLAS:2012voa}.  
 
-The tau reconstruction alone provides limited rejection capabilities against 
-various multi-jet backgrounds that can be challenging to differentiate from \tauhad. Several features of \tauhad, 
-such as their narrow calorimeter clusters, isolation, and distinct 1- or 3-prong track signatures, 
-can be exploited to discriminate between the jets and \tauhad.  During reconstruction, tracks 
-and calorimeter clusters are employed to define several identification
-variables that aid in distinguishing 
-taus from quark- or gluon-initiated jets and other leptons. Variables that demonstrate substantial 
-discriminatory power include those, characterising the shower shape in the calorimeter or tracks 
-(e.g., energy fraction within $\Delta R < 0.1$ and average \pT-weighted track distance from the
-tau axis) as well as those based on the track count.
 
-To effectively suppress backgrounds arising from quark- or gluon-initiated processes, 
-a set of multivariate algorithms collectively referred to as the tau identification have been 
-developed by a dedicated ATLAS team. These algorithms use the aforementioned ID variables to
-discriminate against jet backgrounds.
-Two multivariate techniques, namely the projective likelihood method (LLH) and the method 
-employing  boosted-decision trees (BDTs), are employed. The training of these algorithms involves the use of MC-event
-samples of $\PZ \rightarrow \Ptau\Ptau$, $\PW \rightarrow \Ptau\Pnu_{\tau}$, and
-$\PZ' \rightarrow \Ptau\Ptau$ for signal \tauhad, while jet-enriched data is utilised for 
-background events.  The LLH and BDT are independently trained for 1-prong and multi-prong 
-candidates. Each tau identification method establishes three thresholds based on the desired signal 
-efficiency: \texttt{loose}, \texttt{medium} and \texttt{tight}. 
-For 1-prong taus, the corresponding signal efficiencies obtained with the BDT+LLH method are
-70\%, 60\%, and 40\%, respectively. While for multi-prong these are 65\%, 55\% and 35\%.
+Tracks are associated with the \tauhad if they are in the core region $\Delta R< 0.25$ around the \tauhad direction and satisfy the following criteria: $\pT>1$~GeV, at least two associated hits in the pixel layers of the
+ID, and at least seven hits in total in the pixel and the SCT layers.
+The \tauhad candidates are categorised as 1-prong or multi-prong (primarily composed of three tracks). To correctly establish the charge and the number of charged  decay products of a \tauhad, the tracks that are associated with the \tauhad decay need to be correctly distinguished from the rest.
+The classification of the tracks associated with a \Ptau candidate is done using recurrent neural network (RNN) based on Keras and TensorFlow with three connected dense layers~\cite{ATLAS:2019uhp, ATL-PHYS-PUB-2022-044}. 
+The RNN categorises tracks associated with \Ptau-jet candidates into four categories:
+\texttt{Tau Tracks}, \texttt{Conversion Tracks}, \texttt{Isolation Tracks}, and \texttt{Fake Tracks}. 
+\texttt{Tau Tracks}, are tracks from charged decay products of the tau lepton, essential for determining the charge and number of decay products. 
+\texttt{Conversion Tracks} are from electrons or positrons resulting from photon conversion, used in identifying pi-zero mesons and rejecting truth electrons reconstructed as tau candidates. 
+\texttt{Isolation Tracks} likely originate from quark or gluon jets, characterised by higher multiplicities and a softer transverse momentum spectrum. 
+\texttt{Fake Tracks} include tracks that do not fit into the other categories, mainly misreconstructed or pile-up tracks.
+
+Afterwards, a RNN-based \Ptau-identification algorithm is trained using simulated samples of \tauhad candidates~\cite{ATLAS:2019uhp, ATL-PHYS-PUB-2022-044}. The architecture of this RNN is the same as the one for track classification. The training varies according to the prongness of the \tauhad candidate. The RNN uses a combination of low-level input variables for individual tracks and clusters that are associated with the \tauhad candidate as well as several high-level observables calculated from track and calorimeter quantities. The working points of the RNN for \tauhad identification are presented in Table~\ref{tab:Chap3:Reco:Tau:eff}.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|c|c}
+\toprule
+						& \multicolumn{2}{l}{Truth \tauhad  efficiency (\%)} \\ \midrule
+ Working point				& 1-prong                 & 3-prong     	\\ \midrule
+\texttt{Tight}                 		&  60                        &   45			\\
+\texttt{Medium}                		&  75                        &   60			\\
+\texttt{Loose}                 		&  85                        &   75			\\
+\texttt{Very Loose}            		&  95                        &   95			\\
+\bottomrule
+\end{tabular}
+\caption{List of defined working points with fixed truth \tauhad selection efficiencies for the RNN classifier~\cite{ATL-PHYS-PUB-2022-044}.}
+\label{tab:Chap3:Reco:Tau:eff}
+\end{table}
+
+
+%These \tauhad candidates originate from jet objects with $\ET >10\,$GeV and $|\eta|<2.5$. Subsequently,
+%tracks associated with the candidate are determined if they fall within the core region, defined by
+%a distance $\Delta R < 0.2$ from the jet barycentre. Additionally, tracks must satisfy specific 
+%quality criteria, including minimum \pT cut, hits in the silicon detector, and impact parameters.
+%Tracks within an isolation annulus ($0.2 < \Delta R < 0.4$) surrounding the barycentre are also 
+%employed to calculate identification variables but these tracks are not associated with the core region of the %tau 
+%candidate~\cite{ATL-PHYS-PUB-2022-044, Leister:1609659}. 
+
+%The tau reconstruction alone provides limited rejection capabilities against  various multi-jet backgrounds that can be challenging to differentiate from \tauhad. Several features of \tauhad,  such as their narrow calorimeter clusters, isolation, and distinct 1- or 3-prong track signatures,  can be exploited to discriminate between the jets and \tauhad.  During reconstruction, tracks  and calorimeter clusters are employed to define several identification variables that aid in distinguishing  taus from quark- or gluon-initiated jets and other leptons. Variables that demonstrate substantial  discriminatory power include those, characterising the shower shape in the calorimeter or tracks  (e.g., energy fraction within $\Delta R < 0.1$ and average \pT-weighted track distance from the tau axis) as well as those based on the track count.
+
+%To effectively suppress backgrounds arising from quark- or gluon-initiated processes,  a set of multivariate algorithms collectively referred to as the tau identification have been  developed by a dedicated ATLAS team. These algorithms use the aforementioned ID variables to discriminate against jet backgrounds.
+%Two multivariate techniques, namely the projective likelihood method (LLH) and the method  employing  boosted-decision trees (BDTs), are employed. The training of these algorithms involves the use of MC-event samples of $\PZ \rightarrow \Ptau\Ptau$, $\PW \rightarrow \Ptau\Pnu_{\tau}$, and $\PZ' \rightarrow \Ptau\Ptau$ for signal \tauhad, while jet-enriched data is utilised for  background events.  The LLH and BDT are independently trained for 1-prong and multi-prong  candidates. Each tau identification method establishes three thresholds based on the desired signal  efficiency: \texttt{loose}, \texttt{medium} and \texttt{tight}. 
+%For 1-prong taus, the corresponding signal efficiencies obtained with the BDT+LLH method are 70\%, 60\%, and 40\%, respectively. While for multi-prong these are 65\%, 55\% and 35\%.
 %source: https://cds.cern.ch/record/1609659/files/ATL-GEN-PROC-2013-002.pdf
 
-Electrons and muons can also mimic the \tauhad signature. Similarly to the 
-case of the jets misidentified as \tauhad, the electrons misidentified as \tauhad are discriminated by means of a 
-BDT that is optimised using MC-event samples for $\PZ \rightarrow \Ptau\Ptau$ and 
-$\PZ \rightarrow \Pe\Pe$ as background. The muons are misidentified with \tauhad 
-when the muon track is associated with a sufficiently energetic calorimeter cluster.
-To reduce the rate \Pmu identified as \tauhad, an algorithm requiring a certain criteria is used.
+%Electrons and muons can also mimic the \tauhad signature. Similarly to the  case of the jets misidentified as \tauhad, the electrons misidentified as \tauhad are discriminated by means of a  BDT that is optimised using MC-event samples for $\PZ \rightarrow \Ptau\Ptau$ and  $\PZ \rightarrow \Pe\Pe$ as background. The muons are misidentified with \tauhad  when the muon track is associated with a sufficiently energetic calorimeter cluster. To reduce the rate \Pmu identified as \tauhad, an algorithm requiring a certain criteria is used.
 
 % Leptons :: Tau - Identification efficiency
+\begin{comment}
 \subsubsection{Tau identification efficiency}
 To assess the effectiveness of the tau identification,
 experimental data is directly used. The identification efficiency measurement
@@ -588,6 +591,7 @@ Results presented as ``scale factor $\pm$ systematic uncertainty $\pm$ statistic
 %\pablo{Añadir en esta sección la información de este paper:
 %\url{https://arxiv.org/pdf/2211.16178.pdf}. "Tools for estimating fake/non-prompt lepton
 %backgrounds with the ATLAS detector at the LHC"}
+\end{comment}
 
 
 
@@ -702,7 +706,7 @@ than other hadron decays.
 
 \begin{figure}[h]
 	\centering
- 	 \includegraphics[width = 0.6\textwidth]{Chapter3/b_jet_production}
+ 	 \includegraphics[width = 0.475\textwidth]{Chapter3/b_jet_production}
 	 \caption{Illustration of the production of a \bjet with its characteristic 
 	 second vertex~\cite{ATLAS:2019bwq}.} %Connelly:2017wlp
 	\label{fig:Chap3:b_jet_production}
@@ -773,9 +777,9 @@ of \btag. The ultimate \texttt{DL1r} \btag discriminant is formulated as follows
 where $p_{b}$, $p_{c}$, $p_{\text{light}}$ and $f_{c}$ represent the \bjet,
 \Pcharm-jet and light-flavour jet probabilities, and
 the effective \Pcharm-jet fraction in the background training sample, respectively~\cite{ATLAS:2022qxm}. 
-The \btagged jets are jets whose values of the \texttt{DL1r} are above a certain threshold, hereafter referred to as WPs. 
-%Four WP are defined for the \texttt{DL1r}, the 
-%70\% of the b-jets being selected in tt simulated event WP is used to define the b-jets.
+The \btagged jets are jets whose values of the \texttt{DL1r} are above a certain threshold, hereafter referred to as working points. 
+%Four Working Points are defined for the \texttt{DL1r}, the 
+%70\% of the b-jets being selected in tt simulated event Working Point is used to define the b-jets.
 %The efficiency of the \texttt{DL1r}, algorithm is measured in collision data
 % In our analysis we use the DL1r tagger, it is described in \url{https://arxiv.org/pdf/2211.16345.pdf}
 The efficiency of identifying \bjets~\cite{FTAG-2018-01} and the mis-tag rate of 
