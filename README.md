@@ -1,4 +1,4 @@
-# Thesis: Search for rare associated production of a Higgs boson and a single top quark in the two lepton plus one hadronic tau final state with the ATLAS detector
+# PhD Thesis: Search for rare associated production of a Higgs boson and a single top quark in the two lepton plus one hadronic tau final state with the ATLAS detector
 
 The discovery of a Higgs boson in 2012 opened a new field for exploration in the realm of particle physics. To better understand the Standard Model of particle physics, it is of prominent interest to study the Yukawa coupling of the Higgs boson to the top quark ($`y_{t}`$), the most massive fundamental particle and, consequently, the one with the largest coupling to the Higgs boson.
 
